@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="testartemus.CustomerprofileTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.CustomerprofileTest -->
+      <class name="testartemus.VesselArrivalTest">
+        <methods>
+          <include name="vesselarrivaltab"/>
+          <include name="acknowledgement"/>
+          <include name="login"/>
+          <include name="findbills"/>
+          <include name="homepage"/>
+          <include name="Voyagedetails"/>
+        </methods>
+      </class> <!-- testartemus.VesselArrivalTest -->
+      <class name="testartemus.AMSMainScreenTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.AMSMainScreenTest -->
+      <class name="testartemus.locationTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.locationTest -->
+      <class name="testartemus.vesselTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.vesselTest -->
+      <class name="testartemus.VesselDepartureTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.VesselDepartureTest -->
+      <class name="testartemus.billheaderTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.billheaderTest -->
+      <class name="testartemus.voyegeTest">
+        <methods>
+          <include name="updatevoyege"/>
+          <include name="deletevoyege"/>
+          <include name="secondlocationdetails"/>
+          <include name="savevoyege"/>
+          <include name="homepage"/>
+          <include name="login"/>
+          <include name="findvoyege"/>
+          <include name="portdetailstwo"/>
+        </methods>
+      </class> <!-- testartemus.voyegeTest -->
+      <class name="testartemus.addoriginalmanifestTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.addoriginalmanifestTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

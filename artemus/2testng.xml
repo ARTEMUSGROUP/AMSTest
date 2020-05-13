@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite">
+  <test name="LocationTest">
+    <classes>
+     <class name="testartemus.locationTest"/>
+      </classes>
+  </test> <!-- Test -->
+  
+  <test name="CustomerProfileTest">
+    <classes>
+          <class name="testartemus.CustomerprofileTest"/>
+    
+     </classes>
+  </test> <!-- Test -->
+    
+    <test name="VesselTest">
+    <classes>
+    
+      <class name="testartemus.vesselTest"/>
+      </classes>
+  </test> <!-- Test -->
+  
+   <test name="VoyegeTest">
+    <classes>
+     <class name="testartemus.voyegeTest"/>
+      </classes>
+  </test> <!-- Test -->
+     
+      <test name="BillHeaderTest">
+    <classes>
+      <class name="testartemus.billheaderTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- TestSuite Suite -->
+

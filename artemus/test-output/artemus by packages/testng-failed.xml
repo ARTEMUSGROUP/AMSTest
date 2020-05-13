@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [artemus by packages]">
+  <test name="testartemus(failed)">
+    <classes>
+      <class name="testartemus.vesselTest">
+        <methods>
+          <include name="findvessel"/>
+          <include name="deletevessel"/>
+          <include name="savevessel"/>
+          <include name="login"/>
+          <include name="updatevessel"/>
+        </methods>
+      </class> <!-- testartemus.vesselTest -->
+      <class name="testartemus.locationTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.locationTest -->
+      <class name="testartemus.CustomerprofileTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.CustomerprofileTest -->
+    </classes>
+  </test> <!-- testartemus(failed) -->
+</suite> <!-- Failed suite [artemus by packages] -->

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="testartemus.AMSMainScreenTest"/>
+      <class name="testartemus.addoriginalmanifestTest"/>
+      <class name="testartemus.voyegeTest"/>
+      <class name="testartemus.VesselArrivalTest"/>
+      <class name="testartemus.locationTest"/>
+      <class name="testartemus.vesselTest"/>
+      <class name="testartemus.VesselDepartureTest"/>
+      <class name="testartemus.CustomerprofileTest"/>
+      <class name="testartemus.billheaderTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

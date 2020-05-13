@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regration Suite]">
+  <listeners>
+    <listener class-name="resources.listnertest"/>
+    <listener class-name="resources.ExtentReporterNG"/>
+  </listeners>
+  <test name="CustomerProfileTest(failed)">
+    <classes>
+      <class name="testartemus.billheaderTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.billheaderTest -->
+      <class name="testartemus.CustomerprofileTest">
+        <methods>
+          <include name="savecustomer"/>
+          <include name="createcustomer"/>
+          <include name="deletecustomer"/>
+          <include name="login"/>
+          <include name="updatecustomer"/>
+          <include name="findcustomerassert"/>
+          <include name="findcustomer"/>
+        </methods>
+      </class> <!-- testartemus.CustomerprofileTest -->
+      <class name="testartemus.addoriginalmanifestTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.addoriginalmanifestTest -->
+      <class name="testartemus.locationTest">
+        <methods>
+          <include name="login"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- testartemus.locationTest -->
+      <class name="testartemus.AMSMainScreenTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.AMSMainScreenTest -->
+      <class name="testartemus.voyegeTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.voyegeTest -->
+      <class name="testartemus.vesselTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.vesselTest -->
+    </classes>
+  </test> <!-- CustomerProfileTest(failed) -->
+  <test name="VesselTest(failed)">
+    <classes>
+      <class name="testartemus.billheaderTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.billheaderTest -->
+      <class name="testartemus.CustomerprofileTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.CustomerprofileTest -->
+      <class name="testartemus.addoriginalmanifestTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.addoriginalmanifestTest -->
+      <class name="testartemus.locationTest">
+        <methods>
+          <include name="login"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- testartemus.locationTest -->
+      <class name="testartemus.AMSMainScreenTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.AMSMainScreenTest -->
+      <class name="testartemus.voyegeTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.voyegeTest -->
+      <class name="testartemus.vesselTest">
+        <methods>
+          <include name="findvesselname"/>
+          <include name="findvessel"/>
+          <include name="deletevessel"/>
+          <include name="savevessel"/>
+          <include name="login"/>
+          <include name="japancarriercode"/>
+          <include name="createvessel"/>
+          <include name="updatevessel"/>
+        </methods>
+      </class> <!-- testartemus.vesselTest -->
+    </classes>
+  </test> <!-- VesselTest(failed) -->
+  <test name="VoyegeTest(failed)">
+    <classes>
+      <class name="testartemus.billheaderTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.billheaderTest -->
+      <class name="testartemus.CustomerprofileTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.CustomerprofileTest -->
+      <class name="testartemus.addoriginalmanifestTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.addoriginalmanifestTest -->
+      <class name="testartemus.locationTest">
+        <methods>
+          <include name="login"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- testartemus.locationTest -->
+      <class name="testartemus.AMSMainScreenTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.AMSMainScreenTest -->
+      <class name="testartemus.voyegeTest">
+        <methods>
+          <include name="firstlocationdetails"/>
+          <include name="updatevoyege"/>
+          <include name="deletevoyege"/>
+          <include name="voyegetab"/>
+          <include name="portdetails"/>
+          <include name="datedetails"/>
+          <include name="voyegedetail"/>
+          <include name="login"/>
+          <include name="findvoyege"/>
+          <include name="datedetailstwo"/>
+          <include name="secondlocationdetails"/>
+          <include name="savevoyege"/>
+          <include name="portdetailstwo"/>
+          <include name="vesseldetail"/>
+        </methods>
+      </class> <!-- testartemus.voyegeTest -->
+      <class name="testartemus.vesselTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.vesselTest -->
+    </classes>
+  </test> <!-- VoyegeTest(failed) -->
+  <test name="BillHeaderTest(failed)">
+    <classes>
+      <class name="testartemus.billheaderTest">
+        <methods>
+          <include name="scrollpage2"/>
+          <include name="scrollpageup"/>
+          <include name="Consignee"/>
+          <include name="Packages"/>
+          <include name="billheader"/>
+          <include name="Packagesunit"/>
+          <include name="hblScac"/>
+          <include name="Manufacturer"/>
+          <include name="billStatus"/>
+          <include name="goodsDescription"/>
+          <include name="scrollpage"/>
+          <include name="ShippingInformation"/>
+          <include name="Notify"/>
+          <include name="cargocountry"/>
+          <include name="CountryOfOrigin"/>
+          <include name="HarmonizeCode"/>
+          <include name="findbill"/>
+          <include name="save"/>
+          <include name="login"/>
+          <include name="Equipment"/>
+          <include name="PortOfDischarge"/>
+          <include name="PortOfLoading"/>
+          <include name="receiptPlace"/>
+          <include name="updatebill"/>
+          <include name="HazardCode"/>
+          <include name="PlaceOfDelivery"/>
+          <include name="NvoType"/>
+          <include name="billType"/>
+          <include name="MoveType"/>
+          <include name="equipmentcargodetails"/>
+          <include name="VesselDetail"/>
+        </methods>
+      </class> <!-- testartemus.billheaderTest -->
+      <class name="testartemus.CustomerprofileTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.CustomerprofileTest -->
+      <class name="testartemus.addoriginalmanifestTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.addoriginalmanifestTest -->
+      <class name="testartemus.locationTest">
+        <methods>
+          <include name="login"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- testartemus.locationTest -->
+      <class name="testartemus.AMSMainScreenTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.AMSMainScreenTest -->
+      <class name="testartemus.voyegeTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.voyegeTest -->
+      <class name="testartemus.vesselTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.vesselTest -->
+    </classes>
+  </test> <!-- BillHeaderTest(failed) -->
+  <test name="addoriginalmanifestTest(failed)">
+    <classes>
+      <class name="testartemus.billheaderTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.billheaderTest -->
+      <class name="testartemus.CustomerprofileTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.CustomerprofileTest -->
+      <class name="testartemus.addoriginalmanifestTest">
+        <methods>
+          <include name="findbills"/>
+          <include name="LoadPortdetails"/>
+          <include name="vesseldetails"/>
+          <include name="sendManifestCheckBox"/>
+          <include name="DischargePortdetails"/>
+          <include name="assertRow"/>
+          <include name="Voyagedetails"/>
+          <include name="login"/>
+          <include name="OriginalManifes"/>
+        </methods>
+      </class> <!-- testartemus.addoriginalmanifestTest -->
+      <class name="testartemus.locationTest">
+        <methods>
+          <include name="login"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- testartemus.locationTest -->
+      <class name="testartemus.AMSMainScreenTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.AMSMainScreenTest -->
+      <class name="testartemus.voyegeTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.voyegeTest -->
+      <class name="testartemus.vesselTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.vesselTest -->
+    </classes>
+  </test> <!-- addoriginalmanifestTest(failed) -->
+  <test name="AMSMainScreenTest(failed)">
+    <classes>
+      <class name="testartemus.billheaderTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.billheaderTest -->
+      <class name="testartemus.CustomerprofileTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.CustomerprofileTest -->
+      <class name="testartemus.addoriginalmanifestTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.addoriginalmanifestTest -->
+      <class name="testartemus.locationTest">
+        <methods>
+          <include name="login"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- testartemus.locationTest -->
+      <class name="testartemus.AMSMainScreenTest">
+        <methods>
+          <include name="vesseldetailsmain"/>
+          <include name="BillAmendmentTracking"/>
+          <include name="LoadPortdetailsmain"/>
+          <include name="AMSMainScreen"/>
+          <include name="DischargePortdetailsmain"/>
+          <include name="Voyagedetailsmain"/>
+          <include name="billDetailInformation"/>
+          <include name="findbillsmain"/>
+          <include name="originalManifestTracking"/>
+          <include name="CustomErrorScreen"/>
+          <include name="validatebuttonDiv"/>
+          <include name="validateport"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.AMSMainScreenTest -->
+      <class name="testartemus.voyegeTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.voyegeTest -->
+      <class name="testartemus.vesselTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.vesselTest -->
+    </classes>
+  </test> <!-- AMSMainScreenTest(failed) -->
+</suite> <!-- Failed suite [Regration Suite] -->
