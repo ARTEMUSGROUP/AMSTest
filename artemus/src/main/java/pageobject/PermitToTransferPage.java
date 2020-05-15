@@ -15,7 +15,7 @@ public class PermitToTransferPage {
 	
 	@FindBy(linkText ="AMS")	public WebElement AMS;
 
-	@FindBy(xpath ="//td[contains(text(),'Permit To Transfer')]")	public WebElement PermitToTransfer;
+	@FindBy(xpath ="//a[contains(text(),'Permit To Transfer')]")	public WebElement PermitToTransfer;
 	
 	@FindBy(xpath ="//td[contains(text(),'Permit To Transfer')]")	public WebElement PageTitle;
 
@@ -38,14 +38,24 @@ public class PermitToTransferPage {
 
 	@FindBy(css ="input[name='cIRSNumber']")	public WebElement cIRSNumber;
 
-	@FindBy(xpath ="//div[@id='MainDataDiv']//tr[4]//td[1]")	public WebElement TableRow;
+	@FindBy(xpath ="//table[@id='dataTable']//tbody//tr")	public WebElement TableRow;
 
+	@FindBy(xpath ="//div[@id='CreateDataDiv']//img[@id='img_find']")	public WebElement billFind;
+
+	@FindBy(xpath ="//input[@name='objCheckBox']")	public WebElement objCheckBox;
+
+	@FindBy(css ="input[name='Save']")	public WebElement objChecksave;
+
+	@FindBy(xpath ="//*[@id='MainDataDiv']/input")	public WebElement changeAckName;
+
+	
+	
 	
 	public WebElement AMS() {
 		return AMS;
 	}
 	
-	public WebElement ItSelectionScreen() {
+	public WebElement PermitToTransfer() {
 		return PermitToTransfer;
 	}
 	
@@ -90,6 +100,23 @@ public class PermitToTransferPage {
 	
 	public WebElement TableRow() {
 		return TableRow;
+}
+	
+	public WebElement billFind() {
+		return billFind;
+}
+	
+
+	public WebElement objCheckBox() {
+		return objCheckBox;
+}
+	
+	public WebElement objChecksave() {
+		return objChecksave;
+}
+	
+	public WebElement changeAckName() {
+		return changeAckName;
 }
 	
 }

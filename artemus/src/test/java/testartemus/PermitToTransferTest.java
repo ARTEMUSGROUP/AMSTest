@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.AssertJUnit;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -30,7 +31,7 @@ public class PermitToTransferTest extends base {
 	public void ItSelectionTab() throws InterruptedException					
 	{
 	pt.AMS().click();
-	pt.ItSelectionScreen().click();
+	pt.PermitToTransfer().click();
 	driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		
 	AssertJUnit.assertTrue(pt.PageTitle().isDisplayed());
@@ -91,7 +92,69 @@ public class PermitToTransferTest extends base {
 			}
 
 	}
+	@Test(priority=5)
+	public void findbills() throws InterruptedException					
+	{
+	
+		
+		pt.Find().click();
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		
+		try{
+			System.out.println(pt.TableRow().getText());
+			driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 
+
+		}
+		catch(Exception e)
+		{
+			pt.New().click();
+			
+			driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+
+			
+			Select billladingid = new Select(pt.billladingid());
+			billladingid.selectByValue("453650");
+			driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+			
+			pt.cFirms().sendKeys("1234");
+			driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+
+			pt.cIRSNumber().sendKeys("987654");
+			driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+
+			pt.billFind().click();
+			driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+
+			pt.objCheckBox().click();
+			driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+			
+			pt.objChecksave().click();
+			driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+
+			driver.switchTo().alert().accept();
+			driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+			
+			
+
+		}
+		
+		
+		}
+
+	@Test(priority=6)
+	public void changeAckName() throws InterruptedException					
+	{
+		pt.changeAckName().click();
+		Thread.sleep(200);			
+	}
+	@AfterTest
+	public void homepage() throws InterruptedException
+	{
+		back();
+		Thread.sleep(200);		
+
+	}
 
 }
 

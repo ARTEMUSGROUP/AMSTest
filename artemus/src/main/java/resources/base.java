@@ -34,7 +34,7 @@ public class base {
 		
 		Properties prop=new Properties();
 		
-		FileInputStream fis=new FileInputStream("//home//me//new neon workspace//artemus//src//main//java//resources//data.properties");
+		FileInputStream fis=new FileInputStream("/home/me/git/AMSTest/artemus/src/main/java/resources/data.properties");
 		
 		prop.load(fis);
 		String browserName=prop.getProperty("browser");
@@ -95,7 +95,7 @@ public class base {
 		
 		public void deleteScreenshot() throws IOException 
 		{
-		File dir=new File("/home/me/new neon workspace/artemus/screenshot");
+		File dir=new File("/home/me/git/AMSTest/artemus/screenshot");
 		
 		if(dir.isDirectory() == false) {
 			System.out.println("Not a directory. Do nothing");

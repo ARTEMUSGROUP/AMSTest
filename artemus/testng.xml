@@ -72,6 +72,12 @@
   
   
   
+     <test name="PermitToTransferTest">
+    <classes>
+      <class name="testartemus.PermitToTransferTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
 </suite> <!-- Regration Suite -->
 
 
