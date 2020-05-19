@@ -89,7 +89,7 @@ public class voyegeTest extends base{
 
 		vy.voyage().sendKeys("1721");
 
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 
 		vy.crewMembers().sendKeys("1232");
 		

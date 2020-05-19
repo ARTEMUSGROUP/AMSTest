@@ -78,6 +78,15 @@
     </classes>
   </test> <!-- Test -->
   
+  
+     <test name="ISFTest">
+    <classes>
+      <class name="testartemus.ISFTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  
 </suite> <!-- Regration Suite -->
 
 

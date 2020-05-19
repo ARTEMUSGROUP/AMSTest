@@ -33,7 +33,7 @@ public class ISFpage {
 
 	@FindBy(css ="img[alt='Find Criteria']")	public WebElement Find;
 
-	@FindBy(css ="div[id='billDetails']")	public WebElement billDetailsTable;
+	@FindBy(xpath ="//*[@id='StatusTable']/tbody/tr[1]")	public WebElement billDetailsTable;
 	
 	@FindBy(xpath ="//tr[@id='tr0']//td[1]//input[@name='isISFSentCheckBox']")	public WebElement isISFSentCheckBox;
 

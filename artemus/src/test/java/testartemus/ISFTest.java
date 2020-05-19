@@ -3,9 +3,11 @@ package testartemus;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.AssertJUnit;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -127,8 +129,52 @@ public class ISFTest extends base {
 		System.out.println(Isf.ISFsenttd().getText());
 		}
 		
-		
-		
+		@Test(priority=7)
+		public void Billstatus() throws InterruptedException					
+		{
+		  if(Isf.ISFsenttd().getText().equals("N") && Isf.ISFError().getText().equals("N"))
+		  {
+			  Isf.isISFSentCheckBox().click();
+			  driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+
+			  Isf.SubmitISFBill().click();
+			  driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+
+			  driver.switchTo().alert().accept();
+			  driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+			  
+				System.out.println(Isf.ISFsenttd().getText());
+
+				  Isf.ISFTableRow().click();
+
+				
+		  }
+		  
+		  else
+		  {
+			  Isf.ISFTableRow().click();
+			  driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+
+			Assert.assertTrue(Isf.billDetailsTable().isDisplayed());  
+			
+			Assert.assertTrue(Isf.StatusTable2().isDisplayed());  
+
+			  
+			  System.out.println( Isf.billDetailsTable().getText());
+			  
+			  System.out.println("This is the last ISF send date for bill"+ Isf.SentDate().getText());
+			  
+			  System.out.println(Isf.StatusTable2().getText());
+			  
+		  }
+		}
+		@AfterTest
+		public void homepage() throws InterruptedException
+		{
+			back();
+			Thread.sleep(200);		
+
+		}
 		
 		
 		

@@ -1,41 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35207" started-at="2020-05-15T12:33:30Z" finished-at="2020-05-15T12:34:06Z">
+  <suite name="Default suite" duration-ms="13125" started-at="2020-05-19T05:56:31Z" finished-at="2020-05-19T05:56:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35207" started-at="2020-05-15T12:33:30Z" finished-at="2020-05-15T12:34:06Z">
-      <class name="testartemus.ISFTest">
-        <test-method status="PASS" signature="login()[pri:0, instance:testartemus.ISFTest@59494225]" name="login" is-config="true" duration-ms="28531" started-at="2020-05-15T18:03:30Z" finished-at="2020-05-15T18:03:59Z">
+    <test name="Default test" duration-ms="13125" started-at="2020-05-19T05:56:31Z" finished-at="2020-05-19T05:56:44Z">
+      <class name="testartemus.SCACCodeTest">
+        <test-method status="PASS" signature="login()[pri:0, instance:testartemus.SCACCodeTest@59494225]" name="login" is-config="true" duration-ms="8265" started-at="2020-05-19T11:26:31Z" finished-at="2020-05-19T11:26:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="ItSelectionTab()[pri:1, instance:testartemus.ISFTest@59494225]" name="ItSelectionTab" duration-ms="3734" started-at="2020-05-15T18:03:59Z" finished-at="2020-05-15T18:04:03Z">
+        <test-method status="PASS" signature="SCACCodescreen()[pri:1, instance:testartemus.SCACCodeTest@59494225]" name="SCACCodescreen" duration-ms="908" started-at="2020-05-19T11:26:39Z" finished-at="2020-05-19T11:26:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ItSelectionTab -->
-        <test-method status="PASS" signature="vesseldetails()[pri:2, instance:testartemus.ISFTest@59494225]" name="vesseldetails" duration-ms="816" started-at="2020-05-15T18:04:03Z" finished-at="2020-05-15T18:04:04Z">
+        </test-method> <!-- SCACCodescreen -->
+        <test-method status="PASS" signature="CreateNewScac()[pri:2, instance:testartemus.SCACCodeTest@59494225]" name="CreateNewScac" duration-ms="1608" started-at="2020-05-19T11:26:40Z" finished-at="2020-05-19T11:26:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- vesseldetails -->
-        <test-method status="PASS" signature="Voyagedetails()[pri:3, instance:testartemus.ISFTest@59494225]" name="Voyagedetails" duration-ms="347" started-at="2020-05-15T18:04:04Z" finished-at="2020-05-15T18:04:04Z">
+        </test-method> <!-- CreateNewScac -->
+        <test-method status="PASS" signature="UpdateScac()[pri:3, instance:testartemus.SCACCodeTest@59494225]" name="UpdateScac" duration-ms="1837" started-at="2020-05-19T11:26:42Z" finished-at="2020-05-19T11:26:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Voyagedetails -->
-        <test-method status="PASS" signature="loadPortId()[pri:4, instance:testartemus.ISFTest@59494225]" name="loadPortId" duration-ms="961" started-at="2020-05-15T18:04:04Z" finished-at="2020-05-15T18:04:05Z">
+        </test-method> <!-- UpdateScac -->
+        <test-method status="PASS" signature="DeleteScac()[pri:4, instance:testartemus.SCACCodeTest@59494225]" name="DeleteScac" duration-ms="458" started-at="2020-05-19T11:26:44Z" finished-at="2020-05-19T11:26:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loadPortId -->
-        <test-method status="PASS" signature="DischargePortdetails()[pri:5, instance:testartemus.ISFTest@59494225]" name="DischargePortdetails" duration-ms="293" started-at="2020-05-15T18:04:05Z" finished-at="2020-05-15T18:04:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DischargePortdetails -->
-        <test-method status="PASS" signature="findbills()[pri:6, instance:testartemus.ISFTest@59494225]" name="findbills" duration-ms="492" started-at="2020-05-15T18:04:05Z" finished-at="2020-05-15T18:04:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- findbills -->
-      </class> <!-- testartemus.ISFTest -->
+        </test-method> <!-- DeleteScac -->
+      </class> <!-- testartemus.SCACCodeTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
