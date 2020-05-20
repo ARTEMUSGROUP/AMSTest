@@ -3,101 +3,103 @@ package testartemus;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.support.ui.Select;
 import org.testng.AssertJUnit;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import pageobject.ISFpage;
 import pageobject.SCACCodePage;
+import pageobject.SubOrdinateScacPage;
 import resources.base;
 
-public class SCACCodeTest extends base{
+public class SubOrdinateScacTest extends base {
 
-	SCACCodePage sc;
+	
+	SubOrdinateScacPage soc;
 	@BeforeTest
 	public void login() throws IOException
 	{
 		driver=pageLogin();
 		//
 	
-		sc=new SCACCodePage(driver);
+		soc=new SubOrdinateScacPage(driver);
 	}
 
 	@Test(priority=1)
-	public void SCACCodescreen() throws InterruptedException					
+	public void SubOrdinateScac() throws InterruptedException					
 	{
-		sc.Tables().click();
+		soc.Tables().click();
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 
 		
-		sc.SCACcodeTab().click();
+		soc.SubOrdinateSCACTab().click();
 	driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		
-	AssertJUnit.assertTrue(sc.PageTitle().isDisplayed());
+	AssertJUnit.assertTrue(soc.PageTitle().isDisplayed());
 }
-	@Test(priority=2)
-	public void CreateNewScac() throws InterruptedException					
-	{
-		sc.New().click();
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-
-		sc.SCACcode().sendKeys("AUTO");
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-
-		sc.scacName().sendKeys("ITS AUTOMATION TESTING");
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-
-		sc.carrierCode().sendKeys("1234");
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-
-		sc.Save().click();
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 	
+	@Test(priority=2)
+	public void CreateNewSubScac() throws InterruptedException					
+	{
+		soc.scacCode().sendKeys("TEST");
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+
+		soc.bondHolder().sendKeys("99-9999999oo");
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+
+		Select bond=new Select(soc.bondActivityCode);
+		bond.selectByValue("02");
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+
+
+		Select bondtype=new Select(soc.bondType);
+		bondtype.selectByValue("8");
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		
+		soc.vnumber().sendKeys("1234");
+		soc.name().sendKeys("Automation Time");
+		
+		soc.Save().click();
+		
 		driver.switchTo().alert().accept();
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 
 	}
+	
 	
 	@Test(priority=3)
-	public void UpdateScac() throws InterruptedException					
+	public void updateSubScac() throws InterruptedException					
 	{
-		sc.Find().click();
+		
+		soc.Find().click();
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		
-		sc.sName().sendKeys("AUTO");
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-
-		sc.SearchButton().click();
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-
-		sc.GridRow().click();
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		soc.sCode().sendKeys("TEST");
+		soc.SearchButton().click();
 		
-
-		sc.carrierCode().sendKeys("5678");
+		soc.GridTable().click();
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 
-		sc.Save().click();
+		soc.bondHolder().clear();
+		soc.bondHolder().sendKeys("99-999999911");
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+
+		soc.Save().click();
 		
 		driver.switchTo().alert().accept();
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 
-
 	}
+	
 	
 	@Test(priority=4)
-	public void DeleteScac() throws InterruptedException					
+	public void deleteSubScac() throws InterruptedException					
 	{
-		sc.Delete().click();
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-
+		
+		soc.Delete().click();
 		driver.switchTo().alert().accept();
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-
 	}
-	
 	
 	@AfterTest
 	public void homepage() throws InterruptedException
@@ -106,11 +108,6 @@ public class SCACCodeTest extends base{
 		Thread.sleep(200);		
 
 	}
-	
-	
-	
-	
-	
 	
 	
 }

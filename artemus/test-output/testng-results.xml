@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13125" started-at="2020-05-19T05:56:31Z" finished-at="2020-05-19T05:56:44Z">
+  <suite name="Default suite" duration-ms="20319" started-at="2020-05-20T12:41:41Z" finished-at="2020-05-20T12:42:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13125" started-at="2020-05-19T05:56:31Z" finished-at="2020-05-19T05:56:44Z">
-      <class name="testartemus.SCACCodeTest">
-        <test-method status="PASS" signature="login()[pri:0, instance:testartemus.SCACCodeTest@59494225]" name="login" is-config="true" duration-ms="8265" started-at="2020-05-19T11:26:31Z" finished-at="2020-05-19T11:26:39Z">
+    <test name="Default test" duration-ms="20319" started-at="2020-05-20T12:41:41Z" finished-at="2020-05-20T12:42:01Z">
+      <class name="testartemus.SubOrdinateScacTest">
+        <test-method status="PASS" signature="login()[pri:0, instance:testartemus.SubOrdinateScacTest@59494225]" name="login" is-config="true" duration-ms="14471" started-at="2020-05-20T18:11:41Z" finished-at="2020-05-20T18:11:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="SCACCodescreen()[pri:1, instance:testartemus.SCACCodeTest@59494225]" name="SCACCodescreen" duration-ms="908" started-at="2020-05-19T11:26:39Z" finished-at="2020-05-19T11:26:40Z">
+        <test-method status="PASS" signature="SubOrdinateScac()[pri:1, instance:testartemus.SubOrdinateScacTest@59494225]" name="SubOrdinateScac" duration-ms="1159" started-at="2020-05-20T18:11:55Z" finished-at="2020-05-20T18:11:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SCACCodescreen -->
-        <test-method status="PASS" signature="CreateNewScac()[pri:2, instance:testartemus.SCACCodeTest@59494225]" name="CreateNewScac" duration-ms="1608" started-at="2020-05-19T11:26:40Z" finished-at="2020-05-19T11:26:42Z">
+        </test-method> <!-- SubOrdinateScac -->
+        <test-method status="PASS" signature="CreateNewSubScac()[pri:2, instance:testartemus.SubOrdinateScacTest@59494225]" name="CreateNewSubScac" duration-ms="1856" started-at="2020-05-20T18:11:57Z" finished-at="2020-05-20T18:11:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CreateNewScac -->
-        <test-method status="PASS" signature="UpdateScac()[pri:3, instance:testartemus.SCACCodeTest@59494225]" name="UpdateScac" duration-ms="1837" started-at="2020-05-19T11:26:42Z" finished-at="2020-05-19T11:26:44Z">
+        </test-method> <!-- CreateNewSubScac -->
+        <test-method status="PASS" signature="updateSubScac()[pri:3, instance:testartemus.SubOrdinateScacTest@59494225]" name="updateSubScac" duration-ms="2271" started-at="2020-05-20T18:11:58Z" finished-at="2020-05-20T18:12:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UpdateScac -->
-        <test-method status="PASS" signature="DeleteScac()[pri:4, instance:testartemus.SCACCodeTest@59494225]" name="DeleteScac" duration-ms="458" started-at="2020-05-19T11:26:44Z" finished-at="2020-05-19T11:26:44Z">
+        </test-method> <!-- updateSubScac -->
+        <test-method status="PASS" signature="deleteSubScac()[pri:4, instance:testartemus.SubOrdinateScacTest@59494225]" name="deleteSubScac" duration-ms="528" started-at="2020-05-20T18:12:01Z" finished-at="2020-05-20T18:12:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DeleteScac -->
-      </class> <!-- testartemus.SCACCodeTest -->
+        </test-method> <!-- deleteSubScac -->
+      </class> <!-- testartemus.SubOrdinateScacTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
