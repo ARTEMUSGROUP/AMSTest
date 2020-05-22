@@ -19,23 +19,26 @@ public class ARTEMUSloginpage {
 	// By username =By.name("userName");
 	// By password =By.name("password");
 	// By submit =By.id("submitBtn");
-	@FindBy(css ="tr[class='GridHeader']")	public WebElement Landingpage;
+	@FindBy(css = "tr[class='GridHeader']")
+	public WebElement Landingpage;
 
-	@FindBy(css ="div[id='dhtmlgoodies_menu']")	public WebElement menubar;
-	
-	@FindBy(css ="td[id='userNameLoginScac']")	public WebElement checkLoginScac;
-	
-	
-	
-	
-	@FindBy(css ="input[name='loginScac']")	public WebElement loginSCAC;
-	
-	@FindBy(css ="input[name='userName']") public WebElement userName;
-	
-	@FindBy(css ="input[name='password']") public WebElement password;
-	
-	@FindBy(css="input[id ='submitBtn']") public WebElement submit;
-	
+	@FindBy(css = "div[id='dhtmlgoodies_menu']")
+	public WebElement menubar;
+
+	@FindBy(css = "td[id='userNameLoginScac']")
+	public WebElement checkLoginScac;
+
+	@FindBy(css = "input[name='loginScac']")
+	public WebElement loginSCAC;
+
+	@FindBy(css = "input[name='userName']")
+	public WebElement userName;
+
+	@FindBy(css = "input[name='password']")
+	public WebElement password;
+
+	@FindBy(css = "input[id ='submitBtn']")
+	public WebElement submit;
 
 	public WebElement loginSCAC() {
 		return loginSCAC;
@@ -52,7 +55,7 @@ public class ARTEMUSloginpage {
 	public WebElement submit() {
 		return submit;
 	}
-	
+
 	public WebElement Landingpage() {
 		return Landingpage;
 	}
@@ -60,7 +63,7 @@ public class ARTEMUSloginpage {
 	public WebElement menubar() {
 		return menubar;
 	}
-	
+
 	public WebElement checkLoginScac() {
 		return checkLoginScac;
 	}
