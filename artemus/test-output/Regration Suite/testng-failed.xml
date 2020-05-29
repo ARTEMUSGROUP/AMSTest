@@ -5,7 +5,7 @@
     <listener class-name="resources.listnertest"/>
     <listener class-name="resources.ExtentReporterNG"/>
   </listeners>
-  <test name="VoyegeTest(failed)">
+  <test name="BillHeaderTest(failed)">
     <classes>
       <class name="testartemus.PermitToTransferTest">
         <methods>
@@ -13,47 +13,82 @@
           <include name="login"/>
         </methods>
       </class> <!-- testartemus.PermitToTransferTest -->
-      <class name="testartemus.VesselDepartureTest">
-        <methods>
-          <include name="homepage"/>
-          <include name="login"/>
-        </methods>
-      </class> <!-- testartemus.VesselDepartureTest -->
       <class name="testartemus.billheaderTest">
         <methods>
+          <include name="Equipment"/>
+          <include name="Packages"/>
+          <include name="cargocountry"/>
+          <include name="HazardCode"/>
+          <include name="Packagesunit"/>
           <include name="homepage"/>
+          <include name="HarmonizeCode"/>
+          <include name="Manufacturer"/>
+          <include name="goodsDescription"/>
+          <include name="equipmentcargodetails"/>
+          <include name="PlaceOfDelivery"/>
           <include name="login"/>
         </methods>
       </class> <!-- testartemus.billheaderTest -->
-      <class name="testartemus.CustomerprofileTest">
+      <class name="testartemus.candaaddoriginalmanifestTest">
         <methods>
-          <include name="homepage"/>
           <include name="login"/>
-        </methods>
-      </class> <!-- testartemus.CustomerprofileTest -->
-      <class name="testartemus.addoriginalmanifestTest">
-        <methods>
           <include name="homepage"/>
-          <include name="login"/>
         </methods>
-      </class> <!-- testartemus.addoriginalmanifestTest -->
+      </class> <!-- testartemus.candaaddoriginalmanifestTest -->
       <class name="testartemus.ISFTest">
         <methods>
           <include name="login"/>
-        </methods>
-      </class> <!-- testartemus.ISFTest -->
-      <class name="testartemus.locationTest">
-        <methods>
-          <include name="login"/>
           <include name="homepage"/>
         </methods>
-      </class> <!-- testartemus.locationTest -->
+      </class> <!-- testartemus.ISFTest -->
       <class name="testartemus.ItSelectionScreenTest">
         <methods>
           <include name="login"/>
           <include name="homepage"/>
         </methods>
       </class> <!-- testartemus.ItSelectionScreenTest -->
+      <class name="testartemus.voyegeTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.voyegeTest -->
+      <class name="testartemus.VesselDepartureTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.VesselDepartureTest -->
+      <class name="testartemus.SubOrdinateScacTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.SubOrdinateScacTest -->
+      <class name="testartemus.CustomerprofileTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.CustomerprofileTest -->
+      <class name="testartemus.SCACCodeTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.SCACCodeTest -->
+      <class name="testartemus.addoriginalmanifestTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.addoriginalmanifestTest -->
+      <class name="testartemus.locationTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.locationTest -->
       <class name="testartemus.VesselArrivalTest">
         <methods>
           <include name="login"/>
@@ -66,13 +101,6 @@
           <include name="login"/>
         </methods>
       </class> <!-- testartemus.AMSMainScreenTest -->
-      <class name="testartemus.voyegeTest">
-        <methods>
-          <include name="firstlocationdetails"/>
-          <include name="homepage"/>
-          <include name="login"/>
-        </methods>
-      </class> <!-- testartemus.voyegeTest -->
       <class name="testartemus.vesselTest">
         <methods>
           <include name="homepage"/>
@@ -80,5 +108,5 @@
         </methods>
       </class> <!-- testartemus.vesselTest -->
     </classes>
-  </test> <!-- VoyegeTest(failed) -->
+  </test> <!-- BillHeaderTest(failed) -->
 </suite> <!-- Failed suite [Regration Suite] -->

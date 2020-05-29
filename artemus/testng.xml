@@ -85,6 +85,31 @@
     </classes>
   </test> <!-- Test -->
   
+   <test name="SCACCodeTest">
+    <classes>
+      <class name="testartemus.SCACCodeTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="SubOrdinateScacTest">
+    <classes>
+      <class name="testartemus.SubOrdinateScacTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+   <test name="CandaOriginalmanifest">
+    <classes>
+      <class name="testartemus.CandaOriginalmanifest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+   <test name="CandaMainScreenTest">
+    <classes>
+      <class name="testartemus.CandaMainScreenTest"/>
+    </classes>
+  </test> <!-- Test -->
   
   
 </suite> <!-- Regration Suite -->
