@@ -29,6 +29,8 @@ public class ARTEMUSlogintest extends base {
 		ARTEMUSloginpage lg = new ARTEMUSloginpage(driver);
 
 		Assert.assertTrue(lg.Landingpage().isDisplayed());
+		
+		
 
 		lg.loginSCAC().sendKeys("DEMO");
 

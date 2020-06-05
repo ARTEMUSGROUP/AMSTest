@@ -109,8 +109,6 @@ public class CandaOriginalmanifest extends base {
 		AssertJUnit.assertEquals(defaultItem, "SAULT ST MARIE");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
-	
-
 	}
 
 	@Test(priority = 6)
@@ -124,12 +122,11 @@ public class CandaOriginalmanifest extends base {
 
 	@Test(priority = 7)
 	public void assertRow() throws InterruptedException {
-		
+
 		System.out.println(co.DataTableRow().getText());
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
-		
-		AssertJUnit.assertTrue("Add",co.actionCode().isDisplayed());
+		AssertJUnit.assertTrue("Add", co.actionCode().isDisplayed());
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
 	}

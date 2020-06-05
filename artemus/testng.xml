@@ -111,6 +111,20 @@
     </classes>
   </test> <!-- Test -->
   
+   <test name="AFRVoyageScheduleTest">
+    <classes>
+      <class name="testartemus.AFRVoyageScheduleTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+   <test name="AFRJapanBillHeaderTest">
+    <classes>
+      <class name="testartemus.AFRJapanBillHeaderTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
   
 </suite> <!-- Regration Suite -->
 

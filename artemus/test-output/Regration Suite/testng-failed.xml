@@ -15,26 +15,21 @@
       </class> <!-- testartemus.PermitToTransferTest -->
       <class name="testartemus.billheaderTest">
         <methods>
-          <include name="Equipment"/>
-          <include name="Packages"/>
-          <include name="cargocountry"/>
           <include name="HazardCode"/>
-          <include name="Packagesunit"/>
           <include name="homepage"/>
           <include name="HarmonizeCode"/>
           <include name="Manufacturer"/>
-          <include name="goodsDescription"/>
-          <include name="equipmentcargodetails"/>
-          <include name="PlaceOfDelivery"/>
+          <include name="findbill"/>
+          <include name="save"/>
           <include name="login"/>
         </methods>
       </class> <!-- testartemus.billheaderTest -->
-      <class name="testartemus.candaaddoriginalmanifestTest">
+      <class name="testartemus.CandaOriginalmanifest">
         <methods>
           <include name="login"/>
           <include name="homepage"/>
         </methods>
-      </class> <!-- testartemus.candaaddoriginalmanifestTest -->
+      </class> <!-- testartemus.CandaOriginalmanifest -->
       <class name="testartemus.ISFTest">
         <methods>
           <include name="login"/>
@@ -47,6 +42,12 @@
           <include name="homepage"/>
         </methods>
       </class> <!-- testartemus.ItSelectionScreenTest -->
+      <class name="testartemus.AFRVoyageScheduleTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.AFRVoyageScheduleTest -->
       <class name="testartemus.voyegeTest">
         <methods>
           <include name="homepage"/>
@@ -95,12 +96,22 @@
           <include name="homepage"/>
         </methods>
       </class> <!-- testartemus.VesselArrivalTest -->
+      <class name="testartemus.CandaMainScreenTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.CandaMainScreenTest -->
       <class name="testartemus.AMSMainScreenTest">
         <methods>
           <include name="homepage"/>
           <include name="login"/>
         </methods>
       </class> <!-- testartemus.AMSMainScreenTest -->
+      <class name="testartemus.AFRJapanBillHeaderTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.AFRJapanBillHeaderTest -->
       <class name="testartemus.vesselTest">
         <methods>
           <include name="homepage"/>

@@ -128,15 +128,45 @@ public class MainCanadianCustomsScreen {
 	@FindBy(css = "input[name='VoyageConveyance(A6)']")
 	public WebElement VoyageConveyance;
 	
+	@FindBy(css = "input[name='New']")
+	public WebElement New;
+	
+	@FindBy(css = "select[id='actionCode']")
+	public WebElement actionCode1;
+	
+	@FindBy(css = "input[name='Save']")
+	public WebElement Save;
+	
+	@FindBy(xpath = "//input[@name='createdDate']")
+	public WebElement createdDate;
+	
+	@FindBy(xpath = "//div[@id='modal3']//img")
+	public WebElement closevoyage;
+	
+	
+	@FindBy(css = "input[name='CACMClose']")
+	public WebElement CACMC;
+	
+	@FindBy(css = "input[name='Send']")
+	public WebElement Send;
+	
+	@FindBy(css = "input[name='HouseBillClose']")
+	public WebElement HouseBillClose;
+	
+	@FindBy(css = "select[name='amendCode']")
+	public WebElement amendCode;
+	
+	@FindBy(css = "input[id='allSelectBox']")
+	public WebElement allSelectBox;
+	
+	@FindBy(css = "input[value='Send']")
+	public WebElement SendH;
+	
+	@FindBy(css = "input[value='Disposition Codes Discriptions']")
+	public WebElement Dispositioncode;
 	
 	
 	
-
-
-
-
-
-
 	public WebElement pageTitle() {
 		return pageTitle;
 	}
@@ -271,4 +301,60 @@ public class MainCanadianCustomsScreen {
 		return VoyageConveyance;
 	}
 
+	
+	public WebElement New() {
+		return New;
+	}
+	
+	
+	public WebElement actionCode1() {
+		return actionCode1;
+	}
+	
+	public WebElement Save() {
+		return Save;
+	}
+	
+	
+	public WebElement createdDate() {
+		return createdDate;
+	}
+	
+	public WebElement closevoyage() {
+		return closevoyage;
+	}
+	
+	
+	public WebElement CACMC() {
+		return CACMC;
+	}
+	
+	public WebElement Send() {
+		return Send;
+	}
+	
+	public WebElement HouseBillClose() {
+		return HouseBillClose;
+	}
+	
+	public WebElement amendCode() {
+		return amendCode;
+	}
+	
+	
+	public WebElement allSelectBox() {
+		return allSelectBox;
+	}
+	
+	
+	public WebElement SendH() {
+		return SendH;
+	}
+	
+	
+	public WebElement Dispositioncode() {
+		return Dispositioncode;
+	}
+	
+	
 }

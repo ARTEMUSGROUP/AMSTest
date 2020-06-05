@@ -1,125 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" total="27" passed="24">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Default suite" duration-ms="37192" started-at="2020-06-05T12:53:27Z" finished-at="2020-06-05T12:54:04Z">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="37192" started-at="2020-06-05T12:53:27Z" finished-at="2020-06-05T12:54:04Z">
-      <class name="testartemus.AFRJapanBillHeaderTest">
-        <test-method status="PASS" signature="login()[pri:0, instance:testartemus.AFRJapanBillHeaderTest@50eac852]" name="login" is-config="true" duration-ms="8917" started-at="2020-06-05T18:23:27Z" finished-at="2020-06-05T18:23:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="billheader()[pri:1, instance:testartemus.AFRJapanBillHeaderTest@50eac852]" name="billheader" duration-ms="4020" started-at="2020-06-05T18:23:36Z" finished-at="2020-06-05T18:23:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- billheader -->
-        <test-method status="PASS" signature="billStatus()[pri:2, instance:testartemus.AFRJapanBillHeaderTest@50eac852]" name="billStatus" duration-ms="550" started-at="2020-06-05T18:23:40Z" finished-at="2020-06-05T18:23:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- billStatus -->
-        <test-method status="PASS" signature="billType()[pri:3, instance:testartemus.AFRJapanBillHeaderTest@50eac852]" name="billType" duration-ms="217" started-at="2020-06-05T18:23:40Z" finished-at="2020-06-05T18:23:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- billType -->
-        <test-method status="PASS" signature="hblScac()[pri:4, instance:testartemus.AFRJapanBillHeaderTest@50eac852]" name="hblScac" duration-ms="779" started-at="2020-06-05T18:23:41Z" finished-at="2020-06-05T18:23:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hblScac -->
-        <test-method status="PASS" signature="NvoType()[pri:5, instance:testartemus.AFRJapanBillHeaderTest@50eac852]" name="NvoType" duration-ms="318" started-at="2020-06-05T18:23:41Z" finished-at="2020-06-05T18:23:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- NvoType -->
-        <test-method status="PASS" signature="ShippingInformation()[pri:6, instance:testartemus.AFRJapanBillHeaderTest@50eac852]" name="ShippingInformation" duration-ms="1266" started-at="2020-06-05T18:23:42Z" finished-at="2020-06-05T18:23:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ShippingInformation -->
-        <test-method status="PASS" signature="Consignee()[pri:7, instance:testartemus.AFRJapanBillHeaderTest@50eac852]" name="Consignee" duration-ms="1216" started-at="2020-06-05T18:23:43Z" finished-at="2020-06-05T18:23:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Consignee -->
-        <test-method status="PASS" signature="Notify()[pri:7, instance:testartemus.AFRJapanBillHeaderTest@50eac852]" name="Notify" duration-ms="1325" started-at="2020-06-05T18:23:44Z" finished-at="2020-06-05T18:23:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Notify -->
-        <test-method status="PASS" signature="VesselDetail()[pri:8, instance:testartemus.AFRJapanBillHeaderTest@50eac852]" name="VesselDetail" duration-ms="3032" started-at="2020-06-05T18:23:46Z" finished-at="2020-06-05T18:23:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VesselDetail -->
-        <test-method status="PASS" signature="receiptPlace()[pri:9, instance:testartemus.AFRJapanBillHeaderTest@50eac852]" name="receiptPlace" duration-ms="640" started-at="2020-06-05T18:23:49Z" finished-at="2020-06-05T18:23:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- receiptPlace -->
-        <test-method status="PASS" signature="PortOfLoading()[pri:10, instance:testartemus.AFRJapanBillHeaderTest@50eac852]" name="PortOfLoading" duration-ms="526" started-at="2020-06-05T18:23:49Z" finished-at="2020-06-05T18:23:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PortOfLoading -->
-        <test-method status="PASS" signature="PortOfDischarge()[pri:11, instance:testartemus.AFRJapanBillHeaderTest@50eac852]" name="PortOfDischarge" duration-ms="474" started-at="2020-06-05T18:23:50Z" finished-at="2020-06-05T18:23:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PortOfDischarge -->
-        <test-method status="PASS" signature="PlaceOfDelivery()[pri:12, instance:testartemus.AFRJapanBillHeaderTest@50eac852]" name="PlaceOfDelivery" duration-ms="620" started-at="2020-06-05T18:23:50Z" finished-at="2020-06-05T18:23:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PlaceOfDelivery -->
-        <test-method status="PASS" signature="CountryOfOrigin()[pri:14, instance:testartemus.AFRJapanBillHeaderTest@50eac852]" name="CountryOfOrigin" duration-ms="2639" started-at="2020-06-05T18:23:51Z" finished-at="2020-06-05T18:23:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CountryOfOrigin -->
-        <test-method status="PASS" signature="Equipment()[pri:15, instance:testartemus.AFRJapanBillHeaderTest@50eac852]" name="Equipment" duration-ms="1493" started-at="2020-06-05T18:23:54Z" finished-at="2020-06-05T18:23:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Equipment -->
-        <test-method status="PASS" signature="scrollpage()[pri:16, instance:testartemus.AFRJapanBillHeaderTest@50eac852]" name="scrollpage" duration-ms="28" started-at="2020-06-05T18:23:55Z" finished-at="2020-06-05T18:23:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scrollpage -->
-        <test-method status="PASS" signature="Packages()[pri:17, instance:testartemus.AFRJapanBillHeaderTest@50eac852]" name="Packages" duration-ms="1190" started-at="2020-06-05T18:23:55Z" finished-at="2020-06-05T18:23:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Packages -->
-        <test-method status="PASS" signature="Packagesunit()[pri:18, instance:testartemus.AFRJapanBillHeaderTest@50eac852]" name="Packagesunit" duration-ms="486" started-at="2020-06-05T18:23:56Z" finished-at="2020-06-05T18:23:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Packagesunit -->
-        <test-method status="PASS" signature="scrollpage2()[pri:19, instance:testartemus.AFRJapanBillHeaderTest@50eac852]" name="scrollpage2" duration-ms="17" started-at="2020-06-05T18:23:57Z" finished-at="2020-06-05T18:23:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scrollpage2 -->
-        <test-method status="PASS" signature="equipmentcargodetails()[pri:20, instance:testartemus.AFRJapanBillHeaderTest@50eac852]" name="equipmentcargodetails" duration-ms="2291" started-at="2020-06-05T18:23:57Z" finished-at="2020-06-05T18:23:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- equipmentcargodetails -->
-        <test-method status="PASS" signature="goodsDescription()[pri:21, instance:testartemus.AFRJapanBillHeaderTest@50eac852]" name="goodsDescription" duration-ms="225" started-at="2020-06-05T18:23:59Z" finished-at="2020-06-05T18:23:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goodsDescription -->
-        <test-method status="PASS" signature="HarmonizeCode()[pri:22, instance:testartemus.AFRJapanBillHeaderTest@50eac852]" name="HarmonizeCode" duration-ms="964" started-at="2020-06-05T18:23:59Z" finished-at="2020-06-05T18:24:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HarmonizeCode -->
-        <test-method status="PASS" signature="HazardCode()[pri:23, instance:testartemus.AFRJapanBillHeaderTest@50eac852]" name="HazardCode" duration-ms="828" started-at="2020-06-05T18:24:00Z" finished-at="2020-06-05T18:24:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HazardCode -->
-        <test-method status="PASS" signature="scrollpageup()[pri:24, instance:testartemus.AFRJapanBillHeaderTest@50eac852]" name="scrollpageup" duration-ms="27" started-at="2020-06-05T18:24:01Z" finished-at="2020-06-05T18:24:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scrollpageup -->
-        <test-method status="FAIL" signature="save()[pri:25, instance:testartemus.AFRJapanBillHeaderTest@50eac852]" name="save" duration-ms="350" started-at="2020-06-05T18:24:01Z" finished-at="2020-06-05T18:24:01Z">
-          <exception class="org.openqa.selenium.NoAlertPresentException">
-            <message>
-              <![CDATA[no such alert
+<!-- Generated by org.testng.reporters.JUnitReportReporter -->
+<testsuite hostname="Samsung" name="testartemus.AFRJapanBillHeaderTest" tests="27" failures="0" timestamp="5 Jun 2020 12:54:04 GMT" time="27.578" errors="3">
+  <testcase name="billStatus" time="0.550" classname="testartemus.AFRJapanBillHeaderTest"/>
+  <testcase name="HarmonizeCode" time="0.964" classname="testartemus.AFRJapanBillHeaderTest"/>
+  <testcase name="Packages" time="1.190" classname="testartemus.AFRJapanBillHeaderTest"/>
+  <testcase name="PortOfDischarge" time="0.474" classname="testartemus.AFRJapanBillHeaderTest"/>
+  <testcase name="scrollpage" time="0.028" classname="testartemus.AFRJapanBillHeaderTest"/>
+  <testcase name="scrollpageup" time="0.027" classname="testartemus.AFRJapanBillHeaderTest"/>
+  <testcase name="hblScac" time="0.779" classname="testartemus.AFRJapanBillHeaderTest"/>
+  <testcase name="PortOfLoading" time="0.526" classname="testartemus.AFRJapanBillHeaderTest"/>
+  <testcase name="save" time="0.350" classname="testartemus.AFRJapanBillHeaderTest">
+    <error type="org.openqa.selenium.NoAlertPresentException" message="no such alert
   (Session info: chrome=81.0.4044.138)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Samsung', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-36-generic', java.version: '1.8.0_03-Ubuntu'
+Build info: version: &#039;3.141.59&#039;, revision: &#039;e82be7d358&#039;, time: &#039;2018-11-14T08:25:53&#039;
+System info: host: &#039;Samsung&#039;, ip: &#039;127.0.1.1&#039;, os.name: &#039;Linux&#039;, os.arch: &#039;amd64&#039;, os.version: &#039;4.13.0-36-generic&#039;, java.version: &#039;1.8.0_03-Ubuntu&#039;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /tmp/.com.google.Chrome.03iPhS}, goog:chromeOptions: {debuggerAddress: localhost:37851}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: a71dbe2edf062752255dd1c2ce5c372e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
+Session ID: a71dbe2edf062752255dd1c2ce5c372e">
+      <![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
   (Session info: chrome=81.0.4044.138)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'Samsung', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-36-generic', java.version: '1.8.0_03-Ubuntu'
@@ -165,26 +63,26 @@ Session ID: a71dbe2edf062752255dd1c2ce5c372e
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
 ]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- save -->
-        <test-method status="FAIL" signature="findbill()[pri:26, instance:testartemus.AFRJapanBillHeaderTest@50eac852]" name="findbill" duration-ms="607" started-at="2020-06-05T18:24:01Z" finished-at="2020-06-05T18:24:02Z">
-          <exception class="org.openqa.selenium.InvalidSelectorException">
-            <message>
-              <![CDATA[invalid selector: An invalid or illegal selector was specified
+    </error>
+  </testcase> <!-- save -->
+  <testcase name="receiptPlace" time="0.640" classname="testartemus.AFRJapanBillHeaderTest"/>
+  <testcase name="equipmentcargodetails" time="2.291" classname="testartemus.AFRJapanBillHeaderTest"/>
+  <testcase name="ShippingInformation" time="1.266" classname="testartemus.AFRJapanBillHeaderTest"/>
+  <testcase name="PlaceOfDelivery" time="0.620" classname="testartemus.AFRJapanBillHeaderTest"/>
+  <testcase name="HazardCode" time="0.828" classname="testartemus.AFRJapanBillHeaderTest"/>
+  <testcase name="NvoType" time="0.318" classname="testartemus.AFRJapanBillHeaderTest"/>
+  <testcase name="billType" time="0.217" classname="testartemus.AFRJapanBillHeaderTest"/>
+  <testcase name="findbill" time="0.607" classname="testartemus.AFRJapanBillHeaderTest">
+    <error type="org.openqa.selenium.InvalidSelectorException" message="invalid selector: An invalid or illegal selector was specified
   (Session info: chrome=81.0.4044.138)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Samsung', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-36-generic', java.version: '1.8.0_03-Ubuntu'
+Build info: version: &#039;3.141.59&#039;, revision: &#039;e82be7d358&#039;, time: &#039;2018-11-14T08:25:53&#039;
+System info: host: &#039;Samsung&#039;, ip: &#039;127.0.1.1&#039;, os.name: &#039;Linux&#039;, os.arch: &#039;amd64&#039;, os.version: &#039;4.13.0-36-generic&#039;, java.version: &#039;1.8.0_03-Ubuntu&#039;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /tmp/.com.google.Chrome.03iPhS}, goog:chromeOptions: {debuggerAddress: localhost:37851}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
 Session ID: a71dbe2edf062752255dd1c2ce5c372e
-*** Element info: {Using=css selector, value=//table[@id='BillTable']/tbody/tr[1]/td[1]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+*** Element info: {Using=css selector, value=//table[@id=&#039;BillTable&#039;]/tbody/tr[1]/td[1]}">
+      <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
   (Session info: chrome=81.0.4044.138)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
@@ -237,24 +135,21 @@ Session ID: a71dbe2edf062752255dd1c2ce5c372e
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
 ]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- findbill -->
-        <test-method status="FAIL" signature="updatebill()[pri:26, instance:testartemus.AFRJapanBillHeaderTest@50eac852]" name="updatebill" duration-ms="1450" started-at="2020-06-05T18:24:02Z" finished-at="2020-06-05T18:24:04Z">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <img class="ToolButton" id="img_save" src="images/save.gif" alt="Save" title="Save" border="0" onclick="funSave(); return false;"> is not clickable at point (578, 67). Other element would receive the click: <div id="modal" style="position: absolute; background-color: rgb(192, 192, 254); top: 0px; left: 0px; width: 1015px; height: 1828px; z-index: 5; opacity: 0.4; overflow: auto;" align="center"></div>
+    </error>
+  </testcase> <!-- findbill -->
+  <testcase name="scrollpage2" time="0.017" classname="testartemus.AFRJapanBillHeaderTest"/>
+  <testcase name="Packagesunit" time="0.486" classname="testartemus.AFRJapanBillHeaderTest"/>
+  <testcase name="VesselDetail" time="3.032" classname="testartemus.AFRJapanBillHeaderTest"/>
+  <testcase name="CountryOfOrigin" time="2.639" classname="testartemus.AFRJapanBillHeaderTest"/>
+  <testcase name="updatebill" time="1.450" classname="testartemus.AFRJapanBillHeaderTest">
+    <error type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;img class=&quot;ToolButton&quot; id=&quot;img_save&quot; src=&quot;images/save.gif&quot; alt=&quot;Save&quot; title=&quot;Save&quot; border=&quot;0&quot; onclick=&quot;funSave(); return false;&quot;&gt; is not clickable at point (578, 67). Other element would receive the click: &lt;div id=&quot;modal&quot; style=&quot;position: absolute; background-color: rgb(192, 192, 254); top: 0px; left: 0px; width: 1015px; height: 1828px; z-index: 5; opacity: 0.4; overflow: auto;&quot; align=&quot;center&quot;&gt;&lt;/div&gt;
   (Session info: chrome=81.0.4044.138)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Samsung', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-36-generic', java.version: '1.8.0_03-Ubuntu'
+Build info: version: &#039;3.141.59&#039;, revision: &#039;e82be7d358&#039;, time: &#039;2018-11-14T08:25:53&#039;
+System info: host: &#039;Samsung&#039;, ip: &#039;127.0.1.1&#039;, os.name: &#039;Linux&#039;, os.arch: &#039;amd64&#039;, os.version: &#039;4.13.0-36-generic&#039;, java.version: &#039;1.8.0_03-Ubuntu&#039;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /tmp/.com.google.Chrome.03iPhS}, goog:chromeOptions: {debuggerAddress: localhost:37851}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: a71dbe2edf062752255dd1c2ce5c372e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <img class="ToolButton" id="img_save" src="images/save.gif" alt="Save" title="Save" border="0" onclick="funSave(); return false;"> is not clickable at point (578, 67). Other element would receive the click: <div id="modal" style="position: absolute; background-color: rgb(192, 192, 254); top: 0px; left: 0px; width: 1015px; height: 1828px; z-index: 5; opacity: 0.4; overflow: auto;" align="center"></div>
+Session ID: a71dbe2edf062752255dd1c2ce5c372e">
+      <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <img class="ToolButton" id="img_save" src="images/save.gif" alt="Save" title="Save" border="0" onclick="funSave(); return false;"> is not clickable at point (578, 67). Other element would receive the click: <div id="modal" style="position: absolute; background-color: rgb(192, 192, 254); top: 0px; left: 0px; width: 1015px; height: 1828px; z-index: 5; opacity: 0.4; overflow: auto;" align="center"></div>
   (Session info: chrome=81.0.4044.138)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'Samsung', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-36-generic', java.version: '1.8.0_03-Ubuntu'
@@ -305,16 +200,11 @@ Session ID: a71dbe2edf062752255dd1c2ce5c372e
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
 ]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updatebill -->
-        <test-method status="PASS" signature="homepage()[pri:0, instance:testartemus.AFRJapanBillHeaderTest@50eac852]" name="homepage" is-config="true" duration-ms="602" started-at="2020-06-05T18:24:04Z" finished-at="2020-06-05T18:24:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- homepage -->
-      </class> <!-- testartemus.AFRJapanBillHeaderTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
-</testng-results>
+    </error>
+  </testcase> <!-- updatebill -->
+  <testcase name="Consignee" time="1.216" classname="testartemus.AFRJapanBillHeaderTest"/>
+  <testcase name="Equipment" time="1.493" classname="testartemus.AFRJapanBillHeaderTest"/>
+  <testcase name="Notify" time="1.325" classname="testartemus.AFRJapanBillHeaderTest"/>
+  <testcase name="goodsDescription" time="0.225" classname="testartemus.AFRJapanBillHeaderTest"/>
+  <testcase name="billheader" time="4.020" classname="testartemus.AFRJapanBillHeaderTest"/>
+</testsuite> <!-- testartemus.AFRJapanBillHeaderTest -->

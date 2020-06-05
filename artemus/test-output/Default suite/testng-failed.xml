@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testartemus.CandaMainScreenTest">
+      <class name="testartemus.AFRJapanBillHeaderTest">
         <methods>
-          <include name="MessageFROBE"/>
+          <include name="updatebill"/>
           <include name="login"/>
-          <include name="customsCanadianAmendmentforBLFROBE"/>
-          <include name="CustomsErrorScreen"/>
-          <include name="AmendTrackingScreen"/>
+          <include name="save"/>
+          <include name="homepage"/>
+          <include name="findbill"/>
         </methods>
-      </class> <!-- testartemus.CandaMainScreenTest -->
+      </class> <!-- testartemus.AFRJapanBillHeaderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
