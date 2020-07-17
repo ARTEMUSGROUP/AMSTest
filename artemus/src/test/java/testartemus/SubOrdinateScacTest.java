@@ -57,7 +57,7 @@ public class SubOrdinateScacTest extends base {
 
 		soc.Save().click();
 
-		driver.switchTo().alert().accept();
+		//driver.switchTo().alert().accept();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 	}
@@ -80,7 +80,7 @@ public class SubOrdinateScacTest extends base {
 
 		soc.Save().click();
 
-		driver.switchTo().alert().accept();
+		//driver.switchTo().alert().accept();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 	}
@@ -89,7 +89,7 @@ public class SubOrdinateScacTest extends base {
 	public void deleteSubScac() throws InterruptedException {
 
 		soc.Delete().click();
-		driver.switchTo().alert().accept();
+		//driver.switchTo().alert().accept();
 	}
 
 	@AfterTest

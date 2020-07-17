@@ -42,28 +42,28 @@ public class VesselArrivalTest extends base {
 	@Test(priority = 2)
 	public void vesseldetails() throws InterruptedException {
 		Select vessel = new Select(va.vesselId);
-		vessel.selectByValue("287825");
+		vessel.selectByValue("53");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		WebElement option = vessel.getFirstSelectedOption();
 		String defaultItem = option.getText();
 		System.out.println(defaultItem);
 
-		AssertJUnit.assertEquals(defaultItem, "ARTEMUS");
+		AssertJUnit.assertEquals(defaultItem, "TEST VESSEL");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 
 	@Test(priority = 3)
 	public void Voyagedetails() throws InterruptedException {
 		Select Voyage = new Select(va.voyageId);
-		Voyage.selectByValue("174915");
+		Voyage.selectByValue("76864");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		WebElement option = Voyage.getFirstSelectedOption();
 		String defaultItem = option.getText();
 		System.out.println(defaultItem);
 
-		AssertJUnit.assertEquals(defaultItem, "1234");
+		AssertJUnit.assertEquals(defaultItem, "0712");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 
@@ -73,14 +73,14 @@ public class VesselArrivalTest extends base {
 			try {
 
 				Select discharge = new Select(va.dischargePort);
-				discharge.selectByValue("1001");
+				discharge.selectByValue("2704");
 				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 				WebElement option = discharge.getFirstSelectedOption();
 				String defaultItem = option.getText();
 				System.out.println(defaultItem);
 
-				AssertJUnit.assertEquals(defaultItem, "NEW YORK");
+				AssertJUnit.assertEquals(defaultItem, "LOS ANGELES");
 				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 				break;
 			} catch (Exception e) {
@@ -103,8 +103,12 @@ public class VesselArrivalTest extends base {
 			va.newButton().click();
 			va.arrivalDate().sendKeys(dates.get(0));
 			va.saveButton().click();
-			Thread.sleep(200);
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
+			driver.switchTo().alert().accept();
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
+			
 		}
 	}
 

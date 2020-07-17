@@ -47,28 +47,28 @@ public class ItSelectionScreenTest extends base {
 	@Test(priority = 2)
 	public void vesseldetails() throws InterruptedException {
 		Select vessel = new Select(Iss.vesselId);
-		vessel.selectByValue("287825");
+		vessel.selectByValue("53");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		WebElement option = vessel.getFirstSelectedOption();
 		String defaultItem = option.getText();
 		System.out.println(defaultItem);
 
-		AssertJUnit.assertEquals(defaultItem, "ARTEMUS");
+		AssertJUnit.assertEquals(defaultItem, "TEST VESSEL");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 
 	@Test(priority = 3)
 	public void Voyagedetails() throws InterruptedException {
 		Select Voyage = new Select(Iss.voyageId);
-		Voyage.selectByValue("174915");
+		Voyage.selectByValue("186809");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		WebElement option = Voyage.getFirstSelectedOption();
 		String defaultItem = option.getText();
 		System.out.println(defaultItem);
 
-		AssertJUnit.assertEquals(defaultItem, "1234");
+		//AssertJUnit.assertEquals(defaultItem, "0712");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 
@@ -78,14 +78,14 @@ public class ItSelectionScreenTest extends base {
 			try {
 
 				Select discharge = new Select(Iss.dischargePort);
-				discharge.selectByValue("1001");
+				discharge.selectByValue("2704");
 				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 				WebElement option = discharge.getFirstSelectedOption();
 				String defaultItem = option.getText();
 				System.out.println(defaultItem);
 
-				AssertJUnit.assertEquals(defaultItem, "NEW YORK");
+				AssertJUnit.assertEquals(defaultItem, "LOS ANGELES");
 				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 				break;
 			} catch (Exception e) {
@@ -140,13 +140,19 @@ public class ItSelectionScreenTest extends base {
 			Iss.SaveButtonDiv().click();
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
-			driver.switchTo().alert().accept();
-			Thread.sleep(2000);
+			Iss.Find().click();
+
+			//driver.switchTo().alert().accept();
+			//Thread.sleep(2000);
 		}
 	}
 
 	@Test(priority = 6)
 	public void TableRowDetails() throws InterruptedException {
+		
+		//Iss.Find().click();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
 		Iss.TableRow().click();
 		itNumber = Iss.ITNumber().getText();
 		System.out.println(itNumber);

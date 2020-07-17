@@ -118,7 +118,7 @@ public class billheaderTest extends base {
 
 	@Test(priority = 6)
 	public void ShippingInformation() throws InterruptedException {
-		bh.shipperName().sendKeys("CONSOLIDATED TELECOM SERVICES");
+		bh.shipperName().sendKeys("ARTEMUS TRANSPORTATION SOLUTIONS");
 		bh.preshipperlist().click();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
@@ -132,7 +132,7 @@ public class billheaderTest extends base {
 	// Consignee
 	@Test(priority = 7)
 	public void Consignee() throws InterruptedException {
-		bh.consigneeName().sendKeys("SINOTRANS XIAMEN LOGISTICS CO., LTD");
+		bh.consigneeName().sendKeys("ARTEMUS TRANSPORTATION SOLUTIONS");
 		bh.preconsigneelist().click();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
@@ -430,7 +430,7 @@ public class billheaderTest extends base {
 		alert.accept();
 
 		Thread.sleep(2000);
-		alert.accept();
+		//alert.accept();
 
 	}
 
@@ -469,7 +469,7 @@ public class billheaderTest extends base {
 		alert.accept();
 
 		Thread.sleep(2000);
-		alert.accept();
+		//alert.accept();
 
 	}
 

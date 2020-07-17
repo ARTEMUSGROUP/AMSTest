@@ -5,7 +5,7 @@
     <listener class-name="resources.listnertest"/>
     <listener class-name="resources.ExtentReporterNG"/>
   </listeners>
-  <test name="BillHeaderTest(failed)">
+  <test name="VesselArrivalTest(failed)">
     <classes>
       <class name="testartemus.PermitToTransferTest">
         <methods>
@@ -15,12 +15,7 @@
       </class> <!-- testartemus.PermitToTransferTest -->
       <class name="testartemus.billheaderTest">
         <methods>
-          <include name="HazardCode"/>
           <include name="homepage"/>
-          <include name="HarmonizeCode"/>
-          <include name="Manufacturer"/>
-          <include name="findbill"/>
-          <include name="save"/>
           <include name="login"/>
         </methods>
       </class> <!-- testartemus.billheaderTest -->
@@ -28,6 +23,594 @@
         <methods>
           <include name="login"/>
           <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.CandaOriginalmanifest -->
+      <class name="testartemus.ISFTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.ISFTest -->
+      <class name="testartemus.ItSelectionScreenTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.ItSelectionScreenTest -->
+      <class name="testartemus.AFRVoyageScheduleTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.AFRVoyageScheduleTest -->
+      <class name="testartemus.voyegeTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.voyegeTest -->
+      <class name="testartemus.VesselDepartureTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.VesselDepartureTest -->
+      <class name="testartemus.SubOrdinateScacTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.SubOrdinateScacTest -->
+      <class name="testartemus.CustomerprofileTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.CustomerprofileTest -->
+      <class name="testartemus.SCACCodeTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.SCACCodeTest -->
+      <class name="testartemus.addoriginalmanifestTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.addoriginalmanifestTest -->
+      <class name="testartemus.locationTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.locationTest -->
+      <class name="testartemus.VesselArrivalTest">
+        <methods>
+          <include name="vesselarrivaltab"/>
+          <include name="vesseldetails"/>
+          <include name="acknowledgement"/>
+          <include name="login"/>
+          <include name="findbills"/>
+          <include name="homepage"/>
+          <include name="Voyagedetails"/>
+        </methods>
+      </class> <!-- testartemus.VesselArrivalTest -->
+      <class name="testartemus.CandaMainScreenTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.CandaMainScreenTest -->
+      <class name="testartemus.AMSMainScreenTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.AMSMainScreenTest -->
+      <class name="testartemus.AFRJapanBillHeaderTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.AFRJapanBillHeaderTest -->
+      <class name="testartemus.vesselTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.vesselTest -->
+    </classes>
+  </test> <!-- VesselArrivalTest(failed) -->
+  <test name="VesselDepartureTest(failed)">
+    <classes>
+      <class name="testartemus.PermitToTransferTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.PermitToTransferTest -->
+      <class name="testartemus.billheaderTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.billheaderTest -->
+      <class name="testartemus.CandaOriginalmanifest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.CandaOriginalmanifest -->
+      <class name="testartemus.ISFTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.ISFTest -->
+      <class name="testartemus.ItSelectionScreenTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.ItSelectionScreenTest -->
+      <class name="testartemus.AFRVoyageScheduleTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.AFRVoyageScheduleTest -->
+      <class name="testartemus.voyegeTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.voyegeTest -->
+      <class name="testartemus.VesselDepartureTest">
+        <methods>
+          <include name="vesselarrivaltab"/>
+          <include name="vesseldetails"/>
+          <include name="homepage"/>
+          <include name="Voyagedetails"/>
+          <include name="login"/>
+          <include name="findbills"/>
+        </methods>
+      </class> <!-- testartemus.VesselDepartureTest -->
+      <class name="testartemus.SubOrdinateScacTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.SubOrdinateScacTest -->
+      <class name="testartemus.CustomerprofileTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.CustomerprofileTest -->
+      <class name="testartemus.SCACCodeTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.SCACCodeTest -->
+      <class name="testartemus.addoriginalmanifestTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.addoriginalmanifestTest -->
+      <class name="testartemus.locationTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.locationTest -->
+      <class name="testartemus.VesselArrivalTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.VesselArrivalTest -->
+      <class name="testartemus.CandaMainScreenTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.CandaMainScreenTest -->
+      <class name="testartemus.AMSMainScreenTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.AMSMainScreenTest -->
+      <class name="testartemus.AFRJapanBillHeaderTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.AFRJapanBillHeaderTest -->
+      <class name="testartemus.vesselTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.vesselTest -->
+    </classes>
+  </test> <!-- VesselDepartureTest(failed) -->
+  <test name="ItSelectionScreenTest(failed)">
+    <classes>
+      <class name="testartemus.PermitToTransferTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.PermitToTransferTest -->
+      <class name="testartemus.billheaderTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.billheaderTest -->
+      <class name="testartemus.CandaOriginalmanifest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.CandaOriginalmanifest -->
+      <class name="testartemus.ISFTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.ISFTest -->
+      <class name="testartemus.ItSelectionScreenTest">
+        <methods>
+          <include name="ItContainerArrival"/>
+          <include name="vesseldetails"/>
+          <include name="ItBillArrival"/>
+          <include name="findbills"/>
+          <include name="login"/>
+          <include name="ItArrival"/>
+          <include name="homepage"/>
+          <include name="TableRowDetails"/>
+          <include name="Voyagedetails"/>
+          <include name="ItSelectionTab"/>
+          <include name="ShowArrivalAcknowledgement"/>
+        </methods>
+      </class> <!-- testartemus.ItSelectionScreenTest -->
+      <class name="testartemus.AFRVoyageScheduleTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.AFRVoyageScheduleTest -->
+      <class name="testartemus.voyegeTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.voyegeTest -->
+      <class name="testartemus.VesselDepartureTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.VesselDepartureTest -->
+      <class name="testartemus.SubOrdinateScacTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.SubOrdinateScacTest -->
+      <class name="testartemus.CustomerprofileTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.CustomerprofileTest -->
+      <class name="testartemus.SCACCodeTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.SCACCodeTest -->
+      <class name="testartemus.addoriginalmanifestTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.addoriginalmanifestTest -->
+      <class name="testartemus.locationTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.locationTest -->
+      <class name="testartemus.VesselArrivalTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.VesselArrivalTest -->
+      <class name="testartemus.CandaMainScreenTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.CandaMainScreenTest -->
+      <class name="testartemus.AMSMainScreenTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.AMSMainScreenTest -->
+      <class name="testartemus.AFRJapanBillHeaderTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.AFRJapanBillHeaderTest -->
+      <class name="testartemus.vesselTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.vesselTest -->
+    </classes>
+  </test> <!-- ItSelectionScreenTest(failed) -->
+  <test name="ISFTest(failed)">
+    <classes>
+      <class name="testartemus.PermitToTransferTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.PermitToTransferTest -->
+      <class name="testartemus.billheaderTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.billheaderTest -->
+      <class name="testartemus.CandaOriginalmanifest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.CandaOriginalmanifest -->
+      <class name="testartemus.ISFTest">
+        <methods>
+          <include name="Billstatus"/>
+          <include name="vesseldetails"/>
+          <include name="findbills"/>
+          <include name="Voyagedetails"/>
+          <include name="login"/>
+          <include name="ItSelectionTab"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.ISFTest -->
+      <class name="testartemus.ItSelectionScreenTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.ItSelectionScreenTest -->
+      <class name="testartemus.AFRVoyageScheduleTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.AFRVoyageScheduleTest -->
+      <class name="testartemus.voyegeTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.voyegeTest -->
+      <class name="testartemus.VesselDepartureTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.VesselDepartureTest -->
+      <class name="testartemus.SubOrdinateScacTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.SubOrdinateScacTest -->
+      <class name="testartemus.CustomerprofileTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.CustomerprofileTest -->
+      <class name="testartemus.SCACCodeTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.SCACCodeTest -->
+      <class name="testartemus.addoriginalmanifestTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.addoriginalmanifestTest -->
+      <class name="testartemus.locationTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.locationTest -->
+      <class name="testartemus.VesselArrivalTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.VesselArrivalTest -->
+      <class name="testartemus.CandaMainScreenTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.CandaMainScreenTest -->
+      <class name="testartemus.AMSMainScreenTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.AMSMainScreenTest -->
+      <class name="testartemus.AFRJapanBillHeaderTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.AFRJapanBillHeaderTest -->
+      <class name="testartemus.vesselTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.vesselTest -->
+    </classes>
+  </test> <!-- ISFTest(failed) -->
+  <test name="SubOrdinateScacTest(failed)">
+    <classes>
+      <class name="testartemus.PermitToTransferTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.PermitToTransferTest -->
+      <class name="testartemus.billheaderTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.billheaderTest -->
+      <class name="testartemus.CandaOriginalmanifest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.CandaOriginalmanifest -->
+      <class name="testartemus.ISFTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.ISFTest -->
+      <class name="testartemus.ItSelectionScreenTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.ItSelectionScreenTest -->
+      <class name="testartemus.AFRVoyageScheduleTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.AFRVoyageScheduleTest -->
+      <class name="testartemus.voyegeTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.voyegeTest -->
+      <class name="testartemus.VesselDepartureTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.VesselDepartureTest -->
+      <class name="testartemus.SubOrdinateScacTest">
+        <methods>
+          <include name="deleteSubScac"/>
+          <include name="updateSubScac"/>
+          <include name="login"/>
+          <include name="CreateNewSubScac"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.SubOrdinateScacTest -->
+      <class name="testartemus.CustomerprofileTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.CustomerprofileTest -->
+      <class name="testartemus.SCACCodeTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.SCACCodeTest -->
+      <class name="testartemus.addoriginalmanifestTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.addoriginalmanifestTest -->
+      <class name="testartemus.locationTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.locationTest -->
+      <class name="testartemus.VesselArrivalTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.VesselArrivalTest -->
+      <class name="testartemus.CandaMainScreenTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.CandaMainScreenTest -->
+      <class name="testartemus.AMSMainScreenTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.AMSMainScreenTest -->
+      <class name="testartemus.AFRJapanBillHeaderTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.AFRJapanBillHeaderTest -->
+      <class name="testartemus.vesselTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.vesselTest -->
+    </classes>
+  </test> <!-- SubOrdinateScacTest(failed) -->
+  <test name="CandaOriginalmanifest(failed)">
+    <classes>
+      <class name="testartemus.PermitToTransferTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.PermitToTransferTest -->
+      <class name="testartemus.billheaderTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.billheaderTest -->
+      <class name="testartemus.CandaOriginalmanifest">
+        <methods>
+          <include name="assertRow"/>
+          <include name="login"/>
+          <include name="vesseldetails"/>
+          <include name="sendManifestCheckBox"/>
+          <include name="DischargePortdetails"/>
+          <include name="OriginalManifes"/>
+          <include name="findbills"/>
+          <include name="homepage"/>
+          <include name="Voyagedetails"/>
         </methods>
       </class> <!-- testartemus.CandaOriginalmanifest -->
       <class name="testartemus.ISFTest">
@@ -110,6 +693,7 @@
       <class name="testartemus.AFRJapanBillHeaderTest">
         <methods>
           <include name="login"/>
+          <include name="homepage"/>
         </methods>
       </class> <!-- testartemus.AFRJapanBillHeaderTest -->
       <class name="testartemus.vesselTest">
@@ -119,5 +703,258 @@
         </methods>
       </class> <!-- testartemus.vesselTest -->
     </classes>
-  </test> <!-- BillHeaderTest(failed) -->
+  </test> <!-- CandaOriginalmanifest(failed) -->
+  <test name="CandaMainScreenTest(failed)">
+    <classes>
+      <class name="testartemus.PermitToTransferTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.PermitToTransferTest -->
+      <class name="testartemus.billheaderTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.billheaderTest -->
+      <class name="testartemus.CandaOriginalmanifest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.CandaOriginalmanifest -->
+      <class name="testartemus.ISFTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.ISFTest -->
+      <class name="testartemus.ItSelectionScreenTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.ItSelectionScreenTest -->
+      <class name="testartemus.AFRVoyageScheduleTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.AFRVoyageScheduleTest -->
+      <class name="testartemus.voyegeTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.voyegeTest -->
+      <class name="testartemus.VesselDepartureTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.VesselDepartureTest -->
+      <class name="testartemus.SubOrdinateScacTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.SubOrdinateScacTest -->
+      <class name="testartemus.CustomerprofileTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.CustomerprofileTest -->
+      <class name="testartemus.SCACCodeTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.SCACCodeTest -->
+      <class name="testartemus.addoriginalmanifestTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.addoriginalmanifestTest -->
+      <class name="testartemus.locationTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.locationTest -->
+      <class name="testartemus.VesselArrivalTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.VesselArrivalTest -->
+      <class name="testartemus.CandaMainScreenTest">
+        <methods>
+          <include name="CanCustBLDetailImportedCargoScreen"/>
+          <include name="MessageFROBE"/>
+          <include name="login"/>
+          <include name="customsCanadianAmendmentforBLFROBE"/>
+          <include name="CustomsErrorScreen"/>
+          <include name="findbillsmain"/>
+          <include name="DischargePortdetailsmain"/>
+          <include name="Message"/>
+          <include name="customsCanadianAmendmentforBL"/>
+          <include name="AMSMainScreen"/>
+          <include name="Voyagedetailsmain"/>
+          <include name="validateRow"/>
+          <include name="vesseldetailsmain"/>
+          <include name="HouseBillClose"/>
+          <include name="VoyageConveyance"/>
+          <include name="showAcknowledgementFROBE"/>
+          <include name="AmendTrackingScreen"/>
+          <include name="CACM"/>
+          <include name="showAcknowledgement"/>
+          <include name="CanCustBLDetailFROBECargo"/>
+          <include name="DispositionCodesDiscriptions"/>
+        </methods>
+      </class> <!-- testartemus.CandaMainScreenTest -->
+      <class name="testartemus.AMSMainScreenTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.AMSMainScreenTest -->
+      <class name="testartemus.AFRJapanBillHeaderTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.AFRJapanBillHeaderTest -->
+      <class name="testartemus.vesselTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.vesselTest -->
+    </classes>
+  </test> <!-- CandaMainScreenTest(failed) -->
+  <test name="AFRJapanBillHeaderTest(failed)">
+    <classes>
+      <class name="testartemus.PermitToTransferTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.PermitToTransferTest -->
+      <class name="testartemus.billheaderTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.billheaderTest -->
+      <class name="testartemus.CandaOriginalmanifest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.CandaOriginalmanifest -->
+      <class name="testartemus.ISFTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.ISFTest -->
+      <class name="testartemus.ItSelectionScreenTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.ItSelectionScreenTest -->
+      <class name="testartemus.AFRVoyageScheduleTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.AFRVoyageScheduleTest -->
+      <class name="testartemus.voyegeTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.voyegeTest -->
+      <class name="testartemus.VesselDepartureTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.VesselDepartureTest -->
+      <class name="testartemus.SubOrdinateScacTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.SubOrdinateScacTest -->
+      <class name="testartemus.CustomerprofileTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.CustomerprofileTest -->
+      <class name="testartemus.SCACCodeTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.SCACCodeTest -->
+      <class name="testartemus.addoriginalmanifestTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.addoriginalmanifestTest -->
+      <class name="testartemus.locationTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.locationTest -->
+      <class name="testartemus.VesselArrivalTest">
+        <methods>
+          <include name="login"/>
+          <include name="homepage"/>
+        </methods>
+      </class> <!-- testartemus.VesselArrivalTest -->
+      <class name="testartemus.AFRJapanBillHeaderTest">
+        <methods>
+          <include name="HazardCode"/>
+          <include name="Equipment"/>
+          <include name="updatebill"/>
+          <include name="login"/>
+          <include name="Packages"/>
+          <include name="goodsDescription"/>
+          <include name="homepage"/>
+          <include name="Packagesunit"/>
+          <include name="PlaceOfDelivery"/>
+          <include name="HarmonizeCode"/>
+          <include name="save"/>
+          <include name="equipmentcargodetails"/>
+          <include name="findbill"/>
+        </methods>
+      </class> <!-- testartemus.AFRJapanBillHeaderTest -->
+      <class name="testartemus.CandaMainScreenTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.CandaMainScreenTest -->
+      <class name="testartemus.AMSMainScreenTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.AMSMainScreenTest -->
+      <class name="testartemus.vesselTest">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testartemus.vesselTest -->
+    </classes>
+  </test> <!-- AFRJapanBillHeaderTest(failed) -->
 </suite> <!-- Failed suite [Regration Suite] -->

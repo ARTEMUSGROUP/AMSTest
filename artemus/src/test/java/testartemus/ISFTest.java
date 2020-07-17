@@ -38,28 +38,28 @@ public class ISFTest extends base {
 	@Test(priority = 2)
 	public void vesseldetails() throws InterruptedException {
 		Select vessel = new Select(Isf.vesselId);
-		vessel.selectByValue("287825");
+		vessel.selectByValue("53");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		WebElement option = vessel.getFirstSelectedOption();
 		String defaultItem = option.getText();
 		System.out.println(defaultItem);
 
-		AssertJUnit.assertEquals(defaultItem, "ARTEMUS");
+		AssertJUnit.assertEquals(defaultItem, "TEST VESSEL");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 
 	@Test(priority = 3)
 	public void Voyagedetails() throws InterruptedException {
 		Select Voyage = new Select(Isf.voyageId);
-		Voyage.selectByValue("174915");
+		Voyage.selectByValue("76864");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		WebElement option = Voyage.getFirstSelectedOption();
 		String defaultItem = option.getText();
 		System.out.println(defaultItem);
 
-		AssertJUnit.assertEquals(defaultItem, "1234");
+		AssertJUnit.assertEquals(defaultItem, "0712");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 
@@ -68,15 +68,15 @@ public class ISFTest extends base {
 		for (int i = 0; i <= 2; i++) {
 			try {
 
-				Select discharge = new Select(Isf.loadPortId);
-				discharge.selectByValue("4110");
+				Select LoadPort = new Select(Isf.loadPortId);
+				LoadPort.selectByValue("58201");
 				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
-				WebElement option = discharge.getFirstSelectedOption();
+				WebElement option = LoadPort.getFirstSelectedOption();
 				String defaultItem = option.getText();
 				System.out.println(defaultItem);
 
-				AssertJUnit.assertEquals(defaultItem, "INDIANAPOLIS, IN");
+				AssertJUnit.assertEquals(defaultItem, "HONG KONG");
 				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 				break;
 			} catch (Exception e) {
@@ -91,14 +91,14 @@ public class ISFTest extends base {
 			try {
 
 				Select discharge = new Select(Isf.dischargePortId);
-				discharge.selectByValue("1001");
+				discharge.selectByValue("2704");
 				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 				WebElement option = discharge.getFirstSelectedOption();
 				String defaultItem = option.getText();
 				System.out.println(defaultItem);
 
-				AssertJUnit.assertEquals(defaultItem, "NEW YORK");
+				AssertJUnit.assertEquals(defaultItem, "LOS ANGELES");
 				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 				break;
 			} catch (Exception e) {

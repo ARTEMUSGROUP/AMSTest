@@ -219,8 +219,8 @@ public class AFRJapanBillHeaderPage {
 	@FindBy(css = "td:nth-child(1) table.GridTable tbody:nth-child(2) tr:nth-child(1) > td:nth-child(1)")
 	public WebElement HarmonizedtableRow;
 
-	@FindBy(css = "img[alt='Save']")
-	public WebElement Save;
+	@FindBy(css = "#img_save")
+	public WebElement SaveBill;
 
 	@FindBy(css = "img[title='Find']")
 	public WebElement Find;
@@ -231,9 +231,11 @@ public class AFRJapanBillHeaderPage {
 	@FindBy(css = "input[value='Search']")
 	public WebElement Search;
 	
-	@FindBy(css = "//table[@id='BillTable']/tbody/tr[1]/td[1]")
+	@FindBy(xpath = "//*[@id='BillTable']/tbody/tr/td[1]")
 	public WebElement TableRow;
 	
+	@FindBy(css = "//table[@id='BillTable']")
+	public WebElement TableGrid;
 	
 	
 	
@@ -494,8 +496,8 @@ public class AFRJapanBillHeaderPage {
 		return HarmonizedtableRow;
 	}
 
-	public WebElement Save() {
-		return Save;
+	public WebElement SaveBill() {
+		return SaveBill;
 	}
 
 	public WebElement Find() {
@@ -515,7 +517,9 @@ public class AFRJapanBillHeaderPage {
 		return TableRow;
 		}
 
-
-
+	public WebElement TableGrid() {
+		return TableGrid;
+		}
+	
 
 }

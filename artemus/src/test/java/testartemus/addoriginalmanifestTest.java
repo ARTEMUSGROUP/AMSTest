@@ -46,28 +46,28 @@ public class addoriginalmanifestTest extends base {
 	@Test(priority = 2)
 	public void vesseldetails() throws InterruptedException {
 		Select vessel = new Select(am.vesselListId);
-		vessel.selectByValue("287825");
+		vessel.selectByValue("53");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		WebElement option = vessel.getFirstSelectedOption();
 		String defaultItem = option.getText();
 		System.out.println(defaultItem);
 
-		AssertJUnit.assertEquals(defaultItem, "ARTEMUS");
+		AssertJUnit.assertEquals(defaultItem, "TEST VESSEL");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 
 	@Test(priority = 3)
 	public void Voyagedetails() throws InterruptedException {
 		Select Voyage = new Select(am.voyageListId);
-		Voyage.selectByValue("174915");
+		Voyage.selectByValue("76864");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		WebElement option = Voyage.getFirstSelectedOption();
 		String defaultItem = option.getText();
 		System.out.println(defaultItem);
 
-		AssertJUnit.assertEquals(defaultItem, "1234");
+		AssertJUnit.assertEquals(defaultItem, "0712");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 
@@ -77,14 +77,14 @@ public class addoriginalmanifestTest extends base {
 			try {
 
 				Select LoadPort = new Select(am.loadPortListId);
-				LoadPort.selectByValue("4110");
+				LoadPort.selectByValue("58201");
 				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 				WebElement option = LoadPort.getFirstSelectedOption();
 				String defaultItem = option.getText();
 				System.out.println(defaultItem);
 
-				AssertJUnit.assertEquals(defaultItem, "INDIANAPOLIS, IN");
+				AssertJUnit.assertEquals(defaultItem, "HONG KONG");
 				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 				break;
 			} catch (Exception e) {
@@ -96,7 +96,7 @@ public class addoriginalmanifestTest extends base {
 
 	@Test(priority = 5)
 	public void DischargePortdetails() throws InterruptedException {
-		String dischargePort = "1001";
+		String dischargePort = "2704";
 		Select DischargePort = new Select(am.dischargePortListId);
 		DischargePort.selectByValue(dischargePort);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -105,7 +105,7 @@ public class addoriginalmanifestTest extends base {
 		String defaultItem = option.getText();
 		System.out.println(defaultItem);
 
-		AssertJUnit.assertEquals(defaultItem, "NEW YORK");
+		AssertJUnit.assertEquals(defaultItem, "LOS ANGELES");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		/*
@@ -128,16 +128,16 @@ public class addoriginalmanifestTest extends base {
 
 	@Test(priority = 7)
 	public void assertRow() throws InterruptedException {
-		AssertJUnit.assertTrue("INDIANAPOLIS, IN", am.loadPort().isDisplayed());
+		AssertJUnit.assertTrue("HONG KONG", am.loadPort().isDisplayed());
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
-		AssertJUnit.assertTrue("NEW YORK", am.dischargePort().isDisplayed());
+		AssertJUnit.assertTrue("LOS ANGELES", am.dischargePort().isDisplayed());
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
-		AssertJUnit.assertTrue("4110", am.loadPortCode().isDisplayed());
+		AssertJUnit.assertTrue("58201", am.loadPortCode().isDisplayed());
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
-		AssertJUnit.assertTrue("1001", am.dischargePortCode().isDisplayed());
+		AssertJUnit.assertTrue("2704", am.dischargePortCode().isDisplayed());
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
 	}

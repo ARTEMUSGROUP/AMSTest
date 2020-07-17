@@ -6,8 +6,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.AssertJUnit;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -44,28 +47,28 @@ public class VesselDepartureTest extends base {
 	@Test(priority = 2)
 	public void vesseldetails() throws InterruptedException {
 		Select vessel = new Select(vd.vesselId);
-		vessel.selectByValue("287825");
+		vessel.selectByValue("53");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		WebElement option = vessel.getFirstSelectedOption();
 		String defaultItem = option.getText();
 		System.out.println(defaultItem);
 
-		AssertJUnit.assertEquals(defaultItem, "ARTEMUS");
+		AssertJUnit.assertEquals(defaultItem, "TEST VESSEL");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 
 	@Test(priority = 3)
 	public void Voyagedetails() throws InterruptedException {
 		Select Voyage = new Select(vd.voyageId);
-		Voyage.selectByValue("174915");
+		Voyage.selectByValue("76864");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		WebElement option = Voyage.getFirstSelectedOption();
 		String defaultItem = option.getText();
 		System.out.println(defaultItem);
 
-		AssertJUnit.assertEquals(defaultItem, "1234");
+		AssertJUnit.assertEquals(defaultItem, "0712");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 
@@ -75,14 +78,14 @@ public class VesselDepartureTest extends base {
 			try {
 
 				Select load = new Select(vd.loadPort);
-				load.selectByValue("4110");
+				load.selectByValue("58201");
 				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 				WebElement option = load.getFirstSelectedOption();
 				String defaultItem = option.getText();
 				System.out.println(defaultItem);
 
-				AssertJUnit.assertEquals(defaultItem, "INDIANAPOLIS, IN");
+				AssertJUnit.assertEquals(defaultItem, "HONG KONG");
 				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 				break;
 			} catch (Exception e) {
@@ -105,8 +108,10 @@ public class VesselDepartureTest extends base {
 			vd.newButton().click();
 			vd.departureDate().sendKeys(dates.get(0));
 			vd.saveButton().click();
-			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-			// driver.switchTo().alert().accept();
+			WebDriverWait wait = new WebDriverWait(driver, 20);
+			wait.until(ExpectedConditions.alertIsPresent());
+			
+			
 
 		}
 	}

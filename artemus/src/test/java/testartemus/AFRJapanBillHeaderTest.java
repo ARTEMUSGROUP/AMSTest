@@ -6,7 +6,9 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.AssertJUnit;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -107,7 +109,7 @@ public class AFRJapanBillHeaderTest extends base {
 
 		@Test(priority = 6)
 		public void ShippingInformation() throws InterruptedException {
-			bh.shipperName().sendKeys("CONSOLIDATED TELECOM SERVICES");
+			bh.shipperName().sendKeys("ARTEMUS TRANSPORTATION SOLUTIONS");
 			bh.preshipperlist().click();
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
@@ -121,7 +123,7 @@ public class AFRJapanBillHeaderTest extends base {
 		// Consignee
 		@Test(priority = 7)
 		public void Consignee() throws InterruptedException {
-			bh.consigneeName().sendKeys("SINOTRANS XIAMEN LOGISTICS CO., LTD");
+			bh.consigneeName().sendKeys("ARTEMUS TRANSPORTATION SOLUTIONS");
 			bh.preconsigneelist().click();
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
@@ -380,9 +382,9 @@ public class AFRJapanBillHeaderTest extends base {
 		@Test(priority = 25)
 		public void save() throws InterruptedException {
 
-			bh.Save().click();
+			bh.SaveBill().click();
 			Thread.sleep(200);
-			// driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+			 driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 			// Using Alert class to first switch to or focus to the alert box
 			Alert alert = (Alert) driver.switchTo().alert();
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -400,11 +402,11 @@ public class AFRJapanBillHeaderTest extends base {
 			bh.billSearch().sendKeys(randomBillNumber);
 			bh.Search().click();
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        if(bh.TableRow.equals(randomBillNumber))
-        {
-			bh.TableRow().click();
-        }
-			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
+			//WebDriverWait wait = new WebDriverWait(driver, 30);
+			//wait.until(ExpectedConditions.visibilityOf(bh.TableGrid()));			
+       	bh.TableRow().click();
+        
 
 		}
 		@Test(priority = 26)
@@ -420,16 +422,16 @@ public class AFRJapanBillHeaderTest extends base {
 			AssertJUnit.assertEquals(defaultItem1, "ORIGNAL");
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
-			bh.Save().click();
-			Thread.sleep(2000);
-			// driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-			// Using Alert class to first switch to or focus to the alert box
+			bh.SaveBill().click();
+			WebDriverWait wait = new WebDriverWait(driver, 20);
+			wait.until(ExpectedConditions.alertIsPresent());
 			Alert alert = (Alert) driver.switchTo().alert();
-			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-			// Using accept() method to accept the alert box
+			WebDriverWait wait1 = new WebDriverWait(driver, 20);
+			wait.until(ExpectedConditions.alertIsPresent());
 			alert.accept();
 
-			Thread.sleep(2000);
+			WebDriverWait wait2 = new WebDriverWait(driver, 20);
+			wait.until(ExpectedConditions.alertIsPresent());		
 			alert.accept();
 
 		}
@@ -442,7 +444,8 @@ public class AFRJapanBillHeaderTest extends base {
 			Thread.sleep(200);
 		}
 		
-		}
+		
+}
 		
 		
 		

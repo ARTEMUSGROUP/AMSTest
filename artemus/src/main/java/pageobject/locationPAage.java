@@ -20,7 +20,7 @@ public class locationPAage {
 	@FindBy(xpath = " //a[contains(text(),'Tables')]")
 	public WebElement tableTab;
 
-	@FindBy(xpath = "/html/body/table/tbody/tr[2]/td/div/ul[7]/li[1]/a")
+	@FindBy(xpath = " //a[contains(text(),'Location')]")
 	public WebElement locationTab;
 
 	@FindBy(xpath = "//td[@class='Title'][contains(text(),'Location')]")
