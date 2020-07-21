@@ -1,694 +1,981 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="9" total="21" passed="12">
+<testng-results skipped="0" failed="0" total="189" passed="189">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="164583" started-at="2020-07-17T12:26:58Z" finished-at="2020-07-17T12:29:43Z">
+  <suite name="Regration Suite" duration-ms="417843" started-at="2020-07-21T11:25:10Z" finished-at="2020-07-21T11:32:08Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="164583" started-at="2020-07-17T12:26:58Z" finished-at="2020-07-17T12:29:43Z">
-      <class name="testartemus.CandaMainScreenTest">
-        <test-method status="PASS" signature="login()[pri:0, instance:testartemus.CandaMainScreenTest@59f99ea]" name="login" is-config="true" duration-ms="28605" started-at="2020-07-17T17:56:58Z" finished-at="2020-07-17T17:57:27Z">
+    <test name="LocationTest" duration-ms="46252" started-at="2020-07-21T11:25:10Z" finished-at="2020-07-21T11:25:56Z">
+      <class name="testartemus.locationTest">
+        <test-method status="PASS" signature="login()[pri:0, instance:testartemus.locationTest@5c3bd550]" name="login" is-config="true" duration-ms="17553" started-at="2020-07-21T16:55:10Z" finished-at="2020-07-21T16:55:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="AMSMainScreen()[pri:1, instance:testartemus.CandaMainScreenTest@59f99ea]" name="AMSMainScreen" duration-ms="1553" started-at="2020-07-17T17:57:27Z" finished-at="2020-07-17T17:57:29Z">
+        <test-method status="PASS" signature="createlocation()[pri:1, instance:testartemus.locationTest@5c3bd550]" name="createlocation" duration-ms="6487" started-at="2020-07-21T16:55:28Z" finished-at="2020-07-21T16:55:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createlocation -->
+        <test-method status="PASS" signature="warehousedetail()[pri:2, instance:testartemus.locationTest@5c3bd550]" name="warehousedetail" duration-ms="4785" started-at="2020-07-21T16:55:34Z" finished-at="2020-07-21T16:55:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- warehousedetail -->
+        <test-method status="PASS" signature="unlocodedetail()[pri:3, instance:testartemus.locationTest@5c3bd550]" name="unlocodedetail" duration-ms="1508" started-at="2020-07-21T16:55:39Z" finished-at="2020-07-21T16:55:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unlocodedetail -->
+        <test-method status="PASS" signature="savelocation()[pri:4, instance:testartemus.locationTest@5c3bd550]" name="savelocation" duration-ms="3146" started-at="2020-07-21T16:55:41Z" finished-at="2020-07-21T16:55:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- savelocation -->
+        <test-method status="PASS" signature="findlocation()[pri:5, instance:testartemus.locationTest@5c3bd550]" name="findlocation" duration-ms="672" started-at="2020-07-21T16:55:44Z" finished-at="2020-07-21T16:55:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findlocation -->
+        <test-method status="PASS" signature="findlocationassert()[pri:6, instance:testartemus.locationTest@5c3bd550]" name="findlocationassert" duration-ms="1003" started-at="2020-07-21T16:55:44Z" finished-at="2020-07-21T16:55:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findlocationassert -->
+        <test-method status="PASS" signature="findlocationingrid()[pri:7, instance:testartemus.locationTest@5c3bd550]" name="findlocationingrid" duration-ms="3283" started-at="2020-07-21T16:55:45Z" finished-at="2020-07-21T16:55:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findlocationingrid -->
+        <test-method status="PASS" signature="updatelocation()[pri:8, instance:testartemus.locationTest@5c3bd550]" name="updatelocation" duration-ms="3766" started-at="2020-07-21T16:55:49Z" finished-at="2020-07-21T16:55:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatelocation -->
+        <test-method status="PASS" signature="deletelocation()[pri:9, instance:testartemus.locationTest@5c3bd550]" name="deletelocation" duration-ms="3161" started-at="2020-07-21T16:55:52Z" finished-at="2020-07-21T16:55:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletelocation -->
+        <test-method status="PASS" signature="homepage()[pri:0, instance:testartemus.locationTest@5c3bd550]" name="homepage" is-config="true" duration-ms="732" started-at="2020-07-21T16:55:56Z" finished-at="2020-07-21T16:55:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+      </class> <!-- testartemus.locationTest -->
+    </test> <!-- LocationTest -->
+    <test name="CustomerProfileTest" duration-ms="33532" started-at="2020-07-21T11:25:57Z" finished-at="2020-07-21T11:26:30Z">
+      <class name="testartemus.CustomerprofileTest">
+        <test-method status="PASS" signature="login()[pri:0, instance:testartemus.CustomerprofileTest@6eebc39e]" name="login" is-config="true" duration-ms="29" started-at="2020-07-21T16:55:57Z" finished-at="2020-07-21T16:55:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="createcustomer()[pri:1, instance:testartemus.CustomerprofileTest@6eebc39e]" name="createcustomer" duration-ms="9749" started-at="2020-07-21T16:55:57Z" finished-at="2020-07-21T16:56:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createcustomer -->
+        <test-method status="PASS" signature="savecustomer()[pri:2, instance:testartemus.CustomerprofileTest@6eebc39e]" name="savecustomer" duration-ms="2201" started-at="2020-07-21T16:56:06Z" finished-at="2020-07-21T16:56:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- savecustomer -->
+        <test-method status="PASS" signature="findcustomerassert()[pri:3, instance:testartemus.CustomerprofileTest@6eebc39e]" name="findcustomerassert" duration-ms="799" started-at="2020-07-21T16:56:09Z" finished-at="2020-07-21T16:56:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findcustomerassert -->
+        <test-method status="PASS" signature="findcustomer()[pri:4, instance:testartemus.CustomerprofileTest@6eebc39e]" name="findcustomer" duration-ms="4488" started-at="2020-07-21T16:56:09Z" finished-at="2020-07-21T16:56:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findcustomer -->
+        <test-method status="PASS" signature="updatecustomer()[pri:5, instance:testartemus.CustomerprofileTest@6eebc39e]" name="updatecustomer" duration-ms="2569" started-at="2020-07-21T16:56:14Z" finished-at="2020-07-21T16:56:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatecustomer -->
+        <test-method status="PASS" signature="deletecustomer()[pri:6, instance:testartemus.CustomerprofileTest@6eebc39e]" name="deletecustomer" duration-ms="12516" started-at="2020-07-21T16:56:17Z" finished-at="2020-07-21T16:56:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletecustomer -->
+        <test-method status="PASS" signature="homepage()[pri:0, instance:testartemus.CustomerprofileTest@6eebc39e]" name="homepage" is-config="true" duration-ms="1043" started-at="2020-07-21T16:56:29Z" finished-at="2020-07-21T16:56:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+      </class> <!-- testartemus.CustomerprofileTest -->
+    </test> <!-- CustomerProfileTest -->
+    <test name="VesselTest" duration-ms="17036" started-at="2020-07-21T11:26:30Z" finished-at="2020-07-21T11:26:47Z">
+      <class name="testartemus.vesselTest">
+        <test-method status="PASS" signature="login()[pri:0, instance:testartemus.vesselTest@598067a5]" name="login" is-config="true" duration-ms="24" started-at="2020-07-21T16:56:30Z" finished-at="2020-07-21T16:56:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="createvessel()[pri:1, instance:testartemus.vesselTest@598067a5]" name="createvessel" duration-ms="5762" started-at="2020-07-21T16:56:30Z" finished-at="2020-07-21T16:56:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createvessel -->
+        <test-method status="PASS" signature="japancarriercode()[pri:2, instance:testartemus.vesselTest@598067a5]" name="japancarriercode" duration-ms="1604" started-at="2020-07-21T16:56:36Z" finished-at="2020-07-21T16:56:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- japancarriercode -->
+        <test-method status="PASS" signature="savevessel()[pri:3, instance:testartemus.vesselTest@598067a5]" name="savevessel" duration-ms="1602" started-at="2020-07-21T16:56:38Z" finished-at="2020-07-21T16:56:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- savevessel -->
+        <test-method status="PASS" signature="findvessel()[pri:4, instance:testartemus.vesselTest@598067a5]" name="findvessel" duration-ms="719" started-at="2020-07-21T16:56:39Z" finished-at="2020-07-21T16:56:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findvessel -->
+        <test-method status="PASS" signature="findvesselname()[pri:5, instance:testartemus.vesselTest@598067a5]" name="findvesselname" duration-ms="2540" started-at="2020-07-21T16:56:40Z" finished-at="2020-07-21T16:56:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findvesselname -->
+        <test-method status="PASS" signature="updatevessel()[pri:6, instance:testartemus.vesselTest@598067a5]" name="updatevessel" duration-ms="2405" started-at="2020-07-21T16:56:42Z" finished-at="2020-07-21T16:56:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatevessel -->
+        <test-method status="PASS" signature="deletevessel()[pri:7, instance:testartemus.vesselTest@598067a5]" name="deletevessel" duration-ms="1437" started-at="2020-07-21T16:56:45Z" finished-at="2020-07-21T16:56:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletevessel -->
+        <test-method status="PASS" signature="homepage()[pri:0, instance:testartemus.vesselTest@598067a5]" name="homepage" is-config="true" duration-ms="865" started-at="2020-07-21T16:56:46Z" finished-at="2020-07-21T16:56:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+      </class> <!-- testartemus.vesselTest -->
+    </test> <!-- VesselTest -->
+    <test name="VoyegeTest" duration-ms="25671" started-at="2020-07-21T11:26:47Z" finished-at="2020-07-21T11:27:13Z">
+      <class name="testartemus.voyegeTest">
+        <test-method status="PASS" signature="login()[pri:0, instance:testartemus.voyegeTest@5bc79255]" name="login" is-config="true" duration-ms="53" started-at="2020-07-21T16:56:47Z" finished-at="2020-07-21T16:56:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="voyegetab()[pri:1, instance:testartemus.voyegeTest@5bc79255]" name="voyegetab" duration-ms="1749" started-at="2020-07-21T16:56:47Z" finished-at="2020-07-21T16:56:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- voyegetab -->
+        <test-method status="PASS" signature="vesseldetail()[pri:2, instance:testartemus.voyegeTest@5bc79255]" name="vesseldetail" duration-ms="3940" started-at="2020-07-21T16:56:49Z" finished-at="2020-07-21T16:56:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vesseldetail -->
+        <test-method status="PASS" signature="voyegedetail()[pri:3, instance:testartemus.voyegeTest@5bc79255]" name="voyegedetail" duration-ms="1178" started-at="2020-07-21T16:56:53Z" finished-at="2020-07-21T16:56:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- voyegedetail -->
+        <test-method status="PASS" signature="firstlocationdetails()[pri:4, instance:testartemus.voyegeTest@5bc79255]" name="firstlocationdetails" duration-ms="3878" started-at="2020-07-21T16:56:54Z" finished-at="2020-07-21T16:56:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstlocationdetails -->
+        <test-method status="PASS" signature="datedetails()[pri:5, instance:testartemus.voyegeTest@5bc79255]" name="datedetails" duration-ms="2059" started-at="2020-07-21T16:56:58Z" finished-at="2020-07-21T16:57:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- datedetails -->
+        <test-method status="PASS" signature="portdetails()[pri:6, instance:testartemus.voyegeTest@5bc79255]" name="portdetails" duration-ms="536" started-at="2020-07-21T16:57:00Z" finished-at="2020-07-21T16:57:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- portdetails -->
+        <test-method status="PASS" signature="secondlocationdetails()[pri:7, instance:testartemus.voyegeTest@5bc79255]" name="secondlocationdetails" duration-ms="1287" started-at="2020-07-21T16:57:01Z" finished-at="2020-07-21T16:57:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondlocationdetails -->
+        <test-method status="PASS" signature="datedetailstwo()[pri:8, instance:testartemus.voyegeTest@5bc79255]" name="datedetailstwo" duration-ms="2058" started-at="2020-07-21T16:57:02Z" finished-at="2020-07-21T16:57:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- datedetailstwo -->
+        <test-method status="PASS" signature="portdetailstwo()[pri:9, instance:testartemus.voyegeTest@5bc79255]" name="portdetailstwo" duration-ms="272" started-at="2020-07-21T16:57:04Z" finished-at="2020-07-21T16:57:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- portdetailstwo -->
+        <test-method status="PASS" signature="savevoyege()[pri:10, instance:testartemus.voyegeTest@5bc79255]" name="savevoyege" duration-ms="1300" started-at="2020-07-21T16:57:04Z" finished-at="2020-07-21T16:57:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- savevoyege -->
+        <test-method status="PASS" signature="findvoyege()[pri:11, instance:testartemus.voyegeTest@5bc79255]" name="findvoyege" duration-ms="2783" started-at="2020-07-21T16:57:06Z" finished-at="2020-07-21T16:57:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findvoyege -->
+        <test-method status="PASS" signature="updatevoyege()[pri:12, instance:testartemus.voyegeTest@5bc79255]" name="updatevoyege" duration-ms="1994" started-at="2020-07-21T16:57:08Z" finished-at="2020-07-21T16:57:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatevoyege -->
+        <test-method status="PASS" signature="deletevoyege()[pri:13, instance:testartemus.voyegeTest@5bc79255]" name="deletevoyege" duration-ms="1509" started-at="2020-07-21T16:57:10Z" finished-at="2020-07-21T16:57:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletevoyege -->
+        <test-method status="PASS" signature="homepage()[pri:0, instance:testartemus.voyegeTest@5bc79255]" name="homepage" is-config="true" duration-ms="970" started-at="2020-07-21T16:57:12Z" finished-at="2020-07-21T16:57:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+      </class> <!-- testartemus.voyegeTest -->
+    </test> <!-- VoyegeTest -->
+    <test name="BillHeaderTest" duration-ms="60565" started-at="2020-07-21T11:27:13Z" finished-at="2020-07-21T11:28:14Z">
+      <class name="testartemus.billheaderTest">
+        <test-method status="PASS" signature="login()[pri:0, instance:testartemus.billheaderTest@3701eaf6]" name="login" is-config="true" duration-ms="52" started-at="2020-07-21T16:57:13Z" finished-at="2020-07-21T16:57:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="billheader()[pri:1, instance:testartemus.billheaderTest@3701eaf6]" name="billheader" duration-ms="3628" started-at="2020-07-21T16:57:13Z" finished-at="2020-07-21T16:57:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- billheader -->
+        <test-method status="PASS" signature="billStatus()[pri:2, instance:testartemus.billheaderTest@3701eaf6]" name="billStatus" duration-ms="1182" started-at="2020-07-21T16:57:17Z" finished-at="2020-07-21T16:57:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- billStatus -->
+        <test-method status="PASS" signature="billType()[pri:3, instance:testartemus.billheaderTest@3701eaf6]" name="billType" duration-ms="475" started-at="2020-07-21T16:57:18Z" finished-at="2020-07-21T16:57:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- billType -->
+        <test-method status="PASS" signature="hblScac()[pri:4, instance:testartemus.billheaderTest@3701eaf6]" name="hblScac" duration-ms="1749" started-at="2020-07-21T16:57:18Z" finished-at="2020-07-21T16:57:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hblScac -->
+        <test-method status="PASS" signature="NvoType()[pri:5, instance:testartemus.billheaderTest@3701eaf6]" name="NvoType" duration-ms="396" started-at="2020-07-21T16:57:20Z" finished-at="2020-07-21T16:57:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NvoType -->
+        <test-method status="PASS" signature="ShippingInformation()[pri:6, instance:testartemus.billheaderTest@3701eaf6]" name="ShippingInformation" duration-ms="2733" started-at="2020-07-21T16:57:20Z" finished-at="2020-07-21T16:57:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ShippingInformation -->
+        <test-method status="PASS" signature="Consignee()[pri:7, instance:testartemus.billheaderTest@3701eaf6]" name="Consignee" duration-ms="2692" started-at="2020-07-21T16:57:23Z" finished-at="2020-07-21T16:57:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Consignee -->
+        <test-method status="PASS" signature="Notify()[pri:7, instance:testartemus.billheaderTest@3701eaf6]" name="Notify" duration-ms="2940" started-at="2020-07-21T16:57:26Z" finished-at="2020-07-21T16:57:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Notify -->
+        <test-method status="PASS" signature="VesselDetail()[pri:8, instance:testartemus.billheaderTest@3701eaf6]" name="VesselDetail" duration-ms="3771" started-at="2020-07-21T16:57:29Z" finished-at="2020-07-21T16:57:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VesselDetail -->
+        <test-method status="PASS" signature="receiptPlace()[pri:9, instance:testartemus.billheaderTest@3701eaf6]" name="receiptPlace" duration-ms="1878" started-at="2020-07-21T16:57:33Z" finished-at="2020-07-21T16:57:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- receiptPlace -->
+        <test-method status="PASS" signature="PortOfLoading()[pri:10, instance:testartemus.billheaderTest@3701eaf6]" name="PortOfLoading" duration-ms="828" started-at="2020-07-21T16:57:34Z" finished-at="2020-07-21T16:57:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PortOfLoading -->
+        <test-method status="PASS" signature="PortOfDischarge()[pri:11, instance:testartemus.billheaderTest@3701eaf6]" name="PortOfDischarge" duration-ms="931" started-at="2020-07-21T16:57:35Z" finished-at="2020-07-21T16:57:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PortOfDischarge -->
+        <test-method status="PASS" signature="PlaceOfDelivery()[pri:12, instance:testartemus.billheaderTest@3701eaf6]" name="PlaceOfDelivery" duration-ms="2032" started-at="2020-07-21T16:57:36Z" finished-at="2020-07-21T16:57:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PlaceOfDelivery -->
+        <test-method status="PASS" signature="MoveType()[pri:13, instance:testartemus.billheaderTest@3701eaf6]" name="MoveType" duration-ms="635" started-at="2020-07-21T16:57:38Z" finished-at="2020-07-21T16:57:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MoveType -->
+        <test-method status="PASS" signature="CountryOfOrigin()[pri:14, instance:testartemus.billheaderTest@3701eaf6]" name="CountryOfOrigin" duration-ms="5256" started-at="2020-07-21T16:57:39Z" finished-at="2020-07-21T16:57:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CountryOfOrigin -->
+        <test-method status="PASS" signature="Equipment()[pri:15, instance:testartemus.billheaderTest@3701eaf6]" name="Equipment" duration-ms="1861" started-at="2020-07-21T16:57:44Z" finished-at="2020-07-21T16:57:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Equipment -->
+        <test-method status="PASS" signature="scrollpage()[pri:16, instance:testartemus.billheaderTest@3701eaf6]" name="scrollpage" duration-ms="59" started-at="2020-07-21T16:57:46Z" finished-at="2020-07-21T16:57:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scrollpage -->
+        <test-method status="PASS" signature="Packages()[pri:17, instance:testartemus.billheaderTest@3701eaf6]" name="Packages" duration-ms="3376" started-at="2020-07-21T16:57:46Z" finished-at="2020-07-21T16:57:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Packages -->
+        <test-method status="PASS" signature="Packagesunit()[pri:18, instance:testartemus.billheaderTest@3701eaf6]" name="Packagesunit" duration-ms="1348" started-at="2020-07-21T16:57:49Z" finished-at="2020-07-21T16:57:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Packagesunit -->
+        <test-method status="PASS" signature="scrollpage2()[pri:19, instance:testartemus.billheaderTest@3701eaf6]" name="scrollpage2" duration-ms="44" started-at="2020-07-21T16:57:51Z" finished-at="2020-07-21T16:57:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scrollpage2 -->
+        <test-method status="PASS" signature="equipmentcargodetails()[pri:20, instance:testartemus.billheaderTest@3701eaf6]" name="equipmentcargodetails" duration-ms="2814" started-at="2020-07-21T16:57:51Z" finished-at="2020-07-21T16:57:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equipmentcargodetails -->
+        <test-method status="PASS" signature="goodsDescription()[pri:21, instance:testartemus.billheaderTest@3701eaf6]" name="goodsDescription" duration-ms="601" started-at="2020-07-21T16:57:54Z" finished-at="2020-07-21T16:57:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goodsDescription -->
+        <test-method status="PASS" signature="HarmonizeCode()[pri:22, instance:testartemus.billheaderTest@3701eaf6]" name="HarmonizeCode" duration-ms="1797" started-at="2020-07-21T16:57:54Z" finished-at="2020-07-21T16:57:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HarmonizeCode -->
+        <test-method status="PASS" signature="HazardCode()[pri:23, instance:testartemus.billheaderTest@3701eaf6]" name="HazardCode" duration-ms="1618" started-at="2020-07-21T16:57:56Z" finished-at="2020-07-21T16:57:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HazardCode -->
+        <test-method status="PASS" signature="Manufacturer()[pri:24, instance:testartemus.billheaderTest@3701eaf6]" name="Manufacturer" duration-ms="2037" started-at="2020-07-21T16:57:58Z" finished-at="2020-07-21T16:58:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Manufacturer -->
+        <test-method status="PASS" signature="cargocountry()[pri:25, instance:testartemus.billheaderTest@3701eaf6]" name="cargocountry" duration-ms="492" started-at="2020-07-21T16:58:00Z" finished-at="2020-07-21T16:58:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cargocountry -->
+        <test-method status="PASS" signature="scrollpageup()[pri:26, instance:testartemus.billheaderTest@3701eaf6]" name="scrollpageup" duration-ms="47" started-at="2020-07-21T16:58:00Z" finished-at="2020-07-21T16:58:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scrollpageup -->
+        <test-method status="PASS" signature="save()[pri:27, instance:testartemus.billheaderTest@3701eaf6]" name="save" duration-ms="3637" started-at="2020-07-21T16:58:00Z" finished-at="2020-07-21T16:58:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- save -->
+        <test-method status="PASS" signature="findbill()[pri:28, instance:testartemus.billheaderTest@3701eaf6]" name="findbill" duration-ms="4603" started-at="2020-07-21T16:58:04Z" finished-at="2020-07-21T16:58:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findbill -->
+        <test-method status="PASS" signature="updatebill()[pri:29, instance:testartemus.billheaderTest@3701eaf6]" name="updatebill" duration-ms="3832" started-at="2020-07-21T16:58:09Z" finished-at="2020-07-21T16:58:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatebill -->
+        <test-method status="PASS" signature="homepage()[pri:0, instance:testartemus.billheaderTest@3701eaf6]" name="homepage" is-config="true" duration-ms="1123" started-at="2020-07-21T16:58:12Z" finished-at="2020-07-21T16:58:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+      </class> <!-- testartemus.billheaderTest -->
+    </test> <!-- BillHeaderTest -->
+    <test name="addoriginalmanifestTest" duration-ms="15136" started-at="2020-07-21T11:28:14Z" finished-at="2020-07-21T11:28:29Z">
+      <class name="testartemus.addoriginalmanifestTest">
+        <test-method status="PASS" signature="login()[pri:0, instance:testartemus.addoriginalmanifestTest@1dfe2924]" name="login" is-config="true" duration-ms="27" started-at="2020-07-21T16:58:14Z" finished-at="2020-07-21T16:58:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="OriginalManifes()[pri:1, instance:testartemus.addoriginalmanifestTest@1dfe2924]" name="OriginalManifes" duration-ms="1874" started-at="2020-07-21T16:58:14Z" finished-at="2020-07-21T16:58:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OriginalManifes -->
+        <test-method status="PASS" signature="vesseldetails()[pri:2, instance:testartemus.addoriginalmanifestTest@1dfe2924]" name="vesseldetails" duration-ms="3522" started-at="2020-07-21T16:58:15Z" finished-at="2020-07-21T16:58:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vesseldetails -->
+        <test-method status="PASS" signature="Voyagedetails()[pri:3, instance:testartemus.addoriginalmanifestTest@1dfe2924]" name="Voyagedetails" duration-ms="944" started-at="2020-07-21T16:58:19Z" finished-at="2020-07-21T16:58:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Voyagedetails -->
+        <test-method status="PASS" signature="LoadPortdetails()[pri:4, instance:testartemus.addoriginalmanifestTest@1dfe2924]" name="LoadPortdetails" duration-ms="692" started-at="2020-07-21T16:58:20Z" finished-at="2020-07-21T16:58:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoadPortdetails -->
+        <test-method status="PASS" signature="DischargePortdetails()[pri:5, instance:testartemus.addoriginalmanifestTest@1dfe2924]" name="DischargePortdetails" duration-ms="572" started-at="2020-07-21T16:58:21Z" finished-at="2020-07-21T16:58:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DischargePortdetails -->
+        <test-method status="PASS" signature="findbills()[pri:6, instance:testartemus.addoriginalmanifestTest@1dfe2924]" name="findbills" duration-ms="2406" started-at="2020-07-21T16:58:21Z" finished-at="2020-07-21T16:58:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findbills -->
+        <test-method status="PASS" signature="assertRow()[pri:7, instance:testartemus.addoriginalmanifestTest@1dfe2924]" name="assertRow" duration-ms="659" started-at="2020-07-21T16:58:24Z" finished-at="2020-07-21T16:58:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertRow -->
+        <test-method status="PASS" signature="sendManifestCheckBox()[pri:8, instance:testartemus.addoriginalmanifestTest@1dfe2924]" name="sendManifestCheckBox" duration-ms="3458" started-at="2020-07-21T16:58:24Z" finished-at="2020-07-21T16:58:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendManifestCheckBox -->
+        <test-method status="PASS" signature="homepage()[pri:0, instance:testartemus.addoriginalmanifestTest@1dfe2924]" name="homepage" is-config="true" duration-ms="943" started-at="2020-07-21T16:58:28Z" finished-at="2020-07-21T16:58:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+      </class> <!-- testartemus.addoriginalmanifestTest -->
+    </test> <!-- addoriginalmanifestTest -->
+    <test name="AMSMainScreenTest" duration-ms="17685" started-at="2020-07-21T11:28:29Z" finished-at="2020-07-21T11:28:46Z">
+      <class name="testartemus.AMSMainScreenTest">
+        <test-method status="PASS" signature="login()[pri:0, instance:testartemus.AMSMainScreenTest@cd2dae5]" name="login" is-config="true" duration-ms="53" started-at="2020-07-21T16:58:29Z" finished-at="2020-07-21T16:58:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="AMSMainScreen()[pri:1, instance:testartemus.AMSMainScreenTest@cd2dae5]" name="AMSMainScreen" duration-ms="2657" started-at="2020-07-21T16:58:29Z" finished-at="2020-07-21T16:58:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AMSMainScreen -->
-        <test-method status="PASS" signature="vesseldetailsmain()[pri:2, instance:testartemus.CandaMainScreenTest@59f99ea]" name="vesseldetailsmain" duration-ms="1077" started-at="2020-07-17T17:57:29Z" finished-at="2020-07-17T17:57:30Z">
+        <test-method status="PASS" signature="vesseldetailsmain()[pri:2, instance:testartemus.AMSMainScreenTest@cd2dae5]" name="vesseldetailsmain" duration-ms="4162" started-at="2020-07-21T16:58:31Z" finished-at="2020-07-21T16:58:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vesseldetailsmain -->
-        <test-method status="PASS" signature="Voyagedetailsmain()[pri:3, instance:testartemus.CandaMainScreenTest@59f99ea]" name="Voyagedetailsmain" duration-ms="305" started-at="2020-07-17T17:57:30Z" finished-at="2020-07-17T17:57:30Z">
+        <test-method status="PASS" signature="Voyagedetailsmain()[pri:3, instance:testartemus.AMSMainScreenTest@cd2dae5]" name="Voyagedetailsmain" duration-ms="893" started-at="2020-07-21T16:58:36Z" finished-at="2020-07-21T16:58:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Voyagedetailsmain -->
-        <test-method status="PASS" signature="LoadPortdetailsmain()[pri:4, instance:testartemus.CandaMainScreenTest@59f99ea]" name="LoadPortdetailsmain" duration-ms="418" started-at="2020-07-17T17:57:30Z" finished-at="2020-07-17T17:57:30Z">
+        <test-method status="PASS" signature="LoadPortdetailsmain()[pri:4, instance:testartemus.AMSMainScreenTest@cd2dae5]" name="LoadPortdetailsmain" duration-ms="637" started-at="2020-07-21T16:58:36Z" finished-at="2020-07-21T16:58:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoadPortdetailsmain -->
-        <test-method status="PASS" signature="DischargePortdetailsmain()[pri:5, instance:testartemus.CandaMainScreenTest@59f99ea]" name="DischargePortdetailsmain" duration-ms="302" started-at="2020-07-17T17:57:30Z" finished-at="2020-07-17T17:57:31Z">
+        <test-method status="PASS" signature="DischargePortdetailsmain()[pri:5, instance:testartemus.AMSMainScreenTest@cd2dae5]" name="DischargePortdetailsmain" duration-ms="593" started-at="2020-07-21T16:58:37Z" finished-at="2020-07-21T16:58:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DischargePortdetailsmain -->
-        <test-method status="PASS" signature="findbillsmain()[pri:6, instance:testartemus.CandaMainScreenTest@59f99ea]" name="findbillsmain" duration-ms="2231" started-at="2020-07-17T17:57:31Z" finished-at="2020-07-17T17:57:33Z">
+        <test-method status="PASS" signature="findbillsmain()[pri:6, instance:testartemus.AMSMainScreenTest@cd2dae5]" name="findbillsmain" duration-ms="2331" started-at="2020-07-21T16:58:38Z" finished-at="2020-07-21T16:58:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findbillsmain -->
-        <test-method status="PASS" signature="validateRow()[pri:7, instance:testartemus.CandaMainScreenTest@59f99ea]" name="validateRow" duration-ms="188" started-at="2020-07-17T17:57:33Z" finished-at="2020-07-17T17:57:33Z">
+        <test-method status="PASS" signature="validateport()[pri:7, instance:testartemus.AMSMainScreenTest@cd2dae5]" name="validateport" duration-ms="323" started-at="2020-07-21T16:58:40Z" finished-at="2020-07-21T16:58:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateport -->
+        <test-method status="PASS" signature="validatebuttonDiv()[pri:8, instance:testartemus.AMSMainScreenTest@cd2dae5]" name="validatebuttonDiv" duration-ms="411" started-at="2020-07-21T16:58:40Z" finished-at="2020-07-21T16:58:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatebuttonDiv -->
+        <test-method status="PASS" signature="billDetailInformation()[pri:9, instance:testartemus.AMSMainScreenTest@cd2dae5]" name="billDetailInformation" duration-ms="1725" started-at="2020-07-21T16:58:41Z" finished-at="2020-07-21T16:58:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- billDetailInformation -->
+        <test-method status="PASS" signature="CustomErrorScreen()[pri:10, instance:testartemus.AMSMainScreenTest@cd2dae5]" name="CustomErrorScreen" duration-ms="1058" started-at="2020-07-21T16:58:42Z" finished-at="2020-07-21T16:58:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CustomErrorScreen -->
+        <test-method status="PASS" signature="originalManifestTracking()[pri:11, instance:testartemus.AMSMainScreenTest@cd2dae5]" name="originalManifestTracking" duration-ms="994" started-at="2020-07-21T16:58:44Z" finished-at="2020-07-21T16:58:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- originalManifestTracking -->
+        <test-method status="PASS" signature="BillAmendmentTracking()[pri:12, instance:testartemus.AMSMainScreenTest@cd2dae5]" name="BillAmendmentTracking" duration-ms="976" started-at="2020-07-21T16:58:45Z" finished-at="2020-07-21T16:58:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BillAmendmentTracking -->
+        <test-method status="PASS" signature="homepage()[pri:0, instance:testartemus.AMSMainScreenTest@cd2dae5]" name="homepage" is-config="true" duration-ms="836" started-at="2020-07-21T16:58:46Z" finished-at="2020-07-21T16:58:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+      </class> <!-- testartemus.AMSMainScreenTest -->
+    </test> <!-- AMSMainScreenTest -->
+    <test name="VesselArrivalTest" duration-ms="10228" started-at="2020-07-21T11:28:46Z" finished-at="2020-07-21T11:28:57Z">
+      <class name="testartemus.VesselArrivalTest">
+        <test-method status="PASS" signature="login()[pri:0, instance:testartemus.VesselArrivalTest@1efed156]" name="login" is-config="true" duration-ms="42" started-at="2020-07-21T16:58:46Z" finished-at="2020-07-21T16:58:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="vesselarrivaltab()[pri:1, instance:testartemus.VesselArrivalTest@1efed156]" name="vesselarrivaltab" duration-ms="1566" started-at="2020-07-21T16:58:46Z" finished-at="2020-07-21T16:58:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vesselarrivaltab -->
+        <test-method status="PASS" signature="vesseldetails()[pri:2, instance:testartemus.VesselArrivalTest@1efed156]" name="vesseldetails" duration-ms="3819" started-at="2020-07-21T16:58:48Z" finished-at="2020-07-21T16:58:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vesseldetails -->
+        <test-method status="PASS" signature="Voyagedetails()[pri:3, instance:testartemus.VesselArrivalTest@1efed156]" name="Voyagedetails" duration-ms="806" started-at="2020-07-21T16:58:52Z" finished-at="2020-07-21T16:58:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Voyagedetails -->
+        <test-method status="PASS" signature="DischargePortdetails()[pri:4, instance:testartemus.VesselArrivalTest@1efed156]" name="DischargePortdetails" duration-ms="672" started-at="2020-07-21T16:58:53Z" finished-at="2020-07-21T16:58:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DischargePortdetails -->
+        <test-method status="PASS" signature="findbills()[pri:5, instance:testartemus.VesselArrivalTest@1efed156]" name="findbills" duration-ms="656" started-at="2020-07-21T16:58:53Z" finished-at="2020-07-21T16:58:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findbills -->
+        <test-method status="PASS" signature="acknowledgement()[pri:6, instance:testartemus.VesselArrivalTest@1efed156]" name="acknowledgement" duration-ms="780" started-at="2020-07-21T16:58:54Z" finished-at="2020-07-21T16:58:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acknowledgement -->
+        <test-method status="PASS" signature="homepage()[pri:0, instance:testartemus.VesselArrivalTest@1efed156]" name="homepage" is-config="true" duration-ms="1871" started-at="2020-07-21T16:58:55Z" finished-at="2020-07-21T16:58:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+      </class> <!-- testartemus.VesselArrivalTest -->
+    </test> <!-- VesselArrivalTest -->
+    <test name="VesselDepartureTest" duration-ms="10115" started-at="2020-07-21T11:28:57Z" finished-at="2020-07-21T11:29:07Z">
+      <class name="testartemus.VesselDepartureTest">
+        <test-method status="PASS" signature="login()[pri:0, instance:testartemus.VesselDepartureTest@7c29daf3]" name="login" is-config="true" duration-ms="55" started-at="2020-07-21T16:58:57Z" finished-at="2020-07-21T16:58:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="vesselarrivaltab()[pri:1, instance:testartemus.VesselDepartureTest@7c29daf3]" name="vesselarrivaltab" duration-ms="1457" started-at="2020-07-21T16:58:57Z" finished-at="2020-07-21T16:58:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vesselarrivaltab -->
+        <test-method status="PASS" signature="vesseldetails()[pri:2, instance:testartemus.VesselDepartureTest@7c29daf3]" name="vesseldetails" duration-ms="3903" started-at="2020-07-21T16:58:58Z" finished-at="2020-07-21T16:59:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vesseldetails -->
+        <test-method status="PASS" signature="Voyagedetails()[pri:3, instance:testartemus.VesselDepartureTest@7c29daf3]" name="Voyagedetails" duration-ms="791" started-at="2020-07-21T16:59:02Z" finished-at="2020-07-21T16:59:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Voyagedetails -->
+        <test-method status="PASS" signature="loadPortdetails()[pri:4, instance:testartemus.VesselDepartureTest@7c29daf3]" name="loadPortdetails" duration-ms="631" started-at="2020-07-21T16:59:03Z" finished-at="2020-07-21T16:59:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadPortdetails -->
+        <test-method status="PASS" signature="findbills()[pri:5, instance:testartemus.VesselDepartureTest@7c29daf3]" name="findbills" duration-ms="2340" started-at="2020-07-21T16:59:03Z" finished-at="2020-07-21T16:59:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findbills -->
+        <test-method status="PASS" signature="homepage()[pri:0, instance:testartemus.VesselDepartureTest@7c29daf3]" name="homepage" is-config="true" duration-ms="924" started-at="2020-07-21T16:59:06Z" finished-at="2020-07-21T16:59:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+      </class> <!-- testartemus.VesselDepartureTest -->
+    </test> <!-- VesselDepartureTest -->
+    <test name="ItSelectionScreenTest" duration-ms="20987" started-at="2020-07-21T11:29:07Z" finished-at="2020-07-21T11:29:28Z">
+      <class name="testartemus.ItSelectionScreenTest">
+        <test-method status="PASS" signature="login()[pri:0, instance:testartemus.ItSelectionScreenTest@2a17b7b6]" name="login" is-config="true" duration-ms="60" started-at="2020-07-21T16:59:07Z" finished-at="2020-07-21T16:59:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="ItSelectionTab()[pri:1, instance:testartemus.ItSelectionScreenTest@2a17b7b6]" name="ItSelectionTab" duration-ms="2220" started-at="2020-07-21T16:59:07Z" finished-at="2020-07-21T16:59:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ItSelectionTab -->
+        <test-method status="PASS" signature="vesseldetails()[pri:2, instance:testartemus.ItSelectionScreenTest@2a17b7b6]" name="vesseldetails" duration-ms="4446" started-at="2020-07-21T16:59:09Z" finished-at="2020-07-21T16:59:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vesseldetails -->
+        <test-method status="PASS" signature="Voyagedetails()[pri:3, instance:testartemus.ItSelectionScreenTest@2a17b7b6]" name="Voyagedetails" duration-ms="1065" started-at="2020-07-21T16:59:13Z" finished-at="2020-07-21T16:59:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Voyagedetails -->
+        <test-method status="PASS" signature="DischargePortdetails()[pri:4, instance:testartemus.ItSelectionScreenTest@2a17b7b6]" name="DischargePortdetails" duration-ms="610" started-at="2020-07-21T16:59:15Z" finished-at="2020-07-21T16:59:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DischargePortdetails -->
+        <test-method status="PASS" signature="findbills()[pri:5, instance:testartemus.ItSelectionScreenTest@2a17b7b6]" name="findbills" duration-ms="608" started-at="2020-07-21T16:59:15Z" finished-at="2020-07-21T16:59:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findbills -->
+        <test-method status="PASS" signature="TableRowDetails()[pri:6, instance:testartemus.ItSelectionScreenTest@2a17b7b6]" name="TableRowDetails" duration-ms="507" started-at="2020-07-21T16:59:16Z" finished-at="2020-07-21T16:59:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TableRowDetails -->
+        <test-method status="PASS" signature="ItArrival()[pri:7, instance:testartemus.ItSelectionScreenTest@2a17b7b6]" name="ItArrival" duration-ms="2417" started-at="2020-07-21T16:59:16Z" finished-at="2020-07-21T16:59:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ItArrival -->
+        <test-method status="PASS" signature="ItContainerArrival()[pri:8, instance:testartemus.ItSelectionScreenTest@2a17b7b6]" name="ItContainerArrival" duration-ms="3503" started-at="2020-07-21T16:59:19Z" finished-at="2020-07-21T16:59:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ItContainerArrival -->
+        <test-method status="PASS" signature="ItBillArrival()[pri:9, instance:testartemus.ItSelectionScreenTest@2a17b7b6]" name="ItBillArrival" duration-ms="3815" started-at="2020-07-21T16:59:22Z" finished-at="2020-07-21T16:59:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ItBillArrival -->
+        <test-method status="PASS" signature="ShowArrivalAcknowledgement()[pri:10, instance:testartemus.ItSelectionScreenTest@2a17b7b6]" name="ShowArrivalAcknowledgement" duration-ms="848" started-at="2020-07-21T16:59:26Z" finished-at="2020-07-21T16:59:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ShowArrivalAcknowledgement -->
+        <test-method status="PASS" signature="homepage()[pri:0, instance:testartemus.ItSelectionScreenTest@2a17b7b6]" name="homepage" is-config="true" duration-ms="863" started-at="2020-07-21T16:59:27Z" finished-at="2020-07-21T16:59:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+      </class> <!-- testartemus.ItSelectionScreenTest -->
+    </test> <!-- ItSelectionScreenTest -->
+    <test name="PermitToTransferTest" duration-ms="9038" started-at="2020-07-21T11:29:28Z" finished-at="2020-07-21T11:29:37Z">
+      <class name="testartemus.PermitToTransferTest">
+        <test-method status="PASS" signature="login()[pri:0, instance:testartemus.PermitToTransferTest@131276c2]" name="login" is-config="true" duration-ms="55" started-at="2020-07-21T16:59:28Z" finished-at="2020-07-21T16:59:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="ItSelectionTab()[pri:1, instance:testartemus.PermitToTransferTest@131276c2]" name="ItSelectionTab" duration-ms="1699" started-at="2020-07-21T16:59:28Z" finished-at="2020-07-21T16:59:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ItSelectionTab -->
+        <test-method status="PASS" signature="vesseldetails()[pri:2, instance:testartemus.PermitToTransferTest@131276c2]" name="vesseldetails" duration-ms="3963" started-at="2020-07-21T16:59:29Z" finished-at="2020-07-21T16:59:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vesseldetails -->
+        <test-method status="PASS" signature="Voyagedetails()[pri:3, instance:testartemus.PermitToTransferTest@131276c2]" name="Voyagedetails" duration-ms="855" started-at="2020-07-21T16:59:33Z" finished-at="2020-07-21T16:59:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Voyagedetails -->
+        <test-method status="PASS" signature="DischargePortdetails()[pri:4, instance:testartemus.PermitToTransferTest@131276c2]" name="DischargePortdetails" duration-ms="633" started-at="2020-07-21T16:59:34Z" finished-at="2020-07-21T16:59:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DischargePortdetails -->
+        <test-method status="PASS" signature="findbills()[pri:5, instance:testartemus.PermitToTransferTest@131276c2]" name="findbills" duration-ms="616" started-at="2020-07-21T16:59:35Z" finished-at="2020-07-21T16:59:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findbills -->
+        <test-method status="PASS" signature="changeAckName()[pri:6, instance:testartemus.PermitToTransferTest@131276c2]" name="changeAckName" duration-ms="446" started-at="2020-07-21T16:59:36Z" finished-at="2020-07-21T16:59:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeAckName -->
+        <test-method status="PASS" signature="homepage()[pri:0, instance:testartemus.PermitToTransferTest@131276c2]" name="homepage" is-config="true" duration-ms="752" started-at="2020-07-21T16:59:36Z" finished-at="2020-07-21T16:59:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+      </class> <!-- testartemus.PermitToTransferTest -->
+    </test> <!-- PermitToTransferTest -->
+    <test name="ISFTest" duration-ms="10604" started-at="2020-07-21T11:29:37Z" finished-at="2020-07-21T11:29:47Z">
+      <class name="testartemus.ISFTest">
+        <test-method status="PASS" signature="login()[pri:0, instance:testartemus.ISFTest@23faf8f2]" name="login" is-config="true" duration-ms="29" started-at="2020-07-21T16:59:37Z" finished-at="2020-07-21T16:59:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="ItSelectionTab()[pri:1, instance:testartemus.ISFTest@23faf8f2]" name="ItSelectionTab" duration-ms="1578" started-at="2020-07-21T16:59:37Z" finished-at="2020-07-21T16:59:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ItSelectionTab -->
+        <test-method status="PASS" signature="vesseldetails()[pri:2, instance:testartemus.ISFTest@23faf8f2]" name="vesseldetails" duration-ms="4002" started-at="2020-07-21T16:59:38Z" finished-at="2020-07-21T16:59:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vesseldetails -->
+        <test-method status="PASS" signature="Voyagedetails()[pri:3, instance:testartemus.ISFTest@23faf8f2]" name="Voyagedetails" duration-ms="845" started-at="2020-07-21T16:59:42Z" finished-at="2020-07-21T16:59:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Voyagedetails -->
+        <test-method status="PASS" signature="loadPortId()[pri:4, instance:testartemus.ISFTest@23faf8f2]" name="loadPortId" duration-ms="643" started-at="2020-07-21T16:59:43Z" finished-at="2020-07-21T16:59:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadPortId -->
+        <test-method status="PASS" signature="DischargePortdetails()[pri:5, instance:testartemus.ISFTest@23faf8f2]" name="DischargePortdetails" duration-ms="593" started-at="2020-07-21T16:59:44Z" finished-at="2020-07-21T16:59:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DischargePortdetails -->
+        <test-method status="PASS" signature="findbills()[pri:6, instance:testartemus.ISFTest@23faf8f2]" name="findbills" duration-ms="763" started-at="2020-07-21T16:59:44Z" finished-at="2020-07-21T16:59:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findbills -->
+        <test-method status="PASS" signature="Billstatus()[pri:7, instance:testartemus.ISFTest@23faf8f2]" name="Billstatus" duration-ms="1272" started-at="2020-07-21T16:59:45Z" finished-at="2020-07-21T16:59:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Billstatus -->
+        <test-method status="PASS" signature="homepage()[pri:0, instance:testartemus.ISFTest@23faf8f2]" name="homepage" is-config="true" duration-ms="852" started-at="2020-07-21T16:59:47Z" finished-at="2020-07-21T16:59:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+      </class> <!-- testartemus.ISFTest -->
+    </test> <!-- ISFTest -->
+    <test name="SCACCodeTest" duration-ms="9997" started-at="2020-07-21T11:29:47Z" finished-at="2020-07-21T11:29:57Z">
+      <class name="testartemus.SCACCodeTest">
+        <test-method status="PASS" signature="login()[pri:0, instance:testartemus.SCACCodeTest@56aac163]" name="login" is-config="true" duration-ms="43" started-at="2020-07-21T16:59:47Z" finished-at="2020-07-21T16:59:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="SCACCodescreen()[pri:1, instance:testartemus.SCACCodeTest@56aac163]" name="SCACCodescreen" duration-ms="1370" started-at="2020-07-21T16:59:47Z" finished-at="2020-07-21T16:59:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SCACCodescreen -->
+        <test-method status="PASS" signature="CreateNewScac()[pri:2, instance:testartemus.SCACCodeTest@56aac163]" name="CreateNewScac" duration-ms="3116" started-at="2020-07-21T16:59:49Z" finished-at="2020-07-21T16:59:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateNewScac -->
+        <test-method status="PASS" signature="UpdateScac()[pri:3, instance:testartemus.SCACCodeTest@56aac163]" name="UpdateScac" duration-ms="3491" started-at="2020-07-21T16:59:52Z" finished-at="2020-07-21T16:59:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateScac -->
+        <test-method status="PASS" signature="DeleteScac()[pri:4, instance:testartemus.SCACCodeTest@56aac163]" name="DeleteScac" duration-ms="1090" started-at="2020-07-21T16:59:55Z" finished-at="2020-07-21T16:59:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteScac -->
+        <test-method status="PASS" signature="homepage()[pri:0, instance:testartemus.SCACCodeTest@56aac163]" name="homepage" is-config="true" duration-ms="877" started-at="2020-07-21T16:59:57Z" finished-at="2020-07-21T16:59:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+      </class> <!-- testartemus.SCACCodeTest -->
+    </test> <!-- SCACCodeTest -->
+    <test name="SubOrdinateScacTest" duration-ms="10556" started-at="2020-07-21T11:29:57Z" finished-at="2020-07-21T11:30:08Z">
+      <class name="testartemus.SubOrdinateScacTest">
+        <test-method status="PASS" signature="login()[pri:0, instance:testartemus.SubOrdinateScacTest@167fdd33]" name="login" is-config="true" duration-ms="12" started-at="2020-07-21T16:59:57Z" finished-at="2020-07-21T16:59:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="SubOrdinateScac()[pri:1, instance:testartemus.SubOrdinateScacTest@167fdd33]" name="SubOrdinateScac" duration-ms="1453" started-at="2020-07-21T16:59:57Z" finished-at="2020-07-21T16:59:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubOrdinateScac -->
+        <test-method status="PASS" signature="CreateNewSubScac()[pri:2, instance:testartemus.SubOrdinateScacTest@167fdd33]" name="CreateNewSubScac" duration-ms="3269" started-at="2020-07-21T16:59:59Z" finished-at="2020-07-21T17:00:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateNewSubScac -->
+        <test-method status="PASS" signature="updateSubScac()[pri:3, instance:testartemus.SubOrdinateScacTest@167fdd33]" name="updateSubScac" duration-ms="4138" started-at="2020-07-21T17:00:02Z" finished-at="2020-07-21T17:00:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateSubScac -->
+        <test-method status="PASS" signature="deleteSubScac()[pri:4, instance:testartemus.SubOrdinateScacTest@167fdd33]" name="deleteSubScac" duration-ms="842" started-at="2020-07-21T17:00:06Z" finished-at="2020-07-21T17:00:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteSubScac -->
+        <test-method status="PASS" signature="homepage()[pri:0, instance:testartemus.SubOrdinateScacTest@167fdd33]" name="homepage" is-config="true" duration-ms="828" started-at="2020-07-21T17:00:07Z" finished-at="2020-07-21T17:00:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+      </class> <!-- testartemus.SubOrdinateScacTest -->
+    </test> <!-- SubOrdinateScacTest -->
+    <test name="CandaOriginalmanifest" duration-ms="10581" started-at="2020-07-21T11:30:08Z" finished-at="2020-07-21T11:30:19Z">
+      <class name="testartemus.CandaOriginalmanifest">
+        <test-method status="PASS" signature="login()[pri:0, instance:testartemus.CandaOriginalmanifest@6acdbdf5]" name="login" is-config="true" duration-ms="46" started-at="2020-07-21T17:00:08Z" finished-at="2020-07-21T17:00:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="OriginalManifes()[pri:1, instance:testartemus.CandaOriginalmanifest@6acdbdf5]" name="OriginalManifes" duration-ms="1623" started-at="2020-07-21T17:00:08Z" finished-at="2020-07-21T17:00:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OriginalManifes -->
+        <test-method status="PASS" signature="vesseldetails()[pri:2, instance:testartemus.CandaOriginalmanifest@6acdbdf5]" name="vesseldetails" duration-ms="2001" started-at="2020-07-21T17:00:10Z" finished-at="2020-07-21T17:00:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vesseldetails -->
+        <test-method status="PASS" signature="Voyagedetails()[pri:3, instance:testartemus.CandaOriginalmanifest@6acdbdf5]" name="Voyagedetails" duration-ms="611" started-at="2020-07-21T17:00:12Z" finished-at="2020-07-21T17:00:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Voyagedetails -->
+        <test-method status="PASS" signature="LoadPortdetails()[pri:4, instance:testartemus.CandaOriginalmanifest@6acdbdf5]" name="LoadPortdetails" duration-ms="619" started-at="2020-07-21T17:00:12Z" finished-at="2020-07-21T17:00:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoadPortdetails -->
+        <test-method status="PASS" signature="DischargePortdetails()[pri:5, instance:testartemus.CandaOriginalmanifest@6acdbdf5]" name="DischargePortdetails" duration-ms="633" started-at="2020-07-21T17:00:13Z" finished-at="2020-07-21T17:00:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DischargePortdetails -->
+        <test-method status="PASS" signature="findbills()[pri:6, instance:testartemus.CandaOriginalmanifest@6acdbdf5]" name="findbills" duration-ms="2337" started-at="2020-07-21T17:00:14Z" finished-at="2020-07-21T17:00:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findbills -->
+        <test-method status="PASS" signature="assertRow()[pri:7, instance:testartemus.CandaOriginalmanifest@6acdbdf5]" name="assertRow" duration-ms="305" started-at="2020-07-21T17:00:16Z" finished-at="2020-07-21T17:00:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertRow -->
+        <test-method status="PASS" signature="sendManifestCheckBox()[pri:8, instance:testartemus.CandaOriginalmanifest@6acdbdf5]" name="sendManifestCheckBox" duration-ms="1554" started-at="2020-07-21T17:00:16Z" finished-at="2020-07-21T17:00:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendManifestCheckBox -->
+        <test-method status="PASS" signature="homepage()[pri:0, instance:testartemus.CandaOriginalmanifest@6acdbdf5]" name="homepage" is-config="true" duration-ms="825" started-at="2020-07-21T17:00:18Z" finished-at="2020-07-21T17:00:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+      </class> <!-- testartemus.CandaOriginalmanifest -->
+    </test> <!-- CandaOriginalmanifest -->
+    <test name="candamainTest" duration-ms="28336" started-at="2020-07-21T11:30:19Z" finished-at="2020-07-21T11:30:47Z">
+      <class name="testartemus.candamainTest">
+        <test-method status="PASS" signature="login()[pri:0, instance:testartemus.candamainTest@57e1b0c]" name="login" is-config="true" duration-ms="63" started-at="2020-07-21T17:00:19Z" finished-at="2020-07-21T17:00:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="AMSMainScreen()[pri:1, instance:testartemus.candamainTest@57e1b0c]" name="AMSMainScreen" duration-ms="1889" started-at="2020-07-21T17:00:19Z" finished-at="2020-07-21T17:00:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AMSMainScreen -->
+        <test-method status="PASS" signature="vesseldetailsmain()[pri:2, instance:testartemus.candamainTest@57e1b0c]" name="vesseldetailsmain" duration-ms="1999" started-at="2020-07-21T17:00:21Z" finished-at="2020-07-21T17:00:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vesseldetailsmain -->
+        <test-method status="PASS" signature="Voyagedetailsmain()[pri:3, instance:testartemus.candamainTest@57e1b0c]" name="Voyagedetailsmain" duration-ms="734" started-at="2020-07-21T17:00:23Z" finished-at="2020-07-21T17:00:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Voyagedetailsmain -->
+        <test-method status="PASS" signature="LoadPortdetailsmain()[pri:4, instance:testartemus.candamainTest@57e1b0c]" name="LoadPortdetailsmain" duration-ms="692" started-at="2020-07-21T17:00:23Z" finished-at="2020-07-21T17:00:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoadPortdetailsmain -->
+        <test-method status="PASS" signature="DischargePortdetailsmain()[pri:5, instance:testartemus.candamainTest@57e1b0c]" name="DischargePortdetailsmain" duration-ms="734" started-at="2020-07-21T17:00:24Z" finished-at="2020-07-21T17:00:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DischargePortdetailsmain -->
+        <test-method status="PASS" signature="findbillsmain()[pri:6, instance:testartemus.candamainTest@57e1b0c]" name="findbillsmain" duration-ms="2344" started-at="2020-07-21T17:00:25Z" finished-at="2020-07-21T17:00:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findbillsmain -->
+        <test-method status="PASS" signature="validateRow()[pri:7, instance:testartemus.candamainTest@57e1b0c]" name="validateRow" duration-ms="418" started-at="2020-07-21T17:00:27Z" finished-at="2020-07-21T17:00:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateRow -->
-        <test-method status="PASS" signature="CanCustBLDetailImportedCargoScreen()[pri:8, instance:testartemus.CandaMainScreenTest@59f99ea]" name="CanCustBLDetailImportedCargoScreen" duration-ms="619" started-at="2020-07-17T17:57:33Z" finished-at="2020-07-17T17:57:34Z">
+        <test-method status="PASS" signature="CanCustBLDetailImportedCargoScreen()[pri:8, instance:testartemus.candamainTest@57e1b0c]" name="CanCustBLDetailImportedCargoScreen" duration-ms="7415" started-at="2020-07-21T17:00:27Z" finished-at="2020-07-21T17:00:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CanCustBLDetailImportedCargoScreen -->
-        <test-method status="PASS" signature="showAcknowledgement()[pri:9, instance:testartemus.CandaMainScreenTest@59f99ea]" name="showAcknowledgement" duration-ms="405" started-at="2020-07-17T17:57:34Z" finished-at="2020-07-17T17:57:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- showAcknowledgement -->
-        <test-method status="PASS" signature="customsCanadianAmendmentforBL()[pri:10, instance:testartemus.CandaMainScreenTest@59f99ea]" name="customsCanadianAmendmentforBL" duration-ms="1174" started-at="2020-07-17T17:57:34Z" finished-at="2020-07-17T17:57:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- customsCanadianAmendmentforBL -->
-        <test-method status="PASS" signature="Message()[pri:11, instance:testartemus.CandaMainScreenTest@59f99ea]" name="Message" duration-ms="515" started-at="2020-07-17T17:57:35Z" finished-at="2020-07-17T17:57:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Message -->
-        <test-method status="PASS" signature="DispositionCodesDiscriptions()[pri:12, instance:testartemus.CandaMainScreenTest@59f99ea]" name="DispositionCodesDiscriptions" duration-ms="701" started-at="2020-07-17T17:57:36Z" finished-at="2020-07-17T17:57:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DispositionCodesDiscriptions -->
-        <test-method status="FAIL" signature="CanCustBLDetailFROBECargo()[pri:13, instance:testartemus.CandaMainScreenTest@59f99ea]" name="CanCustBLDetailFROBECargo" duration-ms="30203" started-at="2020-07-17T17:57:37Z" finished-at="2020-07-17T17:58:07Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"tr[title='Double click to view bill details']"}
-  (Session info: chrome=81.0.4044.138)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Samsung', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-36-generic', java.version: '1.8.0_03-Ubuntu'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /tmp/.com.google.Chrome.BKsTDy}, goog:chromeOptions: {debuggerAddress: localhost:37863}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7ee512f8f14edb7ea1ceada6d9c1ddca
-*** Element info: {Using=css selector, value=tr[title='Double click to view bill details']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"tr[title='Double click to view bill details']"}
-  (Session info: chrome=81.0.4044.138)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Samsung', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-36-generic', java.version: '1.8.0_03-Ubuntu'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /tmp/.com.google.Chrome.BKsTDy}, goog:chromeOptions: {debuggerAddress: localhost:37863}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7ee512f8f14edb7ea1ceada6d9c1ddca
-*** Element info: {Using=css selector, value=tr[title='Double click to view bill details']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.getText(Unknown Source)
-	at testartemus.CandaMainScreenTest.CanCustBLDetailFROBECargo(CandaMainScreenTest.java:222)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:778)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
-	at org.testng.TestNG.runSuites(TestNG.java:1075)
-	at org.testng.TestNG.run(TestNG.java:1047)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="CanCustBLDetailFROBECargo()[pri:9, instance:testartemus.candamainTest@57e1b0c]" name="CanCustBLDetailFROBECargo" duration-ms="2654" started-at="2020-07-21T17:00:35Z" finished-at="2020-07-21T17:00:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CanCustBLDetailFROBECargo -->
-        <test-method status="FAIL" signature="showAcknowledgementFROBE()[pri:14, instance:testartemus.CandaMainScreenTest@59f99ea]" name="showAcknowledgementFROBE" duration-ms="30172" started-at="2020-07-17T17:58:07Z" finished-at="2020-07-17T17:58:37Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//body//div[@id='portDetail']//tbody//tbody//tr[1]"}
-  (Session info: chrome=81.0.4044.138)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Samsung', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-36-generic', java.version: '1.8.0_03-Ubuntu'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /tmp/.com.google.Chrome.BKsTDy}, goog:chromeOptions: {debuggerAddress: localhost:37863}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7ee512f8f14edb7ea1ceada6d9c1ddca
-*** Element info: {Using=xpath, value=//body//div[@id='portDetail']//tbody//tbody//tr[1]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//body//div[@id='portDetail']//tbody//tbody//tr[1]"}
-  (Session info: chrome=81.0.4044.138)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Samsung', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-36-generic', java.version: '1.8.0_03-Ubuntu'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /tmp/.com.google.Chrome.BKsTDy}, goog:chromeOptions: {debuggerAddress: localhost:37863}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7ee512f8f14edb7ea1ceada6d9c1ddca
-*** Element info: {Using=xpath, value=//body//div[@id='portDetail']//tbody//tbody//tr[1]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.getText(Unknown Source)
-	at testartemus.CandaMainScreenTest.showAcknowledgementFROBE(CandaMainScreenTest.java:235)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:778)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
-	at org.testng.TestNG.runSuites(TestNG.java:1075)
-	at org.testng.TestNG.run(TestNG.java:1047)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- showAcknowledgementFROBE -->
-        <test-method status="FAIL" signature="customsCanadianAmendmentforBLFROBE()[pri:15, instance:testartemus.CandaMainScreenTest@59f99ea]" name="customsCanadianAmendmentforBLFROBE" duration-ms="30138" started-at="2020-07-17T17:58:37Z" finished-at="2020-07-17T17:59:07Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"select[name='actionCode']"}
-  (Session info: chrome=81.0.4044.138)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Samsung', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-36-generic', java.version: '1.8.0_03-Ubuntu'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /tmp/.com.google.Chrome.BKsTDy}, goog:chromeOptions: {debuggerAddress: localhost:37863}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7ee512f8f14edb7ea1ceada6d9c1ddca
-*** Element info: {Using=css selector, value=select[name='actionCode']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"select[name='actionCode']"}
-  (Session info: chrome=81.0.4044.138)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Samsung', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-36-generic', java.version: '1.8.0_03-Ubuntu'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /tmp/.com.google.Chrome.BKsTDy}, goog:chromeOptions: {debuggerAddress: localhost:37863}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7ee512f8f14edb7ea1ceada6d9c1ddca
-*** Element info: {Using=css selector, value=select[name='actionCode']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.getTagName(Unknown Source)
-	at org.openqa.selenium.support.ui.Select.<init>(Select.java:45)
-	at testartemus.CandaMainScreenTest.customsCanadianAmendmentforBLFROBE(CandaMainScreenTest.java:246)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:778)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
-	at org.testng.TestNG.runSuites(TestNG.java:1075)
-	at org.testng.TestNG.run(TestNG.java:1047)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- customsCanadianAmendmentforBLFROBE -->
-        <test-method status="FAIL" signature="MessageFROBE()[pri:16, instance:testartemus.CandaMainScreenTest@59f99ea]" name="MessageFROBE" duration-ms="30142" started-at="2020-07-17T17:59:07Z" finished-at="2020-07-17T17:59:37Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='modal5']//div//img"}
-  (Session info: chrome=81.0.4044.138)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Samsung', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-36-generic', java.version: '1.8.0_03-Ubuntu'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /tmp/.com.google.Chrome.BKsTDy}, goog:chromeOptions: {debuggerAddress: localhost:37863}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7ee512f8f14edb7ea1ceada6d9c1ddca
-*** Element info: {Using=xpath, value=//div[@id='modal5']//div//img}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='modal5']//div//img"}
-  (Session info: chrome=81.0.4044.138)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Samsung', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-36-generic', java.version: '1.8.0_03-Ubuntu'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /tmp/.com.google.Chrome.BKsTDy}, goog:chromeOptions: {debuggerAddress: localhost:37863}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7ee512f8f14edb7ea1ceada6d9c1ddca
-*** Element info: {Using=xpath, value=//div[@id='modal5']//div//img}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at testartemus.CandaMainScreenTest.MessageFROBE(CandaMainScreenTest.java:271)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:778)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
-	at org.testng.TestNG.runSuites(TestNG.java:1075)
-	at org.testng.TestNG.run(TestNG.java:1047)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MessageFROBE -->
-        <test-method status="FAIL" signature="CustomsErrorScreen()[pri:17, instance:testartemus.CandaMainScreenTest@59f99ea]" name="CustomsErrorScreen" duration-ms="1122" started-at="2020-07-17T17:59:37Z" finished-at="2020-07-17T17:59:38Z">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <input type="button" name="CustomsErrorScreen" value="Customs Error Screen" onclick="showCustomError();" style="width:150px; align:middle;"> is not clickable at point (494, 527). Other element would receive the click: <div id="modal" style="position: absolute; visibility: visible; background-color: rgb(192, 192, 254); top: 0px; left: 0px; width: 1030px; height: 593px; z-index: 5; opacity: 0.4; overflow: auto;"></div>
-  (Session info: chrome=81.0.4044.138)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Samsung', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-36-generic', java.version: '1.8.0_03-Ubuntu'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /tmp/.com.google.Chrome.BKsTDy}, goog:chromeOptions: {debuggerAddress: localhost:37863}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7ee512f8f14edb7ea1ceada6d9c1ddca]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="button" name="CustomsErrorScreen" value="Customs Error Screen" onclick="showCustomError();" style="width:150px; align:middle;"> is not clickable at point (494, 527). Other element would receive the click: <div id="modal" style="position: absolute; visibility: visible; background-color: rgb(192, 192, 254); top: 0px; left: 0px; width: 1030px; height: 593px; z-index: 5; opacity: 0.4; overflow: auto;"></div>
-  (Session info: chrome=81.0.4044.138)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Samsung', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-36-generic', java.version: '1.8.0_03-Ubuntu'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /tmp/.com.google.Chrome.BKsTDy}, goog:chromeOptions: {debuggerAddress: localhost:37863}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7ee512f8f14edb7ea1ceada6d9c1ddca
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at testartemus.CandaMainScreenTest.CustomsErrorScreen(CandaMainScreenTest.java:283)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:778)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
-	at org.testng.TestNG.runSuites(TestNG.java:1075)
-	at org.testng.TestNG.run(TestNG.java:1047)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        <test-method status="PASS" signature="CustomsErrorScreen()[pri:10, instance:testartemus.candamainTest@57e1b0c]" name="CustomsErrorScreen" duration-ms="1447" started-at="2020-07-21T17:00:38Z" finished-at="2020-07-21T17:00:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CustomsErrorScreen -->
-        <test-method status="FAIL" signature="AmendTrackingScreen()[pri:18, instance:testartemus.CandaMainScreenTest@59f99ea]" name="AmendTrackingScreen" duration-ms="1160" started-at="2020-07-17T17:59:38Z" finished-at="2020-07-17T17:59:40Z">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <input type="button" name="AmendTrackingScreen" value="Amend Tracking Screen " onclick="getACIAmendmentTracking();" style="width:150px; align:middle;"> is not clickable at point (649, 527). Other element would receive the click: <div id="modal" style="position: absolute; visibility: visible; background-color: rgb(192, 192, 254); top: 0px; left: 0px; width: 1030px; height: 593px; z-index: 5; opacity: 0.4; overflow: auto;"></div>
-  (Session info: chrome=81.0.4044.138)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Samsung', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-36-generic', java.version: '1.8.0_03-Ubuntu'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /tmp/.com.google.Chrome.BKsTDy}, goog:chromeOptions: {debuggerAddress: localhost:37863}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7ee512f8f14edb7ea1ceada6d9c1ddca]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="button" name="AmendTrackingScreen" value="Amend Tracking Screen " onclick="getACIAmendmentTracking();" style="width:150px; align:middle;"> is not clickable at point (649, 527). Other element would receive the click: <div id="modal" style="position: absolute; visibility: visible; background-color: rgb(192, 192, 254); top: 0px; left: 0px; width: 1030px; height: 593px; z-index: 5; opacity: 0.4; overflow: auto;"></div>
-  (Session info: chrome=81.0.4044.138)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Samsung', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-36-generic', java.version: '1.8.0_03-Ubuntu'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /tmp/.com.google.Chrome.BKsTDy}, goog:chromeOptions: {debuggerAddress: localhost:37863}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7ee512f8f14edb7ea1ceada6d9c1ddca
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at testartemus.CandaMainScreenTest.AmendTrackingScreen(CandaMainScreenTest.java:295)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:778)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
-	at org.testng.TestNG.runSuites(TestNG.java:1075)
-	at org.testng.TestNG.run(TestNG.java:1047)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        <test-method status="PASS" signature="AmendTrackingScreen()[pri:11, instance:testartemus.candamainTest@57e1b0c]" name="AmendTrackingScreen" duration-ms="896" started-at="2020-07-21T17:00:39Z" finished-at="2020-07-21T17:00:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AmendTrackingScreen -->
-        <test-method status="FAIL" signature="VoyageConveyance()[pri:19, instance:testartemus.CandaMainScreenTest@59f99ea]" name="VoyageConveyance" duration-ms="1143" started-at="2020-07-17T17:59:40Z" finished-at="2020-07-17T17:59:41Z">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <input type="button" name="VoyageConveyance(A6)" value="Voyage Conveyance (A6)" onclick="getVoyageConveyance();" style="width:150px; align:middle;"> is not clickable at point (804, 527). Other element would receive the click: <div id="modal" style="position: absolute; visibility: visible; background-color: rgb(192, 192, 254); top: 0px; left: 0px; width: 1030px; height: 593px; z-index: 5; opacity: 0.4; overflow: auto;"></div>
-  (Session info: chrome=81.0.4044.138)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Samsung', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-36-generic', java.version: '1.8.0_03-Ubuntu'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /tmp/.com.google.Chrome.BKsTDy}, goog:chromeOptions: {debuggerAddress: localhost:37863}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7ee512f8f14edb7ea1ceada6d9c1ddca]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="button" name="VoyageConveyance(A6)" value="Voyage Conveyance (A6)" onclick="getVoyageConveyance();" style="width:150px; align:middle;"> is not clickable at point (804, 527). Other element would receive the click: <div id="modal" style="position: absolute; visibility: visible; background-color: rgb(192, 192, 254); top: 0px; left: 0px; width: 1030px; height: 593px; z-index: 5; opacity: 0.4; overflow: auto;"></div>
-  (Session info: chrome=81.0.4044.138)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Samsung', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-36-generic', java.version: '1.8.0_03-Ubuntu'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /tmp/.com.google.Chrome.BKsTDy}, goog:chromeOptions: {debuggerAddress: localhost:37863}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7ee512f8f14edb7ea1ceada6d9c1ddca
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at testartemus.CandaMainScreenTest.VoyageConveyance(CandaMainScreenTest.java:329)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:778)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
-	at org.testng.TestNG.runSuites(TestNG.java:1075)
-	at org.testng.TestNG.run(TestNG.java:1047)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        <test-method status="PASS" signature="VoyageConveyance()[pri:12, instance:testartemus.candamainTest@57e1b0c]" name="VoyageConveyance" duration-ms="1774" started-at="2020-07-21T17:00:40Z" finished-at="2020-07-21T17:00:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VoyageConveyance -->
-        <test-method status="FAIL" signature="CACM()[pri:20, instance:testartemus.CandaMainScreenTest@59f99ea]" name="CACM" duration-ms="1150" started-at="2020-07-17T17:59:41Z" finished-at="2020-07-17T17:59:42Z">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <tr class="GridData" onclick="selectAmsMainScreenRow(this)" style="background-color: rgb(176, 196, 222);">...</tr> is not clickable at point (521, 150). Other element would receive the click: <div style="height: 400px; width: 800px; overflow: auto;">...</div>
-  (Session info: chrome=81.0.4044.138)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Samsung', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-36-generic', java.version: '1.8.0_03-Ubuntu'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /tmp/.com.google.Chrome.BKsTDy}, goog:chromeOptions: {debuggerAddress: localhost:37863}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7ee512f8f14edb7ea1ceada6d9c1ddca]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <tr class="GridData" onclick="selectAmsMainScreenRow(this)" style="background-color: rgb(176, 196, 222);">...</tr> is not clickable at point (521, 150). Other element would receive the click: <div style="height: 400px; width: 800px; overflow: auto;">...</div>
-  (Session info: chrome=81.0.4044.138)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Samsung', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-36-generic', java.version: '1.8.0_03-Ubuntu'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /tmp/.com.google.Chrome.BKsTDy}, goog:chromeOptions: {debuggerAddress: localhost:37863}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7ee512f8f14edb7ea1ceada6d9c1ddca
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at testartemus.CandaMainScreenTest.CACM(CandaMainScreenTest.java:348)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:778)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
-	at org.testng.TestNG.runSuites(TestNG.java:1075)
-	at org.testng.TestNG.run(TestNG.java:1047)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        <test-method status="PASS" signature="CACM()[pri:13, instance:testartemus.candamainTest@57e1b0c]" name="CACM" duration-ms="1588" started-at="2020-07-21T17:00:42Z" finished-at="2020-07-21T17:00:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CACM -->
-        <test-method status="FAIL" signature="HouseBillClose()[pri:21, instance:testartemus.CandaMainScreenTest@59f99ea]" name="HouseBillClose" duration-ms="1156" started-at="2020-07-17T17:59:42Z" finished-at="2020-07-17T17:59:43Z">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <input type="button" name="HouseBillClose" value="House Bill Close" onclick="houseBillClose();" style="width:150px; align:middle;"> is not clickable at point (239, 543). Other element would receive the click: <div id="modal" style="position: absolute; visibility: visible; background-color: rgb(192, 192, 254); top: 0px; left: 0px; width: 1030px; height: 593px; z-index: 5; opacity: 0.4; overflow: auto;"></div>
-  (Session info: chrome=81.0.4044.138)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Samsung', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-36-generic', java.version: '1.8.0_03-Ubuntu'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /tmp/.com.google.Chrome.BKsTDy}, goog:chromeOptions: {debuggerAddress: localhost:37863}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7ee512f8f14edb7ea1ceada6d9c1ddca]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="button" name="HouseBillClose" value="House Bill Close" onclick="houseBillClose();" style="width:150px; align:middle;"> is not clickable at point (239, 543). Other element would receive the click: <div id="modal" style="position: absolute; visibility: visible; background-color: rgb(192, 192, 254); top: 0px; left: 0px; width: 1030px; height: 593px; z-index: 5; opacity: 0.4; overflow: auto;"></div>
-  (Session info: chrome=81.0.4044.138)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'Samsung', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-36-generic', java.version: '1.8.0_03-Ubuntu'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /tmp/.com.google.Chrome.BKsTDy}, goog:chromeOptions: {debuggerAddress: localhost:37863}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7ee512f8f14edb7ea1ceada6d9c1ddca
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at testartemus.CandaMainScreenTest.HouseBillClose(CandaMainScreenTest.java:366)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:778)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
-	at org.testng.TestNG.runSuites(TestNG.java:1075)
-	at org.testng.TestNG.run(TestNG.java:1047)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        <test-method status="PASS" signature="HouseBillClose()[pri:14, instance:testartemus.candamainTest@57e1b0c]" name="HouseBillClose" duration-ms="2855" started-at="2020-07-21T17:00:43Z" finished-at="2020-07-21T17:00:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HouseBillClose -->
-      </class> <!-- testartemus.CandaMainScreenTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method status="PASS" signature="homepage()[pri:0, instance:testartemus.candamainTest@57e1b0c]" name="homepage" is-config="true" duration-ms="779" started-at="2020-07-21T17:00:46Z" finished-at="2020-07-21T17:00:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+      </class> <!-- testartemus.candamainTest -->
+    </test> <!-- candamainTest -->
+    <test name="AFRVoyageScheduleTest" duration-ms="25717" started-at="2020-07-21T11:30:47Z" finished-at="2020-07-21T11:31:13Z">
+      <class name="testartemus.AFRVoyageScheduleTest">
+        <test-method status="PASS" signature="login()[pri:0, instance:testartemus.AFRVoyageScheduleTest@5faeada1]" name="login" is-config="true" duration-ms="35" started-at="2020-07-21T17:00:47Z" finished-at="2020-07-21T17:00:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="jpvoyegetab()[pri:1, instance:testartemus.AFRVoyageScheduleTest@5faeada1]" name="jpvoyegetab" duration-ms="2215" started-at="2020-07-21T17:00:47Z" finished-at="2020-07-21T17:00:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jpvoyegetab -->
+        <test-method status="PASS" signature="vesseldetail()[pri:2, instance:testartemus.AFRVoyageScheduleTest@5faeada1]" name="vesseldetail" duration-ms="3916" started-at="2020-07-21T17:00:49Z" finished-at="2020-07-21T17:00:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vesseldetail -->
+        <test-method status="PASS" signature="voyegedetail()[pri:3, instance:testartemus.AFRVoyageScheduleTest@5faeada1]" name="voyegedetail" duration-ms="1195" started-at="2020-07-21T17:00:53Z" finished-at="2020-07-21T17:00:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- voyegedetail -->
+        <test-method status="PASS" signature="firstlocationdetails()[pri:4, instance:testartemus.AFRVoyageScheduleTest@5faeada1]" name="firstlocationdetails" duration-ms="3791" started-at="2020-07-21T17:00:54Z" finished-at="2020-07-21T17:00:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstlocationdetails -->
+        <test-method status="PASS" signature="datedetails()[pri:5, instance:testartemus.AFRVoyageScheduleTest@5faeada1]" name="datedetails" duration-ms="2086" started-at="2020-07-21T17:00:58Z" finished-at="2020-07-21T17:01:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- datedetails -->
+        <test-method status="PASS" signature="portdetails()[pri:6, instance:testartemus.AFRVoyageScheduleTest@5faeada1]" name="portdetails" duration-ms="501" started-at="2020-07-21T17:01:00Z" finished-at="2020-07-21T17:01:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- portdetails -->
+        <test-method status="PASS" signature="secondlocationdetails()[pri:7, instance:testartemus.AFRVoyageScheduleTest@5faeada1]" name="secondlocationdetails" duration-ms="1445" started-at="2020-07-21T17:01:01Z" finished-at="2020-07-21T17:01:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondlocationdetails -->
+        <test-method status="PASS" signature="datedetailstwo()[pri:8, instance:testartemus.AFRVoyageScheduleTest@5faeada1]" name="datedetailstwo" duration-ms="1985" started-at="2020-07-21T17:01:02Z" finished-at="2020-07-21T17:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- datedetailstwo -->
+        <test-method status="PASS" signature="portdetailstwo()[pri:9, instance:testartemus.AFRVoyageScheduleTest@5faeada1]" name="portdetailstwo" duration-ms="274" started-at="2020-07-21T17:01:04Z" finished-at="2020-07-21T17:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- portdetailstwo -->
+        <test-method status="PASS" signature="savevoyege()[pri:10, instance:testartemus.AFRVoyageScheduleTest@5faeada1]" name="savevoyege" duration-ms="1662" started-at="2020-07-21T17:01:04Z" finished-at="2020-07-21T17:01:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- savevoyege -->
+        <test-method status="PASS" signature="findvoyege()[pri:11, instance:testartemus.AFRVoyageScheduleTest@5faeada1]" name="findvoyege" duration-ms="2660" started-at="2020-07-21T17:01:06Z" finished-at="2020-07-21T17:01:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findvoyege -->
+        <test-method status="PASS" signature="updatevoyege()[pri:12, instance:testartemus.AFRVoyageScheduleTest@5faeada1]" name="updatevoyege" duration-ms="1952" started-at="2020-07-21T17:01:09Z" finished-at="2020-07-21T17:01:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatevoyege -->
+        <test-method status="PASS" signature="deletevoyege()[pri:13, instance:testartemus.AFRVoyageScheduleTest@5faeada1]" name="deletevoyege" duration-ms="1001" started-at="2020-07-21T17:01:11Z" finished-at="2020-07-21T17:01:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletevoyege -->
+        <test-method status="PASS" signature="homepage()[pri:0, instance:testartemus.AFRVoyageScheduleTest@5faeada1]" name="homepage" is-config="true" duration-ms="920" started-at="2020-07-21T17:01:12Z" finished-at="2020-07-21T17:01:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+      </class> <!-- testartemus.AFRVoyageScheduleTest -->
+    </test> <!-- AFRVoyageScheduleTest -->
+    <test name="AFRJapanBillHeaderTest" duration-ms="55378" started-at="2020-07-21T11:31:13Z" finished-at="2020-07-21T11:32:08Z">
+      <class name="testartemus.AFRJapanBillHeaderTest">
+        <test-method status="PASS" signature="login()[pri:0, instance:testartemus.AFRJapanBillHeaderTest@52feb982]" name="login" is-config="true" duration-ms="49" started-at="2020-07-21T17:01:13Z" finished-at="2020-07-21T17:01:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="billheader()[pri:1, instance:testartemus.AFRJapanBillHeaderTest@52feb982]" name="billheader" duration-ms="4382" started-at="2020-07-21T17:01:13Z" finished-at="2020-07-21T17:01:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- billheader -->
+        <test-method status="PASS" signature="billStatus()[pri:2, instance:testartemus.AFRJapanBillHeaderTest@52feb982]" name="billStatus" duration-ms="1079" started-at="2020-07-21T17:01:17Z" finished-at="2020-07-21T17:01:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- billStatus -->
+        <test-method status="PASS" signature="billType()[pri:3, instance:testartemus.AFRJapanBillHeaderTest@52feb982]" name="billType" duration-ms="434" started-at="2020-07-21T17:01:18Z" finished-at="2020-07-21T17:01:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- billType -->
+        <test-method status="PASS" signature="hblScac()[pri:4, instance:testartemus.AFRJapanBillHeaderTest@52feb982]" name="hblScac" duration-ms="1392" started-at="2020-07-21T17:01:19Z" finished-at="2020-07-21T17:01:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hblScac -->
+        <test-method status="PASS" signature="NvoType()[pri:5, instance:testartemus.AFRJapanBillHeaderTest@52feb982]" name="NvoType" duration-ms="490" started-at="2020-07-21T17:01:20Z" finished-at="2020-07-21T17:01:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NvoType -->
+        <test-method status="PASS" signature="ShippingInformation()[pri:6, instance:testartemus.AFRJapanBillHeaderTest@52feb982]" name="ShippingInformation" duration-ms="3114" started-at="2020-07-21T17:01:20Z" finished-at="2020-07-21T17:01:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ShippingInformation -->
+        <test-method status="PASS" signature="Consignee()[pri:7, instance:testartemus.AFRJapanBillHeaderTest@52feb982]" name="Consignee" duration-ms="3234" started-at="2020-07-21T17:01:24Z" finished-at="2020-07-21T17:01:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Consignee -->
+        <test-method status="PASS" signature="Notify()[pri:7, instance:testartemus.AFRJapanBillHeaderTest@52feb982]" name="Notify" duration-ms="3395" started-at="2020-07-21T17:01:27Z" finished-at="2020-07-21T17:01:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Notify -->
+        <test-method status="PASS" signature="VesselDetail()[pri:8, instance:testartemus.AFRJapanBillHeaderTest@52feb982]" name="VesselDetail" duration-ms="3675" started-at="2020-07-21T17:01:30Z" finished-at="2020-07-21T17:01:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VesselDetail -->
+        <test-method status="PASS" signature="receiptPlace()[pri:9, instance:testartemus.AFRJapanBillHeaderTest@52feb982]" name="receiptPlace" duration-ms="1214" started-at="2020-07-21T17:01:34Z" finished-at="2020-07-21T17:01:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- receiptPlace -->
+        <test-method status="PASS" signature="PortOfLoading()[pri:10, instance:testartemus.AFRJapanBillHeaderTest@52feb982]" name="PortOfLoading" duration-ms="811" started-at="2020-07-21T17:01:35Z" finished-at="2020-07-21T17:01:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PortOfLoading -->
+        <test-method status="PASS" signature="PortOfDischarge()[pri:11, instance:testartemus.AFRJapanBillHeaderTest@52feb982]" name="PortOfDischarge" duration-ms="875" started-at="2020-07-21T17:01:36Z" finished-at="2020-07-21T17:01:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PortOfDischarge -->
+        <test-method status="PASS" signature="PlaceOfDelivery()[pri:12, instance:testartemus.AFRJapanBillHeaderTest@52feb982]" name="PlaceOfDelivery" duration-ms="1238" started-at="2020-07-21T17:01:37Z" finished-at="2020-07-21T17:01:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PlaceOfDelivery -->
+        <test-method status="PASS" signature="CountryOfOrigin()[pri:14, instance:testartemus.AFRJapanBillHeaderTest@52feb982]" name="CountryOfOrigin" duration-ms="4940" started-at="2020-07-21T17:01:38Z" finished-at="2020-07-21T17:01:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CountryOfOrigin -->
+        <test-method status="PASS" signature="Equipment()[pri:15, instance:testartemus.AFRJapanBillHeaderTest@52feb982]" name="Equipment" duration-ms="3505" started-at="2020-07-21T17:01:43Z" finished-at="2020-07-21T17:01:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Equipment -->
+        <test-method status="PASS" signature="scrollpage()[pri:16, instance:testartemus.AFRJapanBillHeaderTest@52feb982]" name="scrollpage" duration-ms="36" started-at="2020-07-21T17:01:47Z" finished-at="2020-07-21T17:01:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scrollpage -->
+        <test-method status="PASS" signature="Packages()[pri:17, instance:testartemus.AFRJapanBillHeaderTest@52feb982]" name="Packages" duration-ms="2949" started-at="2020-07-21T17:01:47Z" finished-at="2020-07-21T17:01:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Packages -->
+        <test-method status="PASS" signature="Packagesunit()[pri:18, instance:testartemus.AFRJapanBillHeaderTest@52feb982]" name="Packagesunit" duration-ms="1273" started-at="2020-07-21T17:01:49Z" finished-at="2020-07-21T17:01:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Packagesunit -->
+        <test-method status="PASS" signature="scrollpage2()[pri:19, instance:testartemus.AFRJapanBillHeaderTest@52feb982]" name="scrollpage2" duration-ms="63" started-at="2020-07-21T17:01:51Z" finished-at="2020-07-21T17:01:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scrollpage2 -->
+        <test-method status="PASS" signature="equipmentcargodetails()[pri:20, instance:testartemus.AFRJapanBillHeaderTest@52feb982]" name="equipmentcargodetails" duration-ms="2800" started-at="2020-07-21T17:01:51Z" finished-at="2020-07-21T17:01:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equipmentcargodetails -->
+        <test-method status="PASS" signature="goodsDescription()[pri:21, instance:testartemus.AFRJapanBillHeaderTest@52feb982]" name="goodsDescription" duration-ms="587" started-at="2020-07-21T17:01:54Z" finished-at="2020-07-21T17:01:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goodsDescription -->
+        <test-method status="PASS" signature="HarmonizeCode()[pri:22, instance:testartemus.AFRJapanBillHeaderTest@52feb982]" name="HarmonizeCode" duration-ms="1978" started-at="2020-07-21T17:01:54Z" finished-at="2020-07-21T17:01:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HarmonizeCode -->
+        <test-method status="PASS" signature="HazardCode()[pri:23, instance:testartemus.AFRJapanBillHeaderTest@52feb982]" name="HazardCode" duration-ms="1586" started-at="2020-07-21T17:01:56Z" finished-at="2020-07-21T17:01:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HazardCode -->
+        <test-method status="PASS" signature="scrollpageup()[pri:24, instance:testartemus.AFRJapanBillHeaderTest@52feb982]" name="scrollpageup" duration-ms="57" started-at="2020-07-21T17:01:58Z" finished-at="2020-07-21T17:01:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scrollpageup -->
+        <test-method status="PASS" signature="save()[pri:25, instance:testartemus.AFRJapanBillHeaderTest@52feb982]" name="save" duration-ms="2526" started-at="2020-07-21T17:01:58Z" finished-at="2020-07-21T17:02:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- save -->
+        <test-method status="PASS" signature="findbill()[pri:26, instance:testartemus.AFRJapanBillHeaderTest@52feb982]" name="findbill" duration-ms="3850" started-at="2020-07-21T17:02:00Z" finished-at="2020-07-21T17:02:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findbill -->
+        <test-method status="PASS" signature="updatebill()[pri:26, instance:testartemus.AFRJapanBillHeaderTest@52feb982]" name="updatebill" duration-ms="2721" started-at="2020-07-21T17:02:04Z" finished-at="2020-07-21T17:02:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatebill -->
+        <test-method status="PASS" signature="homepage()[pri:0, instance:testartemus.AFRJapanBillHeaderTest@52feb982]" name="homepage" is-config="true" duration-ms="1040" started-at="2020-07-21T17:02:07Z" finished-at="2020-07-21T17:02:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+      </class> <!-- testartemus.AFRJapanBillHeaderTest -->
+    </test> <!-- AFRJapanBillHeaderTest -->
+  </suite> <!-- Regration Suite -->
 </testng-results>

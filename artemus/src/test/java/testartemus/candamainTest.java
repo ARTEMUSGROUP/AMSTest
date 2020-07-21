@@ -1,19 +1,16 @@
 package testartemus;
 
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
+import java.util.regex.Pattern;
 
-import org.apache.poi.util.SystemOutLogger;
-import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
+import org.hamcrest.Matcher;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.AssertJUnit;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -22,8 +19,7 @@ import org.testng.annotations.Test;
 import pageobject.MainCanadianCustomsScreen;
 import resources.base;
 
-public class CandaMainScreenTest extends base {
-
+public class candamainTest extends base {
 	MainCanadianCustomsScreen Cm;
 
 	// public WebDriver driver;
@@ -136,152 +132,165 @@ public class CandaMainScreenTest extends base {
 	public void CanCustBLDetailImportedCargoScreen() throws InterruptedException {
 
 		Cm.CanCustBLDetailImportedCargoScreen().click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		String tableValue = Cm.canadianbillDetailInformationTable1().getText().trim();
+		System.out.println(tableValue);
+		
 
-		System.out.println(Cm.canadianbillDetailInformationTable().getText());
-		Cm.canadianbillDetailInformationTable().click();
+		if (tableValue.contains("ADD")) {
 
-		AssertJUnit.assertTrue(Cm.canadianbillDetailInformationTableDiv().isDisplayed());
+			Cm.canadianbillDetailInformationTable().click();
 
+			AssertJUnit.assertTrue(Cm.canadianbillDetailInformationTableDiv().isDisplayed());
+			
+			
+			Cm.showAcknowledgement().click();
+
+			System.out.println(Cm.selectacknowledgementRow().getText());
+
+			Cm.customsCanadianAmendmentforBL().click();
+
+			Select Actioncode = new Select(Cm.actionCode);
+			Actioncode.selectByValue("A");
+
+			Select amendmentCode = new Select(Cm.amendmentCode);
+			amendmentCode.selectByValue("20");
+
+			Cm.Submit().click();
+
+
+			WebDriverWait wait = new WebDriverWait(driver, 20);
+			wait.until(ExpectedConditions.alertIsPresent());
+			driver.switchTo().alert().accept();
+			Cm.closeAmendment().click();
+			
+			WebDriverWait wait1 = new WebDriverWait(driver, 20);
+			wait.until(ExpectedConditions.visibilityOf(Cm.canadianbillDetailInformationTable()));
+			
+			System.out.println(Cm.canadianbillDetailInformationTable().getText());
+
+			
+			Cm.Message().click();
+
+			Cm.Messageclose().click();
+			
+			WebDriverWait wait2 = new WebDriverWait(driver, 20);
+			wait.until(ExpectedConditions.visibilityOf(Cm.canadianbillDetailInformationTable()));
+			
+			
+			Cm.Dispositioncode().click();
+			Thread.sleep(200);
+			Set<String> ids = driver.getWindowHandles();
+			Iterator<String> it = ids.iterator();
+			String parentid = it.next();
+			String childid = it.next();
+			driver.switchTo().window(childid);
+			System.out.println(driver.getTitle());
+
+			driver.switchTo().window(parentid);
+			System.out.println(driver.getTitle());
+
+			Cm.close1stTab().click();
+
+			System.out.println(Cm.GridData().getText());
+
+			
+			
+			
+		} else {
+			Cm.Dispositioncode().click();
+			Thread.sleep(200);
+			Set<String> ids = driver.getWindowHandles();
+			Iterator<String> it = ids.iterator();
+			String parentid = it.next();
+			String childid = it.next();
+			driver.switchTo().window(childid);
+			System.out.println(driver.getTitle());
+
+			driver.switchTo().window(parentid);
+			System.out.println(driver.getTitle());
+
+			//Cm.close1stTab().click();
+
+			//System.out.println(Cm.GridData().getText());
+
+			Cm.close().click();
+
+		}
 	}
 
 	@Test(priority = 9)
-	public void showAcknowledgement() throws InterruptedException {
-
-		Cm.showAcknowledgement().click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
-		System.out.println(Cm.selectacknowledgementRow().getText());
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
-	}
-
-	@Test(priority = 10)
-	public void customsCanadianAmendmentforBL() throws InterruptedException {
-
-		Cm.customsCanadianAmendmentforBL().click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
-		Select Actioncode = new Select(Cm.actionCode);
-		Actioncode.selectByValue("A");
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
-		Select amendmentCode = new Select(Cm.amendmentCode);
-		amendmentCode.selectByValue("20");
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
-		Cm.Submit().click();
-
-		Cm.close().click();
-
-		Thread.sleep(200);
-
-		driver.switchTo().alert().accept();
-
-		System.out.println(Cm.canadianbillDetailInformationTable().getText());
-	}
-
-	@Test(priority = 11)
-	public void Message() throws InterruptedException {
-
-		Cm.Message().click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
-		Cm.Messageclose().click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
-	}
-
-	@Test(priority = 12)
-	public void DispositionCodesDiscriptions() throws InterruptedException {
-
-		Cm.Dispositioncode().click();
-		Thread.sleep(200);
-		Set<String> ids = driver.getWindowHandles();
-		Iterator<String> it = ids.iterator();
-		String parentid = it.next();
-		String childid = it.next();
-		driver.switchTo().window(childid);
-		System.out.println(driver.getTitle());
-
-		driver.switchTo().window(parentid);
-		System.out.println(driver.getTitle());
-
-		Cm.close1stTab().click();
-
-		System.out.println(Cm.GridData().getText());
-
-	}
-
-	/*@Test(priority = 13)
 	public void CanCustBLDetailFROBECargo() throws InterruptedException {
-
 		Cm.CanCustBLDetailFROBECargo().click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		String tableValue = Cm.canadianbillDetailInformationTable1().getText().trim();
+		System.out.println(tableValue);
+		
+		
+		if (tableValue.contains("ADD")) {
+			Cm.canadianbillDetailInformationTable().click();
 
-		System.out.println(Cm.CanCustBLDetailFROBECargoRow().getText());
-		Cm.canadianbillDetailInformationTable().click();
+			AssertJUnit.assertTrue(Cm.CanCustBLDetailFROBECargoDiv().isDisplayed());
 
-		AssertJUnit.assertTrue(Cm.CanCustBLDetailFROBECargoDiv().isDisplayed());
+			
+			Cm.showAcknowledgement().click();
 
+			System.out.println(Cm.selectacknowledgementRow().getText());
+			
+			Cm.customsCanadianAmendmentforBL().click();
+
+			Select Actioncode = new Select(Cm.actionCode);
+			Actioncode.selectByValue("A");
+
+			Select amendmentCode = new Select(Cm.amendmentCode);
+			amendmentCode.selectByValue("20");
+
+			Cm.Submit().click();
+
+			WebDriverWait wait = new WebDriverWait(driver, 20);
+			wait.until(ExpectedConditions.alertIsPresent());
+			driver.switchTo().alert().accept();
+			Cm.closeAmendment().click();
+
+			WebDriverWait wait1 = new WebDriverWait(driver, 20);
+			wait.until(ExpectedConditions.visibilityOf(Cm.canadianbillDetailInformationTable()));
+			
+			System.out.println(Cm.canadianbillDetailInformationTable().getText());
+			
+			Cm.Message().click();
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+			Cm.Messageclose().click();
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+			Cm.close1stTab().click();
+
+			System.out.println(Cm.GridData().getText());
+		}
+		 else {
+				Cm.Dispositioncode().click();
+				Thread.sleep(200);
+				Set<String> ids = driver.getWindowHandles();
+				Iterator<String> it = ids.iterator();
+				String parentid = it.next();
+				String childid = it.next();
+				driver.switchTo().window(childid);
+				System.out.println(driver.getTitle());
+
+				driver.switchTo().window(parentid);
+				System.out.println(driver.getTitle());
+
+				//Cm.close1stTab().click();
+
+				//System.out.println(Cm.GridData().getText());
+
+				Cm.close().click();
+
+		 }
 	}
-
-	@Test(priority = 14)
-	public void showAcknowledgementFROBE() throws InterruptedException {
-
-		Cm.showAcknowledgement().click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
-		System.out.println(Cm.selectacknowledgementRow().getText());
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
-	}
-
-	@Test(priority = 15)
-	public void customsCanadianAmendmentforBLFROBE() throws InterruptedException {
-
-		Cm.customsCanadianAmendmentforBL().click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
-		Select Actioncode = new Select(Cm.actionCode);
-		Actioncode.selectByValue("A");
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
-		Select amendmentCode = new Select(Cm.amendmentCode);
-		amendmentCode.selectByValue("20");
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
-		Cm.Submit().click();
-
-		Cm.close().click();
-
-		Thread.sleep(200);
-
-		driver.switchTo().alert().accept();
-
-		System.out.println(Cm.canadianbillDetailInformationTable().getText());
-	}
-
-	@Test(priority = 16)
-	public void MessageFROBE() throws InterruptedException {
-
-		Cm.Message().click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
-		Cm.Messageclose().click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
-		Cm.close1stTab().click();
-
-		System.out.println(Cm.GridData().getText());
-
-	}*/
-
-	@Test(priority = 13)
+	
+	@Test(priority = 10)
 	public void CustomsErrorScreen() throws InterruptedException {
 
 		Cm.CustomsErrorScreen().click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
 		Cm.close1stTab().click();
 
@@ -289,41 +298,18 @@ public class CandaMainScreenTest extends base {
 
 	}
 
-	@Test(priority = 14)
+	@Test(priority = 11)
 	public void AmendTrackingScreen() throws InterruptedException {
 
 		Cm.AmendTrackingScreen().click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
-		/*
-		 * List<WebElement> CreateDateList=Cm.CreatedDate;
-		 * 
-		 * 
-		 * System.out.println(CreateDateList.size());
-		 * //System.out.println("tITLE"+CreateDateList);
-		 * 
-		 * for(int i=0;i<CreateDateList.size();i++){
-		 * System.out.println("index"+CreateDateList.get(i).getText());
-		 * 
-		 * 
-		 * }
-		 * 
-		 * //System.out.println(Cm.CreatedDate); List<String> strings = new
-		 * ArrayList<String>(); for(WebElement e : Cm.CreatedDate){
-		 * strings.add(e.getText());
-		 * 
-		 * System.out.println((e.getText()));
-		 */
-		// }
-
-		// System.out.println("dates are"+Cm.CreatedDate());
-
+	
 		Cm.close1stTab().click();
 
 		System.out.println(Cm.GridData().getText());
 	}
 
-	@Test(priority = 15)
+	@Test(priority = 12)
 	public void VoyageConveyance() throws InterruptedException {
 
 		Cm.VoyageConveyance().click();
@@ -342,7 +328,7 @@ public class CandaMainScreenTest extends base {
 
 	}
 
-	@Test(priority = 16)
+	@Test(priority = 13)
 	public void CACM() throws InterruptedException {
 
 		Cm.GridData().click();
@@ -360,7 +346,7 @@ public class CandaMainScreenTest extends base {
 
 	}
 
-	@Test(priority = 17)
+	@Test(priority = 14)
 	public void HouseBillClose() throws InterruptedException {
 
 		Cm.HouseBillClose().click();
@@ -385,7 +371,7 @@ public class CandaMainScreenTest extends base {
 	@AfterTest
 	public void homepage() throws InterruptedException {
 		back();
-		Thread.sleep(200);
 
 	}
+
 }

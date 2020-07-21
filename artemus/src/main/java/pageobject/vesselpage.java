@@ -16,7 +16,7 @@ public class vesselpage {
 	@FindBy(xpath = " //a[contains(text(),'Tables')]")
 	public WebElement tableTab;
 
-	@FindBy(xpath = " //a[contains(text(),'Vessel')]")
+	@FindBy(xpath = "//a[contains(@href,'vessel.do')]")
 	public WebElement vesseltab;
 
 	@FindBy(css = "	td[align='right']")

@@ -16,7 +16,9 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.AssertJUnit;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -45,10 +47,8 @@ public class billheaderTest extends base {
 	public void billheader() throws InterruptedException {
 
 		bh.billoflading().click();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		bh.billheadertab().click();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		AssertJUnit.assertTrue("Bill Header", bh.pagetitle().isDisplayed());
 
@@ -58,18 +58,15 @@ public class billheaderTest extends base {
 	public void billStatus() throws InterruptedException {
 		randomBillNumber = "AutoBill" + num.generateRandomToken();
 		bh.billLadingNumber().sendKeys(randomBillNumber);
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		Select status = new Select(bh.billStatus);
 		status.selectByValue("COMPLETE");
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		WebElement option = status.getFirstSelectedOption();
 		String defaultItem = option.getText();
 		System.out.println(defaultItem);
 
 		AssertJUnit.assertEquals(defaultItem, "COMPLETE");
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 	}
 
@@ -85,7 +82,6 @@ public class billheaderTest extends base {
 		System.out.println(defaultItem1);
 
 		AssertJUnit.assertEquals(defaultItem1, "WAY BILL");
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 	}
 
@@ -93,9 +89,14 @@ public class billheaderTest extends base {
 	public void hblScac() throws InterruptedException {
 		bh.hblScac().sendKeys("MFUS");
 		bh.populateHblScac().click();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		WebDriverWait wait1 = new WebDriverWait(driver, 30);
+		wait1.until(ExpectedConditions.visibilityOf(bh.hblscacTableRow()));		
 		bh.hblscacTableRow().click();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.visibilityOf(bh.hblScac()));
+		
+		AssertJUnit.assertTrue("MFUS", bh.hblScac().isDisplayed());
 
 	}
 
@@ -111,7 +112,6 @@ public class billheaderTest extends base {
 		System.out.println(defaultItem2);
 
 		AssertJUnit.assertEquals(defaultItem2, "AUTOMATED NVO");
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 
 	// Shipping Information
@@ -120,10 +120,15 @@ public class billheaderTest extends base {
 	public void ShippingInformation() throws InterruptedException {
 		bh.shipperName().sendKeys("ARTEMUS TRANSPORTATION SOLUTIONS");
 		bh.preshipperlist().click();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-
+		
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.visibilityOf(bh.shippertlistTableRow()));
+		
 		bh.shippertlistTableRow().click();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		WebDriverWait wait1 = new WebDriverWait(driver, 30);
+		wait1.until(ExpectedConditions.visibilityOf(bh.shipperName()));
+		AssertJUnit.assertTrue("ARTEMUS TRANSPORTATION SOLUTIONS", bh.shipperName().isDisplayed());
+
 
 	}
 
@@ -134,10 +139,15 @@ public class billheaderTest extends base {
 	public void Consignee() throws InterruptedException {
 		bh.consigneeName().sendKeys("ARTEMUS TRANSPORTATION SOLUTIONS");
 		bh.preconsigneelist().click();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-
+		
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.visibilityOf(bh.consigneetableRow()));
+		
 		bh.consigneetableRow().click();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		WebDriverWait wait1 = new WebDriverWait(driver, 30);
+		wait1.until(ExpectedConditions.visibilityOf(bh.consigneeName()));
+		AssertJUnit.assertTrue("ARTEMUS TRANSPORTATION SOLUTIONS", bh.consigneeName().isDisplayed());
+
 
 	}
 
@@ -147,10 +157,13 @@ public class billheaderTest extends base {
 		bh.notifyparty().click();
 		bh.notifyName().sendKeys("ARTEMUS TRANSPORTATION SOLUTIONS");
 		bh.prenotifylist().click();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.visibilityOf(bh.notifyTableRow()));
 
 		bh.notifyTableRow().click();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		WebDriverWait wait1 = new WebDriverWait(driver, 30);
+		wait1.until(ExpectedConditions.visibilityOf(bh.notifyName()));
+		AssertJUnit.assertTrue("ARTEMUS TRANSPORTATION SOLUTIONS", bh.notifyName().isDisplayed());
 
 	}
 
@@ -160,11 +173,13 @@ public class billheaderTest extends base {
 	public void VesselDetail() throws InterruptedException {
 		bh.vesselName().sendKeys("TEST");
 		bh.populateVessel().click();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.visibilityOf(bh.vesselNamelistRow()));
 
 		bh.vesselNamelistRow().click();
-		// driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-
+		WebDriverWait wait1 = new WebDriverWait(driver, 30);
+		wait1.until(ExpectedConditions.visibilityOf(bh.vesselName()));
+		
 		AssertJUnit.assertTrue("TEST VESSEL-0712", bh.vesselName().isDisplayed());
 		Thread.sleep(2000);
 
@@ -175,11 +190,14 @@ public class billheaderTest extends base {
 
 		bh.receiptPlace().sendKeys("HONG KONG");
 		bh.getpreLocation().click();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.visibilityOf(bh.receiptPlaceTableRow()));
 
 		bh.receiptPlaceTableRow().click();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-
+		WebDriverWait wait1 = new WebDriverWait(driver, 30);
+		wait1.until(ExpectedConditions.visibilityOf(bh.receiptPlace()));
+		
+		AssertJUnit.assertTrue("HONG KONG", bh.receiptPlace().isDisplayed());
 	}
 
 	@Test(priority = 10)
@@ -194,7 +212,6 @@ public class billheaderTest extends base {
 		System.out.println(defaultItem3);
 
 		AssertJUnit.assertEquals(defaultItem3, "HONG KONG");
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 	}
 
@@ -211,7 +228,6 @@ public class billheaderTest extends base {
 		System.out.println(defaultItem3);
 
 		AssertJUnit.assertEquals(defaultItem3, "LOS ANGELES");
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 
 	@Test(priority = 12)
@@ -219,11 +235,14 @@ public class billheaderTest extends base {
 
 		bh.deliveryPlace().sendKeys("LOS ANGELES");
 		bh.getpredeliveryPlace().click();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.visibilityOf(bh.deliveryPlaceTableRow()));
 		bh.deliveryPlaceTableRow().click();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-
+		
+		WebDriverWait wait1 = new WebDriverWait(driver, 30);
+		wait1.until(ExpectedConditions.visibilityOf(bh.deliveryPlace()));
+		
+		AssertJUnit.assertTrue("LOS ANGELES", bh.deliveryPlace().isDisplayed());
 	}
 
 	@Test(priority = 13)
@@ -237,7 +256,6 @@ public class billheaderTest extends base {
 		System.out.println(defaultItem3);
 
 		AssertJUnit.assertEquals(defaultItem3, "FCL/FCL");
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 	}
 
@@ -252,7 +270,6 @@ public class billheaderTest extends base {
 		System.out.println(defaultItem3);
 
 		AssertJUnit.assertEquals(defaultItem3, "HONG KONG");
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 
 	// Equipment
@@ -317,7 +334,6 @@ public class billheaderTest extends base {
 
 		Select wtiUnit = new Select(bh.wtiUnit());
 		wtiUnit.selectByValue("LBS");
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 	}
 
@@ -325,7 +341,6 @@ public class billheaderTest extends base {
 	public void scrollpage2() throws InterruptedException {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,350)", "");
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 
 	// Cargo
@@ -350,17 +365,15 @@ public class billheaderTest extends base {
 	@Test(priority = 22)
 	public void HarmonizeCode() throws InterruptedException {
 		bh.harmonizedCode().sendKeys("1111");
-		bh.preharmonizedcode().click();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-
-		bh.harmonizedSearch().sendKeys("1111");
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-
-		// bh.harmonizedSearchButton().click();
-		// driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-
+		bh.harmonizedCode().sendKeys(Keys.ENTER);
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.visibilityOf(bh.HarmonizedtableRow()));
+		
 		bh.HarmonizedtableRow().click();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		WebDriverWait wait1 = new WebDriverWait(driver, 30);
+		wait1.until(ExpectedConditions.visibilityOf(bh.harmonizedCode()));
+		
+		AssertJUnit.assertTrue("1701111000", bh.harmonizedCode().isDisplayed());
 
 	}
 
@@ -370,16 +383,12 @@ public class billheaderTest extends base {
 	public void HazardCode() throws InterruptedException {
 
 		bh.hazardSearch().click();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		bh.preHazardcode().sendKeys("1111");
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		bh.hazardSearchButton().click();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		bh.HarmonizedtableRow().click();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 	}
 	// Manufacturer
@@ -421,16 +430,13 @@ public class billheaderTest extends base {
 	public void save() throws InterruptedException {
 
 		bh.saveButton().click();
-		Thread.sleep(2000);
-		// driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-		// Using Alert class to first switch to or focus to the alert box
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.alertIsPresent());
 		Alert alert = (Alert) driver.switchTo().alert();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		// Using accept() method to accept the alert box
 		alert.accept();
-
-		Thread.sleep(2000);
-		//alert.accept();
+		WebDriverWait wait1 = new WebDriverWait(driver, 30);
+		wait1.until(ExpectedConditions.alertIsPresent());	
+		alert.accept();
 
 	}
 
@@ -460,16 +466,13 @@ public class billheaderTest extends base {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		bh.saveButton().click();
-		Thread.sleep(2000);
-		// driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-		// Using Alert class to first switch to or focus to the alert box
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.alertIsPresent());
 		Alert alert = (Alert) driver.switchTo().alert();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		// Using accept() method to accept the alert box
 		alert.accept();
-
-		Thread.sleep(2000);
-		//alert.accept();
+		WebDriverWait wait1 = new WebDriverWait(driver, 30);
+		wait1.until(ExpectedConditions.alertIsPresent());	
+		alert.accept();
 
 	}
 

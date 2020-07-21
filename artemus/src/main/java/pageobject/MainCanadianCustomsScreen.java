@@ -63,7 +63,7 @@ public class MainCanadianCustomsScreen {
 	public WebElement CanCustBLDetailImportedCargoScreen;
 	
 	
-	@FindBy(xpath = "//table[@id='canadianbillDetailInformationTable']//tr[@class='GridData']")
+	@FindBy(xpath = "//table[@id='canadianbillDetailInformationTable']/tbody/tr")
 	public WebElement canadianbillDetailInformationTable;
 	
 	@FindBy(xpath = "//div[@id='modal1']//div[2]")
@@ -85,7 +85,7 @@ public class MainCanadianCustomsScreen {
 	@FindBy(css = "input[value='Submit']")
 	public WebElement Submit;
 	
-	@FindBy(xpath = "//div[@id='modal3']//div//img")
+	@FindBy(xpath = "//*[@id='modal1']/div/table[1]/tbody/tr/td[2]/img")
 	public WebElement close;
 	
 	@FindBy(css = "input[value='Message']")
@@ -164,6 +164,16 @@ public class MainCanadianCustomsScreen {
 	
 	@FindBy(css = "input[value='Disposition Codes Discriptions']")
 	public WebElement Dispositioncode;
+	
+	@FindBy(xpath = "//*[@id='DataTable']/tbody/tr[2]")
+	public WebElement DataTableRow2;
+	
+	@FindBy(css = "#canadianbillDetailInformationTable")
+	public WebElement canadianbillDetailInformationTable1;
+	
+	@FindBy(xpath = "//*[@id='modal3']/div/table[1]/tbody/tr/td[2]/img")
+	public WebElement closeAmendment;
+	
 	
 	
 	
@@ -354,6 +364,18 @@ public class MainCanadianCustomsScreen {
 	
 	public WebElement Dispositioncode() {
 		return Dispositioncode;
+	}
+	
+	public WebElement DataTableRow2() {
+		return DataTableRow2;
+	}
+	
+	public WebElement canadianbillDetailInformationTable1() {
+		return canadianbillDetailInformationTable1;
+	}
+	
+	public WebElement closeAmendment() {
+		return closeAmendment;
 	}
 	
 	

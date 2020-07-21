@@ -105,9 +105,9 @@
   </test> <!-- Test -->
   
   
-   <test name="CandaMainScreenTest">
+   <test name="candamainTest">
     <classes>
-      <class name="testartemus.CandaMainScreenTest"/>
+      <class name="testartemus.candamainTest"/>
     </classes>
   </test> <!-- Test -->
   

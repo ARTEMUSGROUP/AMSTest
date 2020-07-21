@@ -20,6 +20,7 @@ import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.tools.ant.taskdefs.WaitFor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -50,53 +51,60 @@ public class locationTest extends base {
 	@Test(priority = 1)
 	public void createlocation() throws InterruptedException {
 		lp.tableTab().click();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		lp.locationTab().click();
 
 		AssertJUnit.assertTrue(lp.pageTitle().isDisplayed());
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		Select s = new Select(lp.country);
 		s.selectByValue("US");
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		lp.portorcity().sendKeys("Testport");
 
 		Select s2 = new Select(lp.state);
 		s2.selectByValue("DC");
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		Select s1 = new Select(lp.customscode);
 		s1.selectByValue("3010");
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		lp.holdAtLp().sendKeys("1111111111");
-		lp.canadaCustomeCode().sendKeys("1212");
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
 	}
 
 	@Test(priority = 2)
 	public void warehousedetail() throws InterruptedException {
+		lp.canadaCustomeCode().sendKeys("1212");
 
-		lp.warehouseCode().sendKeys("1212");
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		lp.canadaCustomeCode().sendKeys(Keys.ENTER);
 
-		String innerText = lp.warehousedetails().getText();
-		System.out.println(innerText);
+
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.visibilityOf(lp.warehousedetails()));
 		lp.warehousedetails().click();
-		Thread.sleep(20000);
+		
+		WebDriverWait wait1 = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.visibilityOf(lp.warehouseCode()));
+		
+		AssertJUnit.assertTrue("3222", lp.warehouseCode().isDisplayed());
+
 
 	}
 
 	@Test(priority = 3)
 	public void unlocodedetail() throws InterruptedException {
-		Thread.sleep(200);
 
 		lp.unlocode().sendKeys("ADZZZ");
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		lp.unlocodedetails().click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		lp.unlocode().sendKeys(Keys.ENTER);
 
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.visibilityOf(lp.unlocodedetails()));
+		lp.unlocodedetails().click();
+
+		WebDriverWait wait1 = new WebDriverWait(driver, 30);
+		wait1.until(ExpectedConditions.visibilityOf(lp.unlocode()));
+		
+		AssertJUnit.assertTrue("ADZZZ", lp.unlocode().isDisplayed());
+
+		
 	}
 
 	@Test(priority = 4)
@@ -111,10 +119,7 @@ public class locationTest extends base {
 	public void findlocation() throws InterruptedException {
 		lp.findlocation().click();
 
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
 		AssertJUnit.assertTrue(lp.enterlocation().isDisplayed());
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
 	}
 
@@ -124,18 +129,14 @@ public class locationTest extends base {
 		lp.enterlocation().sendKeys("Testport");
 		lp.searchlocation().click();
 
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
 		AssertJUnit.assertEquals(lp.searchcheck().getText(), "TESTPORT");
 
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
 	}
 
 	@Test(priority = 7)
 	public void findlocationingrid() throws InterruptedException {
 		lp.searchgrid().click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
 	}
 
@@ -145,27 +146,24 @@ public class locationTest extends base {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		lp.holdAtLp().sendKeys("2222222222");
 		lp.save().click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		WebDriverWait wait1 = new WebDriverWait(driver, 30);
+		wait1.until(ExpectedConditions.alertIsPresent());
 		driver.switchTo().alert().accept();
-		Thread.sleep(2000);
 
 	}
 
 	@Test(priority = 9)
 	public void deletelocation() throws InterruptedException {
 		lp.deletelocation().click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
+		WebDriverWait wait1 = new WebDriverWait(driver, 30);
+		wait1.until(ExpectedConditions.alertIsPresent());
 		driver.switchTo().alert().accept();
-
 	}
 
 	@AfterTest
 	public void homepage() throws InterruptedException {
 		back();
 
-		// driver.navigate().to("http://52.54.244.138:8080/AMS/login.do?actionCode=login");
-		Thread.sleep(200);
 	}
 
 }
